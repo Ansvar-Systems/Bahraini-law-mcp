@@ -66,7 +66,7 @@
       "description": "Get Article 4 of PDPL (consent requirement)",
       "tool": "get_provision",
       "input": {
-        "document_id": "pdpl-2018",
+        "document_id": "law-30-2018",
         "article": "4"
       },
       "assertions": {

@@ -1,0 +1,31 @@
+{
+  "id": "law-9-2012",
+  "type": "statute",
+  "title": "قانون رقم (9) لسنة 2012 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة تركمنستان بشأن تشجيع وحماية الاستثمارات",
+  "title_en": "Law No. (9) of 2012 ratifying the convention between the government of the kingdom of Bahrain and the government of Turkmenistan for the Promotion and Protection of Investments&#160;",
+  "short_name": "Law No. (9) of 2012 ratifying the con...",
+  "status": "in_force",
+  "issued_date": "",
+  "in_force_date": "",
+  "url": "https://legalaffairs.gov.bh/Legislation/HTM/K0612",
+  "provisions": [
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "المادة 2",
+      "content": "د _ السندات القابلة للتداول فيما عدا نظام مقاصة و تسوية الشيكات.\nالمادة الثانية\nعلى رئيس مجلس الوزراء والوزراء – كل فيما يخصه – تنفيذ هذا القانون، ويُعمل به من اليوم التالي لتاريخ نشره في الجريدة الرسمية.\nملك مملكة البحرين\nحمد بن عيسى آل خليفة\nصدر في قصر الرفاع:\nبتاريخ: 21 ربيع الأول 1433ه\nالموافق: 13 فبراير 2012م"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "بتاريخ",
+      "definition": "21 ربيع الأول 1433ه",
+      "source_provision": "art2"
+    },
+    {
+      "term": "الموافق",
+      "definition": "13 فبراير 2012م",
+      "source_provision": "art2"
+    }
+  ]
+}

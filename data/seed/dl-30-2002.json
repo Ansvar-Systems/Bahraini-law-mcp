@@ -1,0 +1,37 @@
+{
+  "id": "dl-30-2002",
+  "type": "statute",
+  "title": "مرسوم بقانون رقم (30) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب",
+  "title_en": "Decree No. (19) 2002 regarding Disposal of State-owned Land owned as Private Property",
+  "short_name": "Decree No. (19) 2002 regarding Dispos...",
+  "status": "in_force",
+  "issued_date": "",
+  "in_force_date": "",
+  "url": "https://legalaffairs.gov.bh/Legislation/HTM/L3002",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "المادة 1",
+      "content": "يُلغى البند (ب) من المادة (22) من المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب مع مراعاة إعادة ترقيم بنود هذه المادة."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "المادة 2",
+      "content": "على رئيس مجلس الوزراء والوزراء كل فيما يخصه تنفيذ هذا القانون، ويعمل به من تاريخ نشره في الجريدة الرسمية.\nملك مملكة البحرين\nحمد بن عيسى آل خليفة\nرئيس مجلس الوزراء\nخليفة بن سلمان آل خليفة\nصدر في قصر الرفاع:\nبتاريخ: 8 رجب 1423ه\nالموافق: 15 سبتمبر 2002م"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "بتاريخ",
+      "definition": "8 رجب 1423ه",
+      "source_provision": "art2"
+    },
+    {
+      "term": "الموافق",
+      "definition": "15 سبتمبر 2002م",
+      "source_provision": "art2"
+    }
+  ]
+}

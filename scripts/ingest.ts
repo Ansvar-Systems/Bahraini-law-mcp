@@ -2,22 +2,24 @@
 /**
  * Bahrain Law MCP -- Census-Driven Ingestion Pipeline
  *
- * Reads data/census.json and fetches + parses every ingestable Act
- * from legalaffairs.gov.bh (Akoma Ntoso HTML).
+ * Reads data/census.json and fetches + parses every ingestable law
+ * from legalaffairs.gov.bh (Word-generated HTML).
  *
  * Features:
- *   - Resume support: skips Acts that already have a seed JSON file
+ *   - Resume support: skips laws that already have a seed JSON file
  *   - Census update: writes provision counts + ingestion dates back to census.json
  *   - Rate limiting: 500ms minimum between requests (via fetcher.ts)
+ *   - Checkpoint: saves census every 50 laws
  *
  * Usage:
  *   npm run ingest                    # Full census-driven ingestion
- *   npm run ingest -- --limit 5       # Test with 5 acts
+ *   npm run ingest -- --limit 5       # Test with 5 laws
  *   npm run ingest -- --skip-fetch    # Reuse cached HTML (re-parse only)
  *   npm run ingest -- --force         # Re-ingest even if seed exists
+ *   npm run ingest -- --resume        # Same as default (skip existing seeds)
  *
- * Data source: legalaffairs.gov.bh (National Council for Law Reporting)
- * Format: AKN (Akoma Ntoso) structured HTML
+ * Data source: legalaffairs.gov.bh (Legislation and Legal Opinion Commission)
+ * Format: Word-generated HTML (MsoNormal)
  * License: Government Open Data
  */
 
@@ -39,14 +41,19 @@ const CENSUS_PATH = path.resolve(__dirname, '../data/census.json');
 interface CensusLawEntry {
   id: string;
   title: string;
+  title_en?: string;
   identifier: string;
   url: string;
+  url_en?: string;
+  htm_code?: string;
   status: 'in_force' | 'amended' | 'repealed';
-  category: 'act';
+  category: string;
   classification: 'ingestable' | 'excluded' | 'inaccessible';
   ingested: boolean;
   provision_count: number;
   ingestion_date: string | null;
+  year?: number | null;
+  number?: number | null;
 }
 
 interface CensusFile {
@@ -90,19 +97,27 @@ function parseArgs(): { limit: number | null; skipFetch: boolean; force: boolean
 
 /**
  * Convert a census entry to an ActIndexEntry for the parser.
- * Extracts AKN year/number from the identifier field.
  */
 function censusToActEntry(law: CensusLawEntry): ActIndexEntry {
-  // identifier format: "act/YEAR/NUMBER"
   const parts = law.identifier.split('/');
   const aknYear = parts[1] ?? '';
   const aknNumber = parts[2] ?? '';
 
+  // Generate a readable short name
+  let shortName = law.id;
+  if (law.title_en && law.title_en.length > 0) {
+    shortName = law.title_en.length > 40 ? law.title_en.substring(0, 37) + '...' : law.title_en;
+  } else if (law.title.length > 40) {
+    shortName = law.title.substring(0, 37) + '...';
+  } else {
+    shortName = law.title;
+  }
+
   return {
     id: law.id,
     title: law.title,
-    titleEn: law.title,
-    shortName: law.title.length > 30 ? law.title.substring(0, 27) + '...' : law.title,
+    titleEn: law.title_en ?? '',
+    shortName,
     status: law.status === 'in_force' ? 'in_force' : law.status === 'amended' ? 'amended' : 'repealed',
     issuedDate: '',
     inForceDate: '',
@@ -119,8 +134,8 @@ async function main(): Promise<void> {
 
   console.log('Bahrain Law MCP -- Ingestion Pipeline (Census-Driven)');
   console.log('====================================================\n');
-  console.log(`  Source: legalaffairs.gov.bh (National Council for Law Reporting)`);
-  console.log(`  Format: AKN (Akoma Ntoso) structured HTML`);
+  console.log(`  Source: legalaffairs.gov.bh (Legislation and Legal Opinion Commission)`);
+  console.log(`  Format: Word-generated HTML (MsoNormal)`);
   console.log(`  License: Government Open Data`);
 
   if (limit) console.log(`  --limit ${limit}`);
@@ -139,7 +154,7 @@ async function main(): Promise<void> {
   const acts = limit ? ingestable.slice(0, limit) : ingestable;
 
   console.log(`\n  Census: ${census.summary.total_laws} total, ${ingestable.length} ingestable`);
-  console.log(`  Processing: ${acts.length} acts\n`);
+  console.log(`  Processing: ${acts.length} laws\n`);
 
   fs.mkdirSync(SOURCE_DIR, { recursive: true });
   fs.mkdirSync(SEED_DIR, { recursive: true });
@@ -222,12 +237,18 @@ async function main(): Promise<void> {
       }
 
       const parsed = parseBahrainLawHtml(html, act);
+
+      // Enrich with English title from census if available
+      if (law.title_en && !parsed.title_en) {
+        parsed.title_en = law.title_en;
+      }
+
       fs.writeFileSync(seedFile, JSON.stringify(parsed, null, 2));
       totalProvisions += parsed.provisions.length;
       totalDefinitions += parsed.definitions.length;
       console.log(`    -> ${parsed.provisions.length} provisions, ${parsed.definitions.length} definitions`);
 
-      // Update census entry (mark ingested even if zero provisions — the act was fetched and parsed)
+      // Update census entry
       const entry = censusMap.get(law.id);
       if (entry) {
         entry.ingested = true;
@@ -251,7 +272,7 @@ async function main(): Promise<void> {
 
     processed++;
 
-    // Save census every 50 acts (checkpoint)
+    // Save census every 50 laws (checkpoint)
     if (processed % 50 === 0) {
       writeCensus(census, censusMap);
       console.log(`  [checkpoint] Census updated at ${processed}/${acts.length}`);
@@ -265,7 +286,7 @@ async function main(): Promise<void> {
   console.log(`\n${'='.repeat(70)}`);
   console.log('Ingestion Report');
   console.log('='.repeat(70));
-  console.log(`\n  Source:      legalaffairs.gov.bh (Akoma Ntoso HTML)`);
+  console.log(`\n  Source:      legalaffairs.gov.bh (Word-generated HTML)`);
   console.log(`  Processed:   ${processed}`);
   console.log(`  New:         ${ingested}`);
   console.log(`  Resumed:     ${skipped}`);
@@ -276,16 +297,16 @@ async function main(): Promise<void> {
   // Summary of failures
   const failures = results.filter(r => r.status.startsWith('HTTP') || r.status.startsWith('ERROR'));
   if (failures.length > 0) {
-    console.log(`\n  Failed acts:`);
+    console.log(`\n  Failed laws:`);
     for (const f of failures) {
       console.log(`    ${f.act}: ${f.status}`);
     }
   }
 
-  // Zero-provision acts
+  // Zero-provision laws
   const zeroProv = results.filter(r => r.provisions === 0 && !r.status.startsWith('HTTP') && !r.status.startsWith('ERROR'));
   if (zeroProv.length > 0) {
-    console.log(`\n  Zero-provision acts (${zeroProv.length}):`);
+    console.log(`\n  Zero-provision laws (${zeroProv.length}):`);
     for (const z of zeroProv.slice(0, 20)) {
       console.log(`    ${z.act}`);
     }
@@ -299,18 +320,13 @@ async function main(): Promise<void> {
 
 function writeCensus(census: CensusFile, censusMap: Map<string, CensusLawEntry>): void {
   // Update the laws array from the map
-  census.laws = Array.from(censusMap.values()).sort((a, b) =>
-    a.title.localeCompare(b.title),
-  );
+  census.laws = Array.from(censusMap.values());
 
   // Recalculate summary
   census.summary.total_laws = census.laws.length;
   census.summary.ingestable = census.laws.filter(l => l.classification === 'ingestable').length;
   census.summary.inaccessible = census.laws.filter(l => l.classification === 'inaccessible').length;
   census.summary.excluded = census.laws.filter(l => l.classification === 'excluded').length;
-
-  // Also compute total_provisions for the top-level census.json
-  const totalProvisions = census.laws.reduce((sum, l) => sum + (l.provision_count ?? 0), 0);
 
   fs.writeFileSync(CENSUS_PATH, JSON.stringify(census, null, 2));
 }

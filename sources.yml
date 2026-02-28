@@ -4,12 +4,12 @@ mcp_name: "Bahrain Law MCP"
 jurisdiction: "BH"
 
 sources:
-  - name: "Legislation and Legal Opinion Commission"
+  - name: "Legislation and Legal Opinion Commission (LLOC)"
     authority: "Government of Bahrain"
     official_portal: "https://legalaffairs.gov.bh"
     canonical_identifier: "legalaffairs.gov.bh"
-    retrieval_method: "curated (Word-generated HTML)"
-    api_documentation: "N/A"
+    retrieval_method: "automated (POST /legislation/search TypeID=K, paginated)"
+    api_documentation: "N/A (reverse-engineered jQuery AJAX)"
     update_frequency: "as enacted"
     last_ingested: "2026-02-28"
     license_or_terms:
@@ -17,8 +17,8 @@ sources:
       url: "https://legalaffairs.gov.bh"
       summary: "Official government legal database; legislation is public domain as government publication"
     coverage:
-      scope: "20 core laws covering constitution, data protection, cybercrime, e-transactions, banking, AML, labor, competition, consumer protection, investment, tax"
-      limitations: "Curated census (portal serves Word-generated HTML). Does not include subsidiary legislation or ministerial orders."
+      scope: "1,622 laws and decree-laws (1957-2026); 13,506 provisions; 2,187 definitions"
+      limitations: "Ratification laws, amendment laws, and budget tables have zero provisions due to lack of article structure. English translations available as .docx files but not yet ingested."
     languages:
       - "ar"
 
