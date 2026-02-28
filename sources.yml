@@ -4,29 +4,25 @@ mcp_name: "Bahrain Law MCP"
 jurisdiction: "BH"
 
 sources:
-  - name: "Bahrain Official Legal Database"
+  - name: "Legislation and Legal Opinion Commission"
     authority: "Government of Bahrain"
     official_portal: "https://legalaffairs.gov.bh"
-    canonical_identifier: "TBD"
-    retrieval_method: "HTML"
+    canonical_identifier: "legalaffairs.gov.bh"
+    retrieval_method: "curated (Word-generated HTML)"
     api_documentation: "N/A"
-    update_frequency: "TBD"
-    last_ingested: "PENDING_FIRST_INGEST"
+    update_frequency: "as enacted"
+    last_ingested: "2026-02-28"
     license_or_terms:
       type: "Government Publication"
       url: "https://legalaffairs.gov.bh"
       summary: "Official government legal database; legislation is public domain as government publication"
     coverage:
-      scope: "TBD -- update after census"
-      limitations: "TBD -- update after census"
+      scope: "20 core laws covering constitution, data protection, cybercrime, e-transactions, banking, AML, labor, competition, consumer protection, investment, tax"
+      limitations: "Curated census (portal serves Word-generated HTML). Does not include subsidiary legislation or ministerial orders."
     languages:
-      - "en"
+      - "ar"
 
 data_freshness:
   automated_checks: false
-  check_frequency: "TBD"
-  last_verified: "2026-02-27"
-
-# Notes:
-# - Source URL: legalaffairs.gov.bh
-# - Update this file after completing census and first ingestion
+  check_frequency: "monthly"
+  last_verified: "2026-02-28"

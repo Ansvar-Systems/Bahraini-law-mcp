@@ -30,11 +30,11 @@ export function generateResponseMetadata(
   }
 
   return {
-    data_source: 'Bahrain Law (legalaffairs.gov.bh) — National Council for Law Reporting',
-    jurisdiction: 'KE',
+    data_source: 'Bahrain Law (legalaffairs.gov.bh) — Legislation and Legal Opinion Commission',
+    jurisdiction: 'BH',
     disclaimer:
       'This data is sourced from Bahrain Law under Government Open Data principles. ' +
-      'The authoritative versions are in English. Swahili translations may be available for some documents. ' +
+      'The authoritative versions are in Arabic. English translations are available for many laws. ' +
       'Always verify with the official Bahrain Law portal (legalaffairs.gov.bh).',
     freshness,
   };

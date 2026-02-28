@@ -45,11 +45,11 @@ export function getAbout(db: InstanceType<typeof Database>, context: AboutContex
     },
     data_source: {
       name: 'Bahrain Law',
-      authority: 'National Council for Law Reporting',
-      url: 'http://legalaffairs.gov.bh',
-      license: 'Government Open Data',
-      jurisdiction: 'KE',
-      languages: ['en', 'sw'],
+      authority: 'Legislation and Legal Opinion Commission',
+      url: 'https://legalaffairs.gov.bh',
+      license: 'Government Publication',
+      jurisdiction: 'BH',
+      languages: ['ar'],
     },
   };
 }

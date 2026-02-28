@@ -2,6 +2,116 @@
   "$schema": "./golden-tests.schema.json",
   "version": "1.0",
   "mcp_name": "Bahrain Law MCP",
-  "description": "Golden contract tests for the Bahrain Law MCP -- add tests after first ingestion",
-  "tests": []
+  "description": "Golden contract tests for the Bahrain Law MCP",
+  "tests": [
+    {
+      "id": "bh-search-001",
+      "category": "search",
+      "description": "Search for data protection provisions in Arabic",
+      "tool": "search_legislation",
+      "input": {
+        "query": "البيانات الشخصية"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["البيانات"]
+      }
+    },
+    {
+      "id": "bh-search-002",
+      "category": "search",
+      "description": "Search for IT system provisions (cybercrime and e-transactions)",
+      "tool": "search_legislation",
+      "input": {
+        "query": "نظام"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["نظام"]
+      }
+    },
+    {
+      "id": "bh-search-003",
+      "category": "search",
+      "description": "Search for money laundering provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "غسل الأموال"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["الأموال"]
+      }
+    },
+    {
+      "id": "bh-provision-001",
+      "category": "provision",
+      "description": "Get Article 19 of the Constitution (personal freedom)",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "constitution-2002",
+        "article": "19"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_contains": ["الحرية الشخصية"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "bh-provision-002",
+      "category": "provision",
+      "description": "Get Article 4 of PDPL (consent requirement)",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "pdpl-2018",
+        "article": "4"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_contains": ["موافقة"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "bh-search-004",
+      "category": "search",
+      "description": "Search for electronic signature provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "التوقيع الإلكتروني"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["الإلكتروني"]
+      }
+    },
+    {
+      "id": "bh-search-005",
+      "category": "search",
+      "description": "Search for consumer protection",
+      "tool": "search_legislation",
+      "input": {
+        "query": "حماية المستهلك"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["المستهلك"]
+      }
+    },
+    {
+      "id": "bh-edge-001",
+      "category": "edge",
+      "description": "Handle nonexistent search gracefully",
+      "tool": "search_legislation",
+      "input": {
+        "query": "xyznonexistent123"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    }
+  ]
 }
