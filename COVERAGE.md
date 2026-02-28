@@ -7,77 +7,1645 @@
 
 | Field | Value |
 |-------|-------|
-| Authority | Legislation and Legal Opinion Commission (LLOC) |
+| Authority | Government of Bahrain |
 | Portal | [legalaffairs.gov.bh](https://legalaffairs.gov.bh) |
 | License | Government Publication |
 | Census date | 2026-02-28 |
-| Census method | Automated scrape of /legislation/search (TypeID=K) |
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
 | Total laws enumerated | 1,622 |
+| Ingestable | 1,622 |
 | Ingested | 1,622 |
-| With provisions | 580 |
-| Zero-provision (ratification/amendment) | 1,042 |
-| Inaccessible | 0 |
-| Provisions extracted | 13,506 |
-| Definitions extracted | 2,187 |
+| Excluded | 0 |
+| Provisions extracted | 14,506 |
 | **Coverage** | **100%** |
 
-## Category Breakdown
+## Laws (1,622 ingested)
 
-| Category | Laws | Provisions |
-|----------|------|------------|
-| Constitution | 1 | 125 |
-| Law (قانون) | 551 | 6,539 |
-| Decree-Law (مرسوم بقانون) | 1,012 | 7,442 |
-| Legislative Decree | 56 | 400 |
-| Decree (مرسوم) | 2 | 0 |
-
-## Coverage by Decade
-
-| Decade | Provisions |
-|--------|------------|
-| 1960s | 24 |
-| 1970s | 199 |
-| 1980s | 179 |
-| 1990s | 753 |
-| 2000s | 4,999 |
-| 2010s | 4,827 |
-| 2020s | 1,747 |
-
-## Top 10 Laws by Provision Count
-
-| Law | Provisions | Title |
-|-----|------------|-------|
-| dl-19-2001 | 1,050 | Civil Code (القانون المدني) |
-| dl-46-2002 | 427 | Criminal Procedure Code |
-| law-13-2022 | 388 | Commercial Companies |
-| dl-54-2002 | 220 | House of Representatives Internal Rules |
-| law-36-2012 | 197 | Private Sector Labor Law |
-| dl-24-2018 | 195 | Bankruptcy and Restructuring |
-| dl-55-2002 | 191 | Shura Council Internal Rules |
-| law-64-2006 | 188 | Central Bank of Bahrain |
-| dl-10-2002 | 179 | Arbitration |
-| law-15-2012 | 160 | Maritime Transport |
-
-## Zero-Provision Laws
-
-1,042 laws have zero extracted provisions. These fall into three categories:
-
-- **Ratification laws** (~336): Approve international treaties with generic 2-3 article text
-- **Amendment laws** (~299): Modify specific articles of other laws
-- **Short/procedural laws** (~407): Short decrees, budget laws (table-only), or older laws with non-standard formatting
-
-These are fetched and stored but their content does not contain structured article divisions parseable by the current article-heading parser. The raw HTML is preserved in `data/source/` for future improvement.
-
-## Database
-
-| Property | Value |
-|----------|-------|
-| Format | SQLite (FTS5, unicode61 tokenizer) |
-| Size | 25.9 MB |
-| Schema version | 2 |
-| Languages | Arabic (primary) |
+| Title | Official URL | Status | Provisions |
+|-------|-------------|--------|------------|
+| قانون رقم (6) لسنة 2026 بالتصديق على اتفاقية البلد المضيف بين حكومة مملكة البحرين والمحكمة الدائمة للتحكيم | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0126) | in_force | 0 |
+| قانون رقم (5) لسنة 2026 بتعديل البند (13) من المادة (3) من القانون رقم (5) لسنة 2021 بشأن تنظيم ومراقبة التجارة الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0526) | in_force | 0 |
+| قانون رقم (4) لسنة 2026 بإصدار قانون المؤسسات التعليمية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4125) | in_force | 34 |
+| قانون رقم (3) لسنة 2026 بإصدار قانون المعاملات المضمونة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4225) | in_force | 13 |
+| قانون رقم (2) لسنة 2026 بالتصديق على الاتفاقية بين حكومة مملكة البحرين ومجلس وزراء جمهورية قيرغيزستان بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0426) | in_force | 36 |
+| قانون رقم (1) لسنة 2026 بتعديل المادة (219) من المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0326) | in_force | 60 |
+| قانون رقم (43) لسنة 2025 بالتصديق على اتفاقية مكة المكرمة للدول الأعضاء في منظمة التعاون الإسلامي للتعاون في مجال إنفاذ قوانين مكافحة الفساد | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3625) | in_force | 19 |
+| قانون رقم (42) لسنة 2025 بتعديل بعض أحكام قانون قوات الأمن العام الصادر بالمرسوم بقانون رقم (3) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3725) | in_force | 0 |
+| قانون رقم (41) لسنة 2025 بتعديل بعض أحكام المرسوم بقانون رقم (47) لسنة 2002 بشأن تنظيم الصحافة والطباعة والنشر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3825) | in_force | 6 |
+| مرسوم بقانون رقم (40) لسنة 2025 بتعديل بعض أحكام القانون رقم (8) لسنة 2021 بشأن الاحتراف الرياضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3225) | in_force | 3 |
+| مرسوم بقانون رقم (39) لسنة 2025 بتعديل بعض أحكام المرسوم بقانون رقم (21) لسنة 2013 بشأن تنظيم جمع المال للأغراض العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3125) | in_force | 2 |
+| مرسوم بقانون رقم (38) لسنة 2025 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (21) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3025) | in_force | 16 |
+| مرسوم بقانون رقم (37) لسنة 2025 بتعديل المادة (161) من قانون مصرف البحرين المركزي والمؤسسات المالية الصادر بالقانون رقم (64) لسنة 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4025) | in_force | 2 |
+| مرسوم بقانون رقم (36) لسنة 2025 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 2001 بشأن حظْر ومكافحة غسْل الأموال وتمويل الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3925) | in_force | 7 |
+| مرسوم بقانون رقم (35) لسنة 2025 بالموافقة على النظام (القانون) الموحد للنقل البري الدولي بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2025) | in_force | 9 |
+| مرسوم بقانون رقم (34) لسنة 2025 بتعديل بعض أحكام القانون رقم (74) لسنة 2006 بشأن رعاية وتأهيل وتشغيل ذوي الإعاقة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2525) | in_force | 3 |
+| مرسوم بقانون رقم (33) لسنة 2025 بالموافقة على اتفاقية الامتياز بشأن مكامن جوبة وما قبل الطويل بحقل البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2325) | in_force | 10 |
+| مرسوم بقانون رقم (32) لسنة 2025 بتعديل بعض أحكام قانون الإجراءات الجنائية الصادر بالمرسوم بقانون رقم (46) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2425) | in_force | 2 |
+| مرسوم بقانون رقم (31) لسنة 2025 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2725) | in_force | 5 |
+| مرسوم بقانون رقم (30) لسنة 2025 بتعديل بعض أحكام قانون المرور الصادر بالقانون رقم (23) لسنة 2014 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3425) | in_force | 3 |
+| قانون رقم (29) لسنة 2025 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة مملكة البحرين وحكومة جمهورية كوريا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1525) | in_force | 0 |
+| قانون رقم (28) لسنة 2025 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة سلطنة عُمان في شأن إزالة الازدواج الضريبي ومنع التهرب والتجنب من الضرائب بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2125) | in_force | 6 |
+| قانون رقم (27) لسنة 2025 بتعديل بعض أحكام القانون رقم (9) لسنة 2016 بشأن المواصفات والمقاييس | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1125) | in_force | 11 |
+| قانون رقم (26) لسنة 2025 بالتصديق على الاتفاقية الإطارية واتفاقيتي الوكالة والضمان بين حكومة مملكة البحرين والبنك الإسلامي للتنمية لتمويل مشروع إنشاء محطة الجسرة الجديدة جهد 400 كيلو فولت | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1425) | in_force | 0 |
+| قانون رقم (25) لسنة 2025 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0525) | in_force | 0 |
+| قانون رقم (24) لسنة 2025 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1225) | in_force | 2 |
+| قانون رقم (23) لسنة 2025 بتعديل بعض أحكام قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0325) | in_force | 3 |
+| قانون رقم (22) لسنة 2025 بالتصديق على اتفاقية التعاون في مجال الموانئ والملاحة البحرية التجارية بين حكومة مملكة البحرين وحكومة دولة الكويت | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0125) | in_force | 36 |
+| قانون رقم (21) لسنة 2025 بتعديل بعض أحكام قانون العدالة الإصلاحية للأطفال وحمايتهم من سوء المعاملة الصادر بالقانون رقم (4) لسنة 2021 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1424) | in_force | 0 |
+| قانون رقم (20) لسنة 2025 بتعديل بعض أحكام القانون رقم (18) لسنة 2017 بشأن العقوبات والتدابير البديلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0425) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 2024 بتعديل المادة (7) من قانون السلطة القضائية الصادر بالمرسوم بقانون رقم (42) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1324) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 2024 بتعديل المادة (40) من القانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1224) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 2024 بشأن تنظيم الضريبة على المشاريع متعددة الجنسيات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1124) | in_force | 44 |
+| مرسوم بقانون رقم (10) لسنة 2024 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1024) | in_force | 2 |
+| مرسوم بقانون رقم (9) لسنة 2024 بشأن محكمة البحرين التجارية الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0924) | in_force | 22 |
+| مرسوم بقانون رقم (8) لسنة 2024 بالتصديق والموافقة على الانضمام إلى عدد من المعاهدات والاتفاقيات الدولية ذات العلاقة بالشأن القضائي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0724) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 2024 بالتصديق والموافقة على الانضمام إلى عدد من المعاهدات والاتفاقيات الدولية ذات العلاقة بالشأن القضائي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0524) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 2024 بتعديل المادة (28) من المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0624) | in_force | 3 |
+| قانون رقم (6) لسنة 2024 بتعديل بعض أحكام قانون مؤسسة الإصلاح والتأهيل الصادر بالقانون رقم (18) لسنة 2014 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2323) | in_force | 1 |
+| قانون رقم (5) لسنة 2024 بإضافة مادة جديدة برقم (16) مكرراً إلى المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0124) | in_force | 0 |
+| قانون رقم (4) لسنة 2024 بالموافقة على انضمام مملكة البحرين إلى اتفاقية تسهيل حركة الملاحة البحرية الدولية لعام 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2223) | in_force | 0 |
+| قانون رقم (3) لسنة 2024 بالتصديق على الاتفاقية بين مملكة البحرين ومجلس التعاون لدول الخليج العربية بشأن مقر المكتب الفني للاتصالات في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2123) | in_force | 0 |
+| قانون رقم (2) لسنة 2024 بالموافقة على انضمام مملكة البحرين إلى المعاهدة الدولية بشأن الموارد الوراثية النباتية للأغذية والزراعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1223) | in_force | 0 |
+| قانون رقم (1) لسنة 2024 بتعديل المادة (1) من المرسوم بقانون رقم (10) لسنة 1976 في شأن الإسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1323) | in_force | 2 |
+| قانون رقم (26) لسنة 2023 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية تشيلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1423) | in_force | 0 |
+| قانون رقم (25) لسنة 2023 بالتصديق على تعديل الفقرة (1) من المادة الخامسة والأربعين من الميثاق العربي لحقوق الإنسان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1623) | in_force | 3 |
+| قانون رقم (24) لسنة 2023 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة جمهورية كوريا بشأن الخدمات الجوية بين إقليميهما وفيما وراءهما | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1523) | in_force | 10 |
+| قانون رقم (23) لسنة 2023 بتعديل المادة (180) من المرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1723) | in_force | 2 |
+| قانون رقم (22) لسنة 2023 بتعديل الفقرة (هـ) من المادة (9) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التَّعَطُّل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1823) | in_force | 9 |
+| قانون رقم (21) لسنة 2023 بتعديل بعض أحكام القانون رقم (18) لسنة 2006 بشأن الضمان الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1923) | in_force | 41 |
+| مرسوم بقانون رقم (20) لسنة 2023 بإضافة بند جديد برقم (7) إلى الفقرة (ج) من المادة (8) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التعطّل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4122) | in_force | 20 |
+| مرسوم بقانون رقم (19) لسنة 2023 بتعديل بعض أحكام المرسوم بقانون رقم (42) لسنة 1999 بإنشاء شركة نفط البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4322) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 2023 بتعديل بعض أحكام قانون الاتصالات الصادر بالمرسوم بقانون رقم (48) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4222) | in_force | 4 |
+| مرسوم بقانون رقم (17) لسنة 2023 بتعديل بعض أحكام القانون رقم (33) لسنة 2006 بشأن الصرف الصحي وصرف المياه السطحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4522) | in_force | 42 |
+| مرسوم بقانون رقم (16) لسنة 2023 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4422) | in_force | 5 |
+| مرسوم بقانون رقم (15) لسنة 2023 بتعديل بعض أحكام المرسوم بقانون رقم (32) لسنة 2020 بشأن قواعد التسجيل والسلامة والمراقبة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0623) | in_force | 14 |
+| مرسوم بقانون رقم (14) لسنة 2023 بتعديل بعض أحكام القانون رقم (16) لسنة 2014 بشأن حماية معلومات ووثائق الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0523) | in_force | 11 |
+| مرسوم بقانون رقم (13) لسنة 2023 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0723) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 2023 بتعديل المادة (4) من القانون رقم (38) لسنة 2009 بإنشاء الهيئة الوطنية لتنظيم المهن والخدمات الصحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2023) | in_force | 0 |
+| قانون رقم (11) لسنة 2023 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة تركمانستان بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3822) | in_force | 17 |
+| قانون رقم (10) لسنة 2023 بالتصديق على الاتفاقية بين مملكة البحرين واليابان لتبادل تشجيع وحماية الاستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3522) | in_force | 0 |
+| قانون رقم (9) لسنة 2023 بالتصديق على اتفاقية التسهيل المباشر لصالح مشروع نقل المياه المصاحب لمحطة الدور المستقلة لإنتاج الكهرباء وتحلية المياه Al-Dur IWPP (المرحلة الثانية من المشروع) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4022) | in_force | 0 |
+| قانون رقم (8) لسنة 2023  بالتصديق على اتفاقية آرتميس لمبادئ التعاون في الاستكشافات المدنية واستخدام القمر والمريخ والمذنبات والكويكبات للأغراض السلمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3922) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (11) لسنة 1995 بشأن حماية الآثار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3422) | in_force | 7 |
+| مرسوم بقانون رقم (33) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة والقانون رقم (62) لسنة 2006 بإنشاء وتنظيم هيئة البحرين للسياحة والمعارض | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3322) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة والقانون رقم (62) لسنة 2006 بإنشاء وتنظيم هيئة البحرين للسياحة والمعارض | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3322) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 2022 بتعديل بعض أحكام المراسيم بقوانين بشأن تنظيم المباني والتخطيط العمراني وتقسيم الأراضي المعدة للتعمير والتطوير | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3222) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 2022 بتعديل بعض أحكام المراسيم بقوانين بشأن تنظيم المباني والتخطيط العمراني وتقسيم الأراضي المعدة للتعمير والتطوير | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3222) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (6) لسنة 1991 بإنشاء صندوق التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام البحرينيين وغير البحرينيين والمرسوم بقانون رقم (47) لسنة 2010 بشأن إدارة واختصاصات صندوق التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام البحرينيين وغير البحرينيين المنشأ بموجب المرسوم بقانون رقم (6) لسنة 1991 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3122) | in_force | 4 |
+| قانون رقم (30) لسنة 2022 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3022) | in_force | 15 |
+| قانون رقم (29) لسنة 2022 بتعديل المادة الثانية من المرسوم بقانون رقم (25) لسنة 2015 بشأن تحصيل كلفة إنشاء وتطوير البنية التحتية في مناطق التعمير | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2022) | in_force | 0 |
+| قانون رقم (28) لسنة 2022 بالتصديق على اتفاقية التعاون الجمركي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2122) | in_force | 1 |
+| قانون رقم (27) لسنة 2022 بشأن حظر استحداث وإنتاج وتخزين الأسلحة البكتريولوجية (البيولوجية) والتكسينية وتدمير تلك الأسلحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2922) | in_force | 0 |
+| قانون رقم (26) لسنة 2022 بتعديل بعض أحكام القانون رقم (51) لسنة 2009 بشأن حظر استحداث وإنتاج وتخزين واستعمال الأسلحة الكيميائية وتدمير تلك الأسلحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2722) | in_force | 17 |
+| قانون رقم (25) لسنة 2022 بالتصديق على اتفاقيتي القرض والضمان لمشروع إنشاء مركز التحكم الجديد للمراقبة والتحكم في شبكات الكهرباء والماء بين حكومة مملكة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2622) | in_force | 4 |
+| قانون رقم (24) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2422) | in_force | 2 |
+| قانون رقم (23) لسنة 2022 بتعديل بعض أحكام المرسوم بقانون رقم (18) لسنة 1997 في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2322) | in_force | 9 |
+| قانون رقم (22) لسنة 2022 بإضافة مادة جديدة برقم (318 مكرراً) إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2222) | in_force | 0 |
+| قانون رقم (21) لسنة 2022 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1822) | in_force | 0 |
+| قانون رقم (20) لسنة 2022 بتعديل المادة (5) من قانون تنظيم المباني الصادر بالمرسوم بقانون رقم (13) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1922) | in_force | 0 |
+| قانون رقم (19) لسنة 2022 بشأن تطبيق أحكام الاتفاق بين حكومة دولة البحرين وبرنامج الأمم المتحدة الإنمائي الموافَق عليه بالمرسوم بقانون رقم (7) لسنة 1979 على العلاقة بين مملكة البحرين والمنسِّق المقيم للأمم المتحدة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1322) | in_force | 14 |
+| قانون رقم (18) لسنة 2022 بتعديل المادة (231) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1622) | in_force | 0 |
+| قانون رقم (١٧) لسنة 2022 بالتصديق على النظام الأساسي لمنظمة تنمية المرأة في الدول الأعضاء بمنظمة المؤتمر الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1422) | in_force | 12 |
+| قانون رقم (16) لسنة 2022 بتعديل المادة (1) من القانون رقم (28) لسنة 2006 بشأن الاحتياطي للأجيال القادمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1522) | in_force | 2 |
+| قانون رقم (15) لسنة 2022 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0722) | in_force | 125 |
+| قانون رقم (14) لسنة 2022 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0922) | in_force | 0 |
+| قانون رقم (13) لسنة 2022 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1022) | in_force | 388 |
+| قانون رقم (12) لسنة 2022  بالموافقة على انضمام مملكة البحرين إلى اتفاقية حصانات وامتيازات منظمة المؤتمر الإسلامي (التعاون الإسلامي حالياً) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0622) | in_force | 15 |
+| قانون رقم (11) لسنة 2022 بالتصديق على النظام الأساسي للاتحاد العربي للمحميات الطبيعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0822) | in_force | 9 |
+| قانون رقم (10) لسنة 2022 بإصدار القانون البحري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0322) | in_force | 0 |
+| قانون رقم (9) لسنة 2022 بتعديل المادة (1) من المرسوم بقانون رقم (27) لسنة 2015 بشأن السجل التجاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0422) | in_force | 22 |
+| قانون رقم (8) لسنة 2022 بتعديل بعض أحكام قانون البلديات الصادر بالمرسوم بقانون رقم (35) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3221) | in_force | 0 |
+| قانون رقم (7) لسنة 2022 بشأن البيئة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0522) | in_force | 66 |
+| قانون رقم (6) لسنة 2022 بالموافقة على نظام (قانون) بتعديل بعض أحكام نظام براءات الاختراع لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3321) | in_force | 0 |
+| قانون رقم (5) لسنة 2022 بتعديل بعض أحكام عقد التأسيس والنظام الأساسي لشركة الخليج لصناعة البتروكيماويات المنشأة بموجب المرسوم بقانون رقم (18) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2521) | in_force | 0 |
+| قانون رقم (4) لسنة 2022 بتعديل بعض أحكام قانون تنظيم الطيران المدني الصادر بالقانون رقم (14) لسنة 2013 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2921) | in_force | 0 |
+| قانون رقم (3) لسنة 2022 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3121) | in_force | 45 |
+| قانون رقم (2) لسنة 2022 بالموافقة على المعاهدة متعددة الأطراف لتطبيق التدابير المتعلقة بالاتفاقيات الضريبية لمنع تآكل الوعاء الضريبي وتحويل الأرباح (MLI) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2621) | in_force | 2 |
+| قانون رقم (1) لسنة 2022 بالموافقة على انضمام مملكة البحرين إلى بروتوكول ناغويا بشأن الحصول على الموارد الجينية والتَّقَاسُم العادل والمنصف للمنافع الناشئة عن استخدامها الملحق باتفاقية التَّنَوُّع البيولوجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2721) | in_force | 2 |
+| قانون رقم (33) لسنة 2021 بتعديل بعض أحكام قانون ضريبة القيمة المضافة الصادر بالمرسوم بقانون رقم (48) لسنة 2018 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2021) | in_force | 4 |
+| قانون رقم (32) لسنة 2021 بتعديل المادة التاسعة من القانون رقم (18) لسنة 2006 بشأن الضمان الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2821) | in_force | 16 |
+| قانون رقم (31) لسنة 2021 بشأن حماية الأصناف النباتية الجديدة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2121) | in_force | 0 |
+| قانون رقم (30) لسنة 2021 بالموافقة على انضمام مملكة البحرين إلى معاهدة المحافظة على الأنواع المهاجرة من الحيوانات الفطرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2321) | in_force | 0 |
+| قانون رقم (29) لسنة 2021 بتعديل البند (د) من المادة (23) من قانون الخطابات والمعاملات الإلكترونية الصادر بالمرسوم بقانون رقم (54) لسنة 2018 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2221) | in_force | 60 |
+| مرسوم بقانون رقم (25) لسنة 2021 بتعديل بعض أحكام القانون رقم (10) لسنة 2006 بشأن مهام واختصاصات الهيئة الوطنية للنِّفط والغاز المنشأة بالمرسوم رقم (63) لسنة 2005 وتعديل بعض أحكام المرسوم بقانون رقم (42) لسنة 1999 بإنشاء شركة نِفْط البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1921) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 2021 بتعديل بعض أحكام القانون رقم (51) لسنة 2014 في شأن تنظيم مزاولة المهن الهندسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1821) | in_force | 9 |
+| مرسوم بقانون رقم (17) لسنة 2021 بتعديل بعض أحكام المرسوم بقانون رقم (12) لسنة 1986 بإنشاء وتنظيم جامعة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1721) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 2021 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالقانون رقم (36) لسنة 2012 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1621) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 2021 بشأن مدققي الحسابات الخارجيين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1521) | in_force | 61 |
+| قانون رقم (14) لسنة 2021 بالموافقة على انضمام مملكة البحرين إلى اتفاقية ميناماتا بشأن الزئبق | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1121) | in_force | 0 |
+| قانون رقم (13) لسنة 2021 بالموافقة على انضمام مملكة البحرين إلى اتفاقية تسجيل الأجسام المطلقة في الفضاء الخارجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1221) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 2021 بإضافة بند جديد برقم (6) إلى الفقرة (ج) من المادة (8) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التعطل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0821) | in_force | 5 |
+| قانون رقم (11) لسنة 2021 بإضافة مادة جديدة برقم (261 مكرراً) إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0921) | in_force | 11 |
+| قانون رقم (10) لسنة 2021 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة الجمهورية الإيطالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2421) | in_force | 0 |
+| قانون رقم (9) لسنة 2021 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2021 و2022 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0421) | in_force | 89 |
+| قانون رقم (8) لسنة 2021 بشأن الاحتراف الرياضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0521) | in_force | 32 |
+| قانون رقم (7) لسنة 2021 بالتصديق على النظام الأساسي لمركز العمل لمنظمة التعاون الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2820) | in_force | 47 |
+| قانون رقم (6) لسنة 2021 بالتصديق على اتفاقية بشأن الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية المالديف بين وفيما وراء إقليميهما | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0321) | in_force | 0 |
+| قانون رقم (5) لسنة 2021 بشأن تنظيم ومراقبة التجارة الدولية في الأنواع المهدَّدة بالانقراض من مجموعات الحيوان والنبات الفِطْرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2920) | in_force | 14 |
+| قانون رقم (4) لسنة 2021 بإصدار قانون العدالة الإصلاحية للأطفال وحمايتهم من سوء المعاملة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3020) | in_force | 0 |
+| قانون رقم (3) لسنة 2021 بالموافقة على تعديل قانون (نظام) العلامات التجارية لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3120) | in_force | 0 |
+| قانون رقم (2) لسنة 2021 بالتصديق على الاتفاقية بين حكومة مملكة البحرين والاتحاد الفيدرالي السويسري بشأن إزالة الازدواج الضريبي فيما يتعلق بالضرائب على الدخل ورأس المال ومنع التهرب والتجنب الضريبي والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2620) | in_force | 0 |
+| قانون رقم (1) لسنة 2021 بالموافقة على انضمام مملكة البحرين إلى الاتفاقية متعددة الأطراف بين السلطات المختصة بشأن تبادل التقارير بين الدول ذات الصلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3220) | in_force | 25 |
+| مرسوم بقانون رقم (32) لسنة 2020 بشأن قواعد التسجيل والسلامة والمراقبة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2420) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 2020 بتعديل بعض أحكام القانون رقم (3) لسنة 2005 بشأن التعليم العالي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2320) | in_force | 4 |
+| مرسوم بقانون رقم (30) لسنة 2020 بإضافة بند جديد برقم (5) إلى الفقرة (ج) من المادة (8) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التَّـعَـطُّـل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2220) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 2020 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 2001 بشأن حظْـر ومكافحة غسْـل الأموال وتمويل الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2120) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 2020 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (21) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2720) | in_force | 2 |
+| مرسوم بقانون رقم (27) لسنة 2020 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1720) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 2020 بتعديل المادة (173) من المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2520) | in_force | 5 |
+| مرسوم بقانون رقم (25) لسنة 2020 بتعديل بعض أحكام قانون إعادة التنظيم والإفلاس الصادر بالقانون رقم (22) لسنة 2018 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1520) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 2020 بإضافة مادة جديدة برقم (62 مكرراً) إلى قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1420) | in_force | 12 |
+| مرسوم بقانون رقم (23) لسنة 2020 بشأن التصرف في جزء من أموال حساب احتياطي الأجيال القادمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1320) | in_force | 1 |
+| مرسوم بقانون رقم (22) لسنة 2020 بإدراج مصروفات طارئة ضمن الميزانية العامة للدولة للسنة المالية 2020 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1220) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 2020 بشأن صناديق ومعاشات التقاعد في القوانين والأنظمة التقاعدية والتأمينية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2020) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 2020 بإضافة بند جديد برقم (4) إلى الفقرة (ج) من المادة (8) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التَّعَطُّل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0820) | in_force | 0 |
+| قانون رقم (19) لسنة 2020 بالتصديق على البروتوكول المعدِّل لاتفاقية حكومة مملكة البحرين وحكومة جمهورية باكستان الإسلامية بشأن تجنُّب الازدواج الضريبي ومنْع التهرُّب المالي بالنسبة للضرائب على الدَّخْل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1020) | in_force | 2 |
+| قانون رقم (18) لسنة 2020 بالتصديق على اتفاقية الخِدْمات الجوية بين مملكة البحرين ومملكة إسبانيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1120) | in_force | 24 |
+| قانون رقم (17) لسنة 2020 بتعديل المادة الأولى من المرسوم بقانون رقم (40) لسنة 1999 بشأن تمَلُّك مواطني دول مجلس التعاون لدول الخليج العربية للعقارات المبنية والأراضي في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1620) | in_force | 9 |
+| قانون رقم (14) لسنة 2020 بتعديل بعض أحكام قانون مصرف البحرين المركزي والمؤسسات المالية الصادر بالقانون رقم (64) لسنة 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2419) | in_force | 1 |
+| قانون رقم (13) لسنة 2020 بتعديل بعض أحكام قانون إيجار العقارات الصادر بالقانون رقم (27) لسنة 2014 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0720) | in_force | 13 |
+| قانون رقم (12) لسنة 2020 بتعديل المادة (3) من المرسوم بقانون رقم (10) لسنة 1976 في شأن الإسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0620) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 2019 بتعديل بعض أحكام قانون الخدمة المدنية الصادر بالمرسوم بقانون رقم (48) لسنة 2010 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2319) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 2019 بشأن الوساطة لتسوية المنازعات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2219) | in_force | 20 |
+| مرسوم بقانون رقم (21) لسنة 2019 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمرسوم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2119) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 2019 بتعديل المادة (10) من المرسوم بقانون رقم (5) لسنة 1987 في شأن القوة الاحتياطية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2019) | in_force | 0 |
+| قانون رقم (19) لسنة 2019 بالتصديق على اتفاقية النقل البري الدولي للركاب والبضائع بين حكومة مملكة البحرين وحكومة دولة الإمارات العربية المتحدة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1019) | in_force | 16 |
+| قانون رقم (18) لسنة2019 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة المملكة العربية السعودية في مجال خِـدْمات النقل الجوي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1119) | in_force | 11 |
+| قانون رقم (17) لسنة 2019 بالموافقة على الانضمام إلى اتفاقية المسئولية الدولية عن الأضرار التي تُحْدِثها الأجسام الفضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1619) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 2019 بتعديل بعض أحكام قانون الجنسية البحرينية لعام 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0519) | in_force | 0 |
+| قانون رقم (15) لسنة 2019 بالتصديق على اتفاقية الخِدْمات الجوية بين حكومة مملكة البحرين وحكومة بروناي دار السلام | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0819) | in_force | 0 |
+| قانون رقم (14) لسنة 2019 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة دولة الإمارات العربية المتحدة بشأن الخِدْمات الجوية بين إقليميهما وفيما وراءهما | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0719) | in_force | 24 |
+| قانون رقم (13) لسنة 2019 بالموافقة على الانضمام إلى معاهدة المبادىء المنظِّمة لأنشطة الدول في ميدان استكشاف واستخدام الفضاء الخارجي بما في ذلك القمر والأجرام السماوية الأخرى | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0319) | in_force | 0 |
+| قانون رقم (12) لسنة 2019 بالموافقة على انضمام مملكة البحرين إلى وثيقة إنشاء صندوق البيئة العالمية المعادة هيكلته | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0419) | in_force | 0 |
+| قانون رقم (11) لسنة 2019 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2019 و2020 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0119) | in_force | 0 |
+| قانون رقم (10) لسنة 2019 بشأن النظافة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4918) | in_force | 5 |
+| مرسوم بقانون رقم (9) لسنة 2019 بالموافقة على اتفاقية الاستكشاف والمشاركة في الإنتاج بين حكومة مملكة البحرين ممثَّـلة في الهيئة الوطنية للنفط والغاز وشركة إيني البحرين بي.في | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5018) | in_force | 6 |
+| قانون رقم (8) لسنة 2019 بشأن تعديل المادة (11) من القانون رقم (58) لسنة 2006 بشأن حماية المجتمع من الأعمال الإرهابية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5218) | in_force | 1 |
+| قانون رقم (7) لسنة 2019 بتنظيم تسجيل المواليد والوفيات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5118) | in_force | 0 |
+| قانون رقم (6) لسنة 2019 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة المملكة المغربية بشأن الخِدْمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5418) | in_force | 28 |
+| قانون رقم (5) لسنة 2019 بتعديل المادة (424) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5318) | in_force | 5 |
+| قانون رقم (4) لسنة 2019 بتعديل بعض أحكام المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التعطُّل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5518) | in_force | 19 |
+| قانون رقم (3) لسنة 2019 بتعديل المادة (325) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5618) | in_force | 6 |
+| قانون رقم (2) لسنة 2019 بالتصديق على البروتوكول المعدِّل والمكمِّل لاتفاقية الخِدْمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية الفلبين الموقَّع بين البلدين في 13 أبريل 2017 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5718) | in_force | 0 |
+| قانون رقم (1) لسنة 2019 بتعديل المادة (14) من المرسوم بقانون رقم (21) لسنة 2015 بشأن المؤسسات الصحية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5818) | in_force | 0 |
+| مرسوم بقانون رقم (60) لسنة 2018 بتعديل بعض أحكام القانون رقم (60) لسنة 2006 بشأن إعادة تنظيم هيئة التشريع والإفتاء القانوني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3618) | in_force | 0 |
+| مرسوم بقانون رقم (59) لسنة 2018 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالقانون رقم (36) لسنة 2012 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3418) | in_force | 131 |
+| مرسوم بقانون رقم (58) لسنة 2018 بتعديل بعض أحكام القانون رقم (2) لسنة 2018 بشأن قواعد التسجيل والسلامة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3318) | in_force | 0 |
+| مرسوم بقانون رقم (57) لسنة 2018 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 2001 بشأن حظْر ومكافحة غسْل الأموال وتمويل الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4018) | in_force | 0 |
+| مرسوم بقانون رقم (56) لسنة 2018 بشأن تزويد خدمات الحوسبة السحابية لأطراف أجنبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4218) | in_force | 0 |
+| مرسوم بقانون رقم (55) لسنة 2018 بشأن السجلات الإلكترونية القابلة للتداول | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4318) | in_force | 1 |
+| مرسوم بقانون رقم (54) لسنة 2018 بإصدار قانون الخطابات والمعاملات الإلكترونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4718) | in_force | 78 |
+| مرسوم بقانون رقم (53) لسنة 2018 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (21) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4818) | in_force | 79 |
+| مرسوم بقانون رقم (52) لسنة 2018 بتعديل بعض أحكام المرسوم بقانون رقم (27) لسنة 2015 بشأن السجل التجاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4518) | in_force | 0 |
+| مرسوم بقانون رقم (51) لسنة 2018 بتعديل بعض أحكام قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4418) | in_force | 31 |
+| مرسوم بقانون رقم (50) لسنة 2018 بتعديل بعض أحكام المرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6018) | in_force | 0 |
+| مرسوم بقانون رقم (49) لسنة 2018 بتعديل بعض أحكام المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5918) | in_force | 6 |
+| مرسوم بقانون رقم (44) لسنة 2018 بإصدار قانون الجرائم الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3718) | in_force | 0 |
+| قانون رقم (39) لسنة 2018 بالتصديق على النظام الأساسي للهيئة القضائية الاقتصادية لمجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3018) | in_force | 60 |
+| قانون رقم (38) لسنة 2018 بالتصديق على اتفاقية التعاون في مجال الملاحة البحرية التجارية بين حكومة مملكة البحرين وحكومة جمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3918) | in_force | 41 |
+| قانون رقم (31) لسنة 2018 بإصدار قانون تشجيع وحماية المنافسة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2918) | in_force | 0 |
+| قانون رقم (30) لسنة 2018 بإصدار قانون حماية البيانات الشخصية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3118) | in_force | 56 |
+| قانون رقم (29) لسنة 2018 بتعديل المادة (35) من قانون الجمعيات التعاونية الصادر بالمرسوم بقانون رقم (24) لسنة 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2618) | in_force | 6 |
+| قانون رقم (28) لسنة 2018 بالتصديق على الاتفاق بين حكومة مملكة البحرين وحكومة جمهورية مصر العربية بشأن تجنُّب الازدواج الضريبي ومنْع التَّهَرُّب من الضرائب بالنسبة للضرائب على الدَّخْل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2718) | in_force | 0 |
+| قانون رقم (27) لسنة 2018 بتعديل بعض أحكام قانون محكمة التمييز الصادر بالمرسوم بقانون رقم (8) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2418) | in_force | 0 |
+| قانون رقم (26) لسنة 2018 بشأن كلية البحرين التقنية (بوليتكنك البحرين) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2518) | in_force | 0 |
+| قانون رقم (25) لسنة 2018 بتعديل المادة الثالثة من المرسوم بقانون رقم (14) لسنة 2002 بشأن مباشرة الحقوق السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2318) | in_force | 82 |
+| قانون رقم (24) لسنة 2018 بتعديل الفقرة الثانية من المادة (24) من المرسوم بقانون رقم (28) لسنة 1999 بشأن إنشاء وتنظيم المناطق الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2218) | in_force | 195 |
+| قانون رقم (23) لسنة 2018 بإصدار قانون الضمان الصحي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1818) | in_force | 0 |
+| قانون رقم (22) لسنة 2018 بإصدار قانون إعادة التنظيم والإفلاس | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1718) | in_force | 0 |
+| قانون رقم (21) لسنة 2018 بالتصديق على اتفاقية بين مملكة البحرين وروسيا الاتحادية بشأن تسليم المجرمين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1518) | in_force | 0 |
+| قانون رقم (20) لسنة 2018 بالتصديق على اتفاقية الخِدْمات الجوية بين حكومة مملكة البحرين وحكومة ماليزيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1918) | in_force | 0 |
+| قانون رقم (19) لسنة 2018 بإضافة مادة جديدة برقم (18) مكرراً إلى القانون رقم (11) لسنة 1975بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0818) | in_force | 0 |
+| قانون رقم (18) لسنة 2018 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمرسوم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1118) | in_force | 2 |
+| قانون رقم (17) لسنة 2018 بتعديل المادة (36) من قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1018) | in_force | 0 |
+| قانون رقم (16) لسنة 2018 بالتصديق على الاتفاق بين مملكة البحرين ومنظمة حظْر الأسلحة الكيميائية بشأن امتيازات المنظمة وحصاناتها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0318) | in_force | 17 |
+| قانون رقم (15) لسنة 2018 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0118) | in_force | 43 |
+| قانون رقم (14) لسنة 2018 بالموافقة على انضمام مملكة البحرين إلى الاتفاقية متعددة الأطراف بين السلطات المختصة بشأن التبادل التلقائي لمعلومات الحسابات المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3617) | in_force | 1 |
+| قانون رقم (13) لسنة 2018 بالموافقة على انضمام مملكة البحرين إلى اتفاقية المساعدة الإدارية المتبادلة في المسائل الضريبية بصيغتها المعدلة بموجب بروتوكول 2010 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3917) | in_force | 29 |
+| قانون رقم (12) لسنة 2018 بالموافقة على القانون (النظام) الموحَّد لمكافحة الغِش التجاري لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0218) | in_force | 25 |
+| قانون رقم (11) لسنة 2018 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3517) | in_force | 0 |
+| قانون رقم (10) لسنة 2018 بتعديل المادة (34) من قانون الإجراءات أمام المحاكم الشرعية الصادر بالمرسوم بقانون رقم (26) لسنة 1986 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4017) | in_force | 25 |
+| قانون رقم (9) لسنة 2018 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة الجمهورية التونسية حول المساعدة الإدارية المتبادلة قصْد منْع وتقَصِّي وزجْر (عقاب) المخالفات الجمركية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3717) | in_force | 3 |
+| قانون رقم (8) لسنة 2018 بتعديل المادة (47) من المرسوم بقانون رقم (39) لسنة 2002 بشأن الميزانية العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3317) | in_force | 0 |
+| قانون رقم (7) لسنة 2018 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية فنلندا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3417) | in_force | 6 |
+| قانون رقم (6) لسنة 2018 بالتصديق على البروتوكول المعدِّل لاتفاقية حكومة مملكة البحرين وحكومة مملكة تايلند بشأن تجنُّب الازدواج الضريبي ومنْع التَّهَرُّب من الضرائب بالنسبة للضرائب على الدَّخْل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3817) | in_force | 6 |
+| قانون رقم (5) لسنة 2018 بالتصديق على البروتوكول المعدِّل لاتفاقية حكومة مملكة البحرين وحكومة جمهورية الفلبين بشأن تجنُّب الازدواج الضريبي ومنْع التَّهَرُّب من الضرائب بالنسبة للضرائب على الدَّخْل ورأس المال | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2617) | in_force | 20 |
+| قانون رقم (4) لسنة 2018 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة الولايات المتحدة الأمريكية لتحسين الامتثال الضريبي الدولي وتطبيق قانون الامتثال الضريبي للحسابات الأجنبية (FATCA) وملحقيها الأول والثاني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2817) | in_force | 0 |
+| قانون رقم (3) لسنة 2018 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2717) | in_force | 109 |
+| قانون رقم (2) لسنة 2018 بشأن قواعد التسجيل والسلامة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2217) | in_force | 0 |
+| قانون رقم (25) لسنة2017 بالموافقة على انضمام مملكة البحرين إلى اتفاقية حدود المسؤولية عن المطالبات البحرية لعام 1976، وبروتوكول عام 1996 المعدِّل لها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1917) | in_force | 141 |
+| قانون رقم (24) لسنة 2017 بالتصديق على بروتوكول بين حكومة مملكة البحرين وحكومة الجمهورية التركية لتعديل واستكمال بعض أحكام الاتفاقية المبرمة بين حكومة دولة البحرين وحكومة الجمهورية التركية بشأن الخدمات الجوية الموقعة بتاريخ 26 أكتوبر 1998 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1817) | in_force | 24 |
+| قانون رقم (21) لسنة 2017 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0317) | in_force | 0 |
+| قانون رقم (20) لسنة 2017 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2017 و2018 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1217) | in_force | 3 |
+| قانون رقم (19) لسنة 2017 بإصدار قانون الأسرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2117) | in_force | 2 |
+| قانون رقم (18) لسنة 2017 بشأن العقوبات والتدابير البديلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2017) | in_force | 11 |
+| قانون رقم (17) لسنة 2017 بالتصديق على بروتوكول تعديل الاتفاقية بين حكومة مملكة البحرين وحكومة المملكة المغربية لتجنُّب الازدواج الضريبي ومنْع التَّهَرُّب من الضرائب بالنسبة للضرائب على الدَّخْل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0117) | in_force | 27 |
+| قانون رقم (16) لسنة 2017 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة المجر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2116) | in_force | 4 |
+| قانون رقم (15) لسنة 2017 بالتصديق على اتفاقية نقل المحكوم عليهم بين حكومة مملكة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2016) | in_force | 2 |
+| قانون رقم (14) لسنة 2017 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جورجيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1916) | in_force | 4 |
+| قانون رقم (13) لسنة 2017 بالتصديق على اتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة جمهورية التشيك | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2416) | in_force | 0 |
+| قانون رقم (12) لسنة 2017 بتعديل بعض أحكام قانون القضاء العسكري الصادر بالمرسوم بقانون رقم (34) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2216) | in_force | 31 |
+| قانون رقم (11) لسنة 2017 بالتصديق على اتفاقية بين مملكة البحرين وروسيا الاتحادية بشأن نقل المحكوم عليهم بعقوبات سالبة للحرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2316) | in_force | 73 |
+| قانون رقم (10) لسنة 2017 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية بنغلادش الشعبية بشأن تجنُّب الازدواج الضريبي ومنْع التَّهَرُّب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1516) | in_force | 0 |
+| قانون رقم (9) لسنة 2017 بالتصديق على اتفاقية تشجيع وحماية الاستثمارات المتبادَلة بين حكومة مملكة البحرين وحكومة جمهورية بنغلادش الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1416) | in_force | 0 |
+| قانون رقم (8) لسنة 2017 بالتصديق على اتفاق النقل الجوي بين حكومة مملكة البحرين وحكومة الجمهورية التونسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1616) | in_force | 0 |
+| قانون رقم (7) لسنة 2017 بالتصديق على الاتفاقية العربية لمكافحة غسل الأموال وتمويل الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1816) | in_force | 24 |
+| قانون رقم (6) لسنة 2017 بالتصديق على الاتفاقية العربية لمكافحة الفساد | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1316) | in_force | 2 |
+| قانون رقم (5) لسنة 2017 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة جمهورية الهند بشأن التعاون لمكافحة الإرهاب الدولي والجريمة المنظَّمة عبر الوطنية والإتجار غير المشروع بالعقاقير والمخدرات والمؤثرات العقلية والسلائف الكيميائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0816) | in_force | 0 |
+| قانون رقم (4) لسنة 2017 بالتصديق على الاتفاقية العربية لمكافحة الجريمة المنظَّمة عبر الحدود الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0916) | in_force | 22 |
+| قانون رقم (3) لسنة 2017 بالتصديق على الاتفاقية العربية لنقْل نزلاء المؤسسات العقابية والإصلاحية في إطار تنفيذ الأحكام الجزائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2515) | in_force | 0 |
+| قانون رقم (2) لسنة 2017 بالتصديق على الاتفاقية العربية لمكافحة جرائم تقنية المعلومات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3715) | in_force | 0 |
+| مرسوم بقانون رقم (36) لسنة 2015 بشأن وقف الحقوق والمزايا التقاعدية في حالة سحب الجنسية البحرينية أو فقدها أو إسقاطها أو التجنس بجنسية دولة أجنبية دون إذن | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3615) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 2015 بإلغاء المؤسسة العامة للشباب والرياضة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3515) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 2015 بتعديل بعض أحكام قانون مصرف البحرين المركزي والمؤسسات المالية الصادر بالقانون رقم (64) لسنة 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3415) | in_force | 9 |
+| مرسوم بقانون رقم (33) لسنة 2015 بنقل اختصاصات ومهام المجلس الأعلى للتدريب المهني إلى صندوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3315) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 2015 بتعديل بعض أحكام القانون رقم (38) لسنة 2009 بإنشاء الهيئة الوطنية لتنظيم المهن والخدمات الصحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3215) | in_force | 3 |
+| مرسوم بقانون رقم (31) لسنة 2015 بتعديل بعض أحكام القانون رقم (62) لسنة 2006 بإنشاء وتنظيم هيئة البحرين للمؤتمرات والمعارض والمرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3115) | in_force | 6 |
+| مرسوم بقانون رقم (30) لسنة 2015 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3015) | in_force | 2 |
+| مرسوم بقانون رقم (29) لسنة 2015 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمرسوم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2915) | in_force | 3 |
+| مرسوم بقانون رقم (28) لسنة 2015 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (21) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2815) | in_force | 5 |
+| مرسوم بقانون رقم (27) لسنة 2015 بشأن السجل التجاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2715) | in_force | 31 |
+| مرسوم بقانون رقم (26) لسنة 2015 بتعديل بعض أحكام المرسوم بقانون رقم (28) لسنة 1999 بشأن إنشاء وتنظيم المناطق الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2615) | in_force | 7 |
+| مرسوم بقانون رقم (24) لسنة 2015 بتعديل بعض أحكام قانون السلطة القضائية الصادر بالمرسوم بقانون رقم (42) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2415) | in_force | 1 |
+| مرسوم بقانون رقم (23) لسنة 2015 بتعديل بعض أحكام قانون محكمة التمييز الصادر بالمرسوم بقانون رقم (8) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2315) | in_force | 4 |
+| مرسوم بقانون رقم (22) لسنة 2015 بتعديل بعض أحكام قانون الإجراءات أمام المحاكم الشرعية الصادر بالمرسوم بقانون رقم (26) لسنة 1986 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2215) | in_force | 6 |
+| مرسوم بقانون رقم (21) لسنة 2015 بشأن المؤسسات الصحية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2115) | in_force | 35 |
+| مرسوم بقانون رقم (20) لسنة 2015 بتعديل بعض أحكام المرسوم بقانون رقم (18) لسنة 1997 في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2015) | in_force | 24 |
+| قانون رقم (19) لسنة 2015 بتعديل المادة (5) من القانون رقم (57) لسنة 2006 بإنشاء صندوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1915) | in_force | 0 |
+| قانون رقم (18) لسنة 2015 بتعديل المادة (6) من القانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1815) | in_force | 0 |
+| قانون رقم (17) لسنة 2015 بشأن الحماية من العنف الأسري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1715) | in_force | 20 |
+| قانون رقم (16) لسنة 2015 بالتصديق على اتفاقيتي الاستصناع والوكالة بين حكومة مملكة البحرين والبنك الإسلامي للتنمية بشأن الحفاظ على تراث اللؤلؤ وإحياء الاقتصاد الحضري بمدينة المحرق | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1515) | in_force | 0 |
+| قانون رقم (15) لسنة 2015 بتعديل المادة (38) من قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1015) | in_force | 0 |
+| قانون رقم (14) لسنة 2015 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2015 و 2016 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0115) | in_force | 1 |
+| قانون رقم (13) لسنة 2015 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية باكستان الإسلامية بشأن تشجيع وحماية الاستثمارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0615) | in_force | 28 |
+| قانون رقم (12) لسنة 2015 بالموافقة على الانضمام إلى بروتوكول عام 1988 المتعلق بالاتفاقية الدولية لسلامة الأرواح في البحار (سولاس) لعام 1974 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1415) | in_force | 12 |
+| قانون رقم (11) لسنة 2015 بالتصديق على البروتوكول المعدل لبعض أحكام اتفاقية النقل الجوي المبرمة بين حكومة مملكة البحرين وحكومة إستراليا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0215) | in_force | 0 |
+| قانون رقم (10) لسنة 2015 بتعديل المادة (320) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0915) | in_force | 11 |
+| قانون رقم (9) لسنة 2015 بإصدار قانون التحكيم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6614) | in_force | 0 |
+| قانون رقم (8) لسنة 2015 بالانضمام إلى الاتفاقية الدولية لسلامة الحاويات لعام 1972 وتعديلاتها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6514) | in_force | 3 |
+| قانون رقم (7) لسنة 2015 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية طاجيكستان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6414) | in_force | 2 |
+| قانون رقم (6) لسنة 2015 بشأن تنازع القوانين في المسائل المدنية والتجارية ذات العنصر الأجنبي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6314) | in_force | 2 |
+| قانون رقم (5) لسنة 2015 بالموافقة على انضمام مملكة البحرين إلى بروتوكول عام 1988 المتعلق بالاتفاقية الدولية لخطوط التحميل لعام 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6714) | in_force | 1 |
+| قانون رقم (4) لسنة 2015 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية باكستان الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6914) | in_force | 0 |
+| قانون رقم (3) لسنة 2015 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة هنغاريا بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L6814) | in_force | 7 |
+| قانون رقم (2) لسنة 2015 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7014) | in_force | 0 |
+| قانون رقم (1) لسنة 2015 بتعديل المادة (177) من المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7114) | in_force | 6 |
+| مرسوم بقانون رقم (68) لسنة 2014 بتعديل بعض أحكام القانون رقم (58) لسنة 2006 بشأن حماية المجتمع من الأعمال الإرهابية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5914) | in_force | 1 |
+| مرسوم بقانون رقم (67) لسنة 2014 بتعديل المادة (22) من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5414) | in_force | 0 |
+| مرسوم بقانون رقم (66) لسنة 2014 بشأن تسوية مشاريع التطوير العقارية المتعثرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6214) | in_force | 16 |
+| مرسوم بقانون رقم (65) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (10) لسنة 1990 في شأن الرقابة على اللؤلؤ والأحجار ذات القيمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6114) | in_force | 27 |
+| مرسوم بقانون رقم (64) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (30) لسنة 2009 بشأن غرفة البحرين لتسوية المنازعات الاقتصادية والمالية والاستثمارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6014) | in_force | 24 |
+| مرسوم بقانون رقم (٦٣) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7214) | in_force | 1 |
+| مرسوم بقانون رقم (58) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 2002 بشأن نظام انتخاب أعضاء المجالس البلدية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4714) | in_force | 6 |
+| مرسوم بقانون رقم (57) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (14) لسنة 2002 بشأن مباشرة الحقوق السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4614) | in_force | 4 |
+| مرسوم بقانون رقم (56) لسنة 2014 بتعديل المادة (1) من المرسوم بقانون رقم (17) لسنة 2002 بشأن نظام المحافظات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5814) | in_force | 0 |
+| قانون رقم (55) لسنة 2014 بالموافقة على النظام الموحد لمد الحماية التأمينية للعسكريين من مواطني دول مجلس التعاون لدول الخليج العربية العاملين في غير دولهم في أية دولة عضو في المجلس | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5114) | in_force | 45 |
+| قانون رقم (53) لسنة 2014 بالتصديق على البروتوكول المعدل والمكمل لاتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4914) | in_force | 29 |
+| قانون رقم (52) لسنة 2014 بالموافقة على قانون (نظام) الرفق بالحيوان لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5514) | in_force | 23 |
+| قانون رقم (51) لسنة 2014 في شأن تنظيم مزاولة المهن الهندسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5714) | in_force | 0 |
+| قانون رقم (50) لسنة 2014 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (21) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3914) | in_force | 3 |
+| قانون رقم (49) لسنة 2014 شأن البريد | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5614) | in_force | 1 |
+| قانون رقم (48) لسنة 2014 بإضافة مادة جديدة برقم (391) مكرراً إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3814) | in_force | 0 |
+| قانون رقم (47) لسنة 2014 بتعديل بعض أحكام قانون محكمة التمييز الصادر بالمرسوم بقانون رقم (8) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5014) | in_force | 25 |
+| قانون رقم (46) لسنة 2014 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4814) | in_force | 0 |
+| قانون رقم (45) لسنة 2014 بإضافة مادة جديدة برقم (233 مكرراً) إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3214) | in_force | 1 |
+| قانون رقم (44) لسنة 2014 بتعديل المادة (39) من قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3114) | in_force | 0 |
+| قانون رقم (43) لسنة 2014 بتعديل المادة (33) من المرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التعطل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4514) | in_force | 1 |
+| قانون رقم (42) لسنة 2014 بتعديل بعض أحكام قانون تنظيم المباني الصادر بالمرسوم بقانون رقم (13) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4414) | in_force | 0 |
+| قانون رقم (41) لسنة 2014 بتعديل الفقرة الأخيرة من المادة (393) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4314) | in_force | 0 |
+| قانون رقم (40) لسنة 2014 بتعديل بعض أحكام القانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4214) | in_force | 3 |
+| قانون رقم (39) لسنة 2014 بتعديل بعض أحكام قانون الإجراءات الجنائية الصادر بالمرسوم بقانون رقم (46) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4114) | in_force | 0 |
+| قانون رقم (38) لسنة 2014 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4014) | in_force | 0 |
+| قانون رقم (37) لسنة 2014 بشأن تنظيم عملية استخراج الرمال البحرية وبيعها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2414) | in_force | 4 |
+| قانون رقم (36) لسنة 2014 بشأن تجريم ومكافحة تهريب مشتقات النفط المدعومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2314) | in_force | 63 |
+| قانون رقم (35) لسنة 2014 بتعديل بعض أحكام القانون البحري الصادر بالمرسوم بقانون رقم (23) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3714) | in_force | 11 |
+| قانون رقم (34) لسنة 2014 بتعديل بعض أحكام القانون رقم (26) لسنة 2005 بشأن الجمعيات السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3614) | in_force | 0 |
+| قانون رقم (33) لسنة 2014 بتعديل المادة الرابعة من القانون رقم (3) لسنة 2008 بشأن الهيئة العامة للتأمين الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3514) | in_force | 6 |
+| قانون رقم (32) لسنة 2014 بتعديل بعض أحكام المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3414) | in_force | 14 |
+| قانون رقم (31) لسنة 2014 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالقانون رقم (36) لسنة 2012 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3314) | in_force | 0 |
+| قانون رقم (30) لسنة 2014 بالتصديق على اتفاقيات استصناع ووكالة استصناع وضمان استصناع وبيع لأجل وضمان بيع لأجل لتمويل مشروع تحسين وتطوير شبكة نقل المياه بين حكومة مملكة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2014) | in_force | 1 |
+| قانون رقم (29) لسنة 2014 بالتصديق على اتفاقية تبادل تشجيع وحماية الاستثمارات بين حكومة مملكة البحرين وحكومة جمهورية تركيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1814) | in_force | 84 |
+| قانون رقم (28) لسنة 2014 في شأن التطوير العقاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1614) | in_force | 0 |
+| قانون رقم (27) لسنة 2014 بإصدار قانون إيجار العقارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1914) | in_force | 38 |
+| قانون رقم (26) لسنة 2014 بإنشاء المؤسسة الوطنية لحقوق الإنسان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2814) | in_force | 32 |
+| قانون رقم (25) لسنة 2014 بتعديل المادة (363) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2714) | in_force | 46 |
+| قانون رقم (24) لسنة 2014 بتعديل بعض أحكام قانون البلديات الصادر بالمرسوم بقانون رقم (35) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2614) | in_force | 23 |
+| قانون رقم (23) لسنة 2014 بإصدار قانون المرور | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2514) | in_force | 1 |
+| قانون رقم (14) لسنة 2014 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة النمسا الاتحادية للخدمات الجوية بين إقليميهما وفيما وراءهما | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0914) | in_force | 0 |
+| قانون رقم (13) لسنة 2014 بالتصديق على بروتوكول قواعد المنشأ الخاصة بنظام الأفضليات التجارية بين الدول الأعضاء في منظمة التعاون الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2214) | in_force | 6 |
+| قانون رقم (12) لسنة 2014 بالتصديق على البروتوكول بشأن تعديل بعض أحكام اتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2114) | in_force | 6 |
+| قانون رقم (11) لسنة 2014 بالموافقة على لائحة السلامة الخاصة بالسفن ذات الحمولات الصغيرة التي لا تشملها المعاهدات البحرية الدولية في دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1514) | in_force | 1 |
+| قانون رقم (7) لسنة 2014 بالتصديق على الاتفاقية الإطارية بشأن استغلال المنحة المخصصة من حكومة دولة الكويت لتمويل مشاريع إنمائية في مملكة البحرين بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الاقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0514) | in_force | 5 |
+| قانون رقم (6) لسنة 2014 بالموافقة على قانون (نظام) العلامات التجارية لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2613) | in_force | 2 |
+| قانون رقم (5) لسنة 2014 بتعديل بعض أحكام القانون رقم (22) لسنة 2006 بشأن حماية حقوق المؤلف والحقوق المجاورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0114) | in_force | 0 |
+| قانون رقم (4) لسنة 2014 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة كندا بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2213) | in_force | 1 |
+| قانون رقم (3) لسنة 2014 بالتصديق على بروتوكول تعديل اتفاقية بين حكومة مملكة البحرين وحكومة جلالة سلطان ويانج دي برتوان بروناي دارالسلام بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2513) | in_force | 2 |
+| قانون رقم (2) لسنة 2014 بالتصديق على النظام الأساسي لمركز مجلس التعاون لدول الخليج العربية لإدارة حالات الطوارئ | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2413) | in_force | 8 |
+| قانون رقم (1) لسنة 2014 بتعديل المادة (214) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2713) | in_force | 0 |
+| قانون رقم (28) لسنة 2013 بالتصديق على الاتفاقية الأمنية بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2313) | in_force | 5 |
+| مرسوم بقانون رقم (27) لسنة 2013 بتعديل بعض أحكام القانون رقم (60) لسنة 2006 بشأن إعادة تنظيم هيئة التشريع والإفتاء القانوني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2113) | in_force | 17 |
+| مرسوم بقانون رقم (26) لسنة 2013 بتعديل بعض أحكام قانون السلطة القضائية الصادر بالمرسوم بقانون رقم (42) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2013) | in_force | 3 |
+| قانون رقم (25) لسنة 2013 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 2001 بشأن حظر ومكافحة غسل الأموال وتمويل الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1713) | in_force | 0 |
+| قانون رقم (24) لسنة 2013 بتعديل بعض أحكام قانون الإثبات في المواد المدنية والتجارية الصادر بالمرسوم بقانون رقم (14) لسنة 1996 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1813) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 2013 بتعديل بعض أحكام المرسوم بقانون رقم (17) لسنة 1976 في شأن الأحداث | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1413) | in_force | 141 |
+| مرسوم بقانون رقم (22) لسنة 2013 باستبدال المادة (11) من المرسوم بقانون رقم (18) لسنة 1973 بشأن الاجتماعات العامة والمسيرات والتجمعات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1313) | in_force | 59 |
+| مرسوم بقانون رقم (21) لسنة 2013 بشأن تنظيم جمع المال للأغراض العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1013) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 2013 بتعديل بعض أحكام القانون رقم (58) لسنة 2006 بشأن حماية المجتمع من الأعمال الإرهابية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1213) | in_force | 1 |
+| قانون رقم (19) لسنة 2013 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة الولايات المتحدة المكسيكية بشأن تشجيع والحماية المتبادلة للاستثمارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0513) | in_force | 0 |
+| قانون رقم (18) لسنة 2013 بتعديل المادة التاسعة من القانون رقم (18) لسنة 2006 بشأن الضمان الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0413) | in_force | 2 |
+| قانون رقم (17) لسنة 2013 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2013 و2014 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0213) | in_force | 0 |
+| قانون رقم (16) لسنة 2013 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة باربادوس بشأن تجنب الازدواج الضريبي ومنع التهرب المالي فيما يتعلق بالضرائب المفروضة على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0113) | in_force | 11 |
+| قانون رقم (15) لسنة 2013 بالتصديق على البروتوكول بين البحرين ومملكة هولندا بشأن تعديل اتفاقية الخدمات الجوية الموقع عليها في المنامة بتاريخ 11 يوليو 1990 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5412) | in_force | 0 |
+| قانون رقم (14) لسنة 2013 بإصدار قانون تنظيم الطيران المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5612) | in_force | 15 |
+| قانون رقم (13) لسنة 2013 بإصدار قانون التسجيل العقاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0313) | in_force | 0 |
+| قانون رقم (12) لسنة 2013 بإضافة مادة جديدة برقم (221 مكرراً) إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5512) | in_force | 2 |
+| قانون رقم (11) لسنة 2013 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية استونيا بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5012) | in_force | 2 |
+| قانون رقم (10) لسنة 2013 بشأن معاملة علم مجلس التعاون لدول الخليج العربية معاملة علم مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4912) | in_force | 1 |
+| قانون رقم (9) لسنة 2013 بالموافقة على انضمام مملكة البحرين إلى اتفاقية الأمم المتحدة بشأن عقود البيع الدولي للبضائع (اتفاقية فيينا 1980) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5112) | in_force | 3 |
+| قانون رقم (8) لسنة 2013 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة كوريا لتجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4512) | in_force | 0 |
+| قانون رقم (7) لسنة 2013 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية الهند بشأن تبادل المعلومات بالنسبة للضرائب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4412) | in_force | 0 |
+| قانون رقم (6) لسنة 2013 بالتصديق على اتفاقيتي قرض وضمان مشروع تطوير شبكة نقل المياه في مملكة البحرين بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الاقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4812) | in_force | 53 |
+| قانون رقم (5) لسنة 2013 بتعديل المادة الثالثة من القانون رقم (40) لسنة 2006 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5312) | in_force | 8 |
+| قانون رقم (4) لسنة 2013 بتعديل بعض أحكام المرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5212) | in_force | 2 |
+| قانون رقم (2) لسنة 2013 بشأن اعتماد بطاقات الهوية الرسمية الصادرة من دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4712) | in_force | 0 |
+| قانون رقم (1) لسنة 2013 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4612) | in_force | 9 |
+| مرسوم بقانون رقم (43) لسنة 2012 بتعديل بعض أحكام القانون رقم (60) لسنة 2006 بشأن إعادة تنظيم هيئة التشريع والإفتاء القانوني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4312) | in_force | 0 |
+| مرسوم بقانون رقم (42) لسنة 2012 بتعديل بعض أحكام المرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4212) | in_force | 6 |
+| مرسوم بقانون رقم (41) لسنة 2012 بتعديل بعض أحكام المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4112) | in_force | 30 |
+| مرسوم بقانون رقم (40) لسنة 2012 بتعديل بعض أحكام المرسوم بقانون رقم (39) لسنة 2002 بشأن الميزانية العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4012) | in_force | 0 |
+| مرسوم بقانون رقم (39) لسنة 2012 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3912) | in_force | 4 |
+| مرسوم بقانون رقم (38) لسنة 2012 بتعديل بعض أحكام المرسوم بقانون رقم (27) لسنة 2002 بإنشاء المحكمة الدستورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3812) | in_force | 4 |
+| قانون رقم (37) لسنة 2012 بإصدار قانون الطفل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3712) | in_force | 69 |
+| قانون رقم (36) لسنة 2012 بإصدار قانون العمل في القطاع الأهلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3612) | in_force | 197 |
+| قانون رقم (35) لسنة 2012 بشأن حماية المستهلك | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3512) | in_force | 25 |
+| قانون رقم (٣٤) لسنة ٢٠١٢ بالموافقة على قانون (نظام) البذور والتقاوي والشتلات لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3412) | in_force | 0 |
+| قانون رقم (٣٣) لسنة ٢٠١٢ بتعديل المادة (٢٢١) من قانون العقوبات الصادر بالمرسوم بقانون رقم (١٥) لسنة ١٩٧٦ | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3312) | in_force | 1 |
+| قانون رقم (٣٢) لسنة ٢٠١٢ بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة مملكة الدنمارك بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3012) | in_force | 0 |
+| قانون رقم (٣١) لسنة ٢٠١٢ بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة أستراليا بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2912) | in_force | 3 |
+| قانون رقم (30) لسنة 2012 بالتصديق على اتفاقية بين مملكة البحرين ومملكة أسبانيا لتشجيع وتبادل حماية الاستثمارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2812) | in_force | 3 |
+| قانون رقم (29) لسنة  2012 بالتصديق على بروتوكول تعديل اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب  بالنسبة للضرائب على الدخل بين حكومة مملكة البحرين وحكومة جمهورية سنغافورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2712) | in_force | 0 |
+| قانون رقم (28) لسنة 2012 بتعديل بعض أحكام قانون قوات الأمن العام الصادر بالمرسوم بقانون رقم (3) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2012) | in_force | 25 |
+| قانون رقم (27) لسنة 2012 بالموافقة على انضمام مملكة البحرين إلى اتفاقية بشأن التجارة الدولية في الأنواع المهددة بالانقراض من مجموعات الحيوان والنبات الفطرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1912) | in_force | 0 |
+| قانون رقم (26) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة مملكة النرويج بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1812) | in_force | 26 |
+| قانون رقم (25) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة مملكة السويد بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1712) | in_force | 17 |
+| قانون رقم (24) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة أيسلندا بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2612) | in_force | 12 |
+| قانون رقم (23) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جرينلند بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2512) | in_force | 13 |
+| قانون رقم (22) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية فنلندا بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2412) | in_force | 12 |
+| قانون رقم (21) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جزر فارو بشأن تبادل المعلومات في المسائل الضريبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2312) | in_force | 12 |
+| قانون رقم (20) لسنة 2012 بالتصديق على اتفاقية النقل البري الدولي بين حكومة مملكة البحرين وحكومة الجمهورية التركية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2212) | in_force | 12 |
+| قانون رقم (19) لسنة 2012 بالموافقة على تعديل بعض أحكام اتفاقية تأسيس صندوق النقد الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2112) | in_force | 12 |
+| قانون رقم (18) لسنة 2012 بشأن الأسماء التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1312) | in_force | 23 |
+| قانون رقم (17) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية تركيا بشأن التعاون وتقديم المساعدة المتبادلة في المسائل الجمركية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1212) | in_force | 2 |
+| قانون رقم (16) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جورجيا بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل ورأس المال | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0912) | in_force | 14 |
+| قانون رقم (15) لسنة 2012 بالتصديق على اتفاقية النقل البحري للأغراض التجارية بين حكومة مملكة البحرين وحكومة جمهورية تركيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0812) | in_force | 160 |
+| قانون رقم (14) لسنة 2012 بالموافقة على الانضمام إلى اتفاقية روتردام المتعلقة بتطبيق إجراء الموافقة المسبقة عن علم على مواد كيمائية ومبيدات آفات معينة خطرة متداولة في التجارة الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1612) | in_force | 29 |
+| قانون رقم (13) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية التشيك بشأن تجنب الازدواج الضريبي ومنع التهرب المالي من ضرائب الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1412) | in_force | 55 |
+| قانون رقم (12) لسنة 2012 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية سيرلانكا الديمقراطية الاشتراكية بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1112) | in_force | 0 |
+| قانون رقم (11) لسنة 2012 بالتصديق على اتفاقية التعاون في مجال الملاحة التجارية بين حكومة مملكة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1512) | in_force | 19 |
+| قانون رقم (10) لسنة 2012 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي من ضرائب الدخل وأرباح رأس المال بين حكومة مملكة البحرين وحكومة جزيرة مان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0712) | in_force | 0 |
+| قانون رقم (9) لسنة 2012 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة تركمنستان بشأن تشجيع وحماية الاستثمارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0612) | in_force | 1 |
+| قانون رقم (8) لسنة 2012 بالموافقة على الانضمام إلى اتفاقية الإدخال المؤقت (اسطنبول 26 يونيو 1990) والملحقين (A) و (B1) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1012) | in_force | 26 |
+| قانون رقم (7) لسنة 2012 بشأن إقامة منطقة تجارة حرة بين الدول الأعضاء في مجلس التعاون لدول الخليج العربية ودول رابطة التجارة الحرة الأوربية (إفتا) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0212) | in_force | 0 |
+| قانون رقم (6) لسنة 2012 بتعديل الفقرة (د) من البند (2) من المادة (2) من المرسوم بقانون رقم (28) لسنة 2002 بشأن المعاملات الإلكترونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0112) | in_force | 18 |
+| قانون رقم (5) لسنة 2012 بالتصديق على اتفاقية القرض بين حكومة مملكة البحرين وصندوق أبوظبي للتنمية لتمويل مشروع إنشاء مجمع سفارة مملكة البحرين في أبوظبي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4211) | in_force | 0 |
+| قانون رقم (4) لسنة 2012 بالموافقة على الانضمام إلى معاهدة بودابست بشأن الاعتراف الدولي بإيداع الكائنات الدقيقة لأغراض الإجراءات الخاصة بالبراءات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4111) | in_force | 0 |
+| قانون رقم (3) لسنة 2012 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة تركمنستان بشأن تجنب الازدواج الضريبي بالنسبة للضرائب على الدخل ورأس المال | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0512) | in_force | 0 |
+| قانون رقم (2) لسنة 2012 بالموافقة على الانضمام إلى الاتفاقية الدولية لتبسيط وتنسيق الإجراءات الجمركية (اتفاقية كيوتو المعدلة) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0412) | in_force | 21 |
+| قانون رقم (1) لسنة 2012 بالموافقة على الاتفاقية الدولية رقم (138) لسنة 1973 بشأن الحد الأدنى لسن الاستخدام | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0312) | in_force | 42 |
+| قانون رقم (48) لسنة 2011 بالموافقة على القانون (النظام) الموحد المعدل لمكافحة الإغراق والتدابير التعويضية والوقائية لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4811) | in_force | 15 |
+| قانون رقم (45) لسنة 2011 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة مالطا بشأن تجنب الازدواج الضريبي ومنه التهرب المالي بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4711) | in_force | 0 |
+| قانون رقم (44) لسنة 2011 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة المملكة المتحدة لبريطانيا العظمى وايرلندا الشمالية بشأن تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل والأرباح الرأسمالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4611) | in_force | 0 |
+| قانون رقم (43) لسنة 2011 بشأن انضمام مملكة البحرين إلى اتفاقية المؤسسة الدولية للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4511) | in_force | 25 |
+| قانون رقم (42) لسنة 2011 بالتصديق على النظام الأساسي للوكالة الدولية للطاقة المتجددة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4411) | in_force | 27 |
+| قانون رقم (41) لسنة 2011 بالتصديق على اتفاق بين حكومة مملكة البحرين ومنظمة الأمم المتحدة للتربية والعلوم والثقافة (اليونسكو) بشأن إنشاء المركز الإقليمي لتكنولوجيا المعلومات والاتصال بالمنامة في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4311) | in_force | 0 |
+| قانون رقم (40) لسنة 2011 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة جمهورية سيشل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4011) | in_force | 0 |
+| قانون رقم (39) لسنة 2011 بالتصديق على الاتفاقية بين حكومة مملكة البحرين وحكومة الولايات المتحدة المكسيكية بشأن تجنب الازدواج الضريبي ومنع التهرب المالي فيما يتعلق بالضرائب المفروضة على الدخل والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3911) | in_force | 25 |
+| قانون رقم (38) لسنة 2011 بالتصديق على الاتفاقية الإطارية للتعاون الاقتصادي بين دول مجلس التعاون لدول الخليج العربية والميركوسور | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3811) | in_force | 0 |
+| قانون رقم (37) لسنة 2011 بالتصديق على بروتوكول تعديل الاتفاقية بين حكومة مملكة البحرين وحكومة ماليزيا بشأن تجنب الازدواج الضريبي ومنع التهرب المالي من الضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3711) | in_force | 4 |
+| مرسوم بقانون رقم (36) لسنة 2011 بشأن ضوابط استحقاق رواتب ومزايا موظفي الهيئات والمؤسسات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3611) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 2011 بتعديل بعض أحكام قانون النقابات العمالية الصادر بالمرسوم بقانون رقم (33) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3511) | in_force | 2 |
+| مرسوم بقانون رقم (34) لسنة 2011 بالموافقة على اتفاقية الاستكشاف والمشاركة في الإنتاج للغاز العميق بين حكومة مملكة البحرين وشركة أوكسيدنتال الأمريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3411) | in_force | 70 |
+| مرسوم بقانون رقم (33) لسنة 2011 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3311) | in_force | 2 |
+| مرسوم بقانون رقم (32) لسنة 2011 بتعديل البند (هـ) من المادة (42) من القانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3211) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 2011 بتعديل بعض أحكام القانون رقم (9) لسنة 2011 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2011 و 2012 وبفتح اعتماد إضافي في تلك الميزانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3111) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 2011 بإنشاء صندوق وطني لتعويض المتضررين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3011) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 2011 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2911) | in_force | 2 |
+| مرسوم بقانون رقم (28) لسنة 2011 بشأن القضايا الخاصة بحالة السلامة الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2811) | in_force | 0 |
+| قانون رقم (27) لسنة 2011 بشأن رفع الحد الأدنى لمعاشات الخاضعين لأحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2711) | in_force | 0 |
+| قانون رقم (26) لسنة 2011 بشأن نقل احتياطيات موظفي الحكومة وضباط وأفراد قوة دفاع البحرين والأمن العام والمؤمن عليهم عن مدد خدمتهم أو اشتراكهم في التأمين بين صناديق التقاعد والتأمين الخاضعين لها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2611) | in_force | 0 |
+| قانون رقم (25) لسنة 2011 بشأن رفع الحد الأدنى لمعاشات الخاضعين لأحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2511) | in_force | 0 |
+| قانون رقم (24) لسنة 2011 بشأن رفع الحد الأدنى لمعاشات الخاضعين لأحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2411) | in_force | 0 |
+| قانون رقم (23) لسنة 2011 بالتصديق على اتفاقيتي قرض وضمان قرض مشروع برنامج عمليات بنك البحرين للتنمية بين حكومة مملكة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2311) | in_force | 0 |
+| قانون رقم (22) لسنة 2011 بالتصديق على اتفاقية حقوق الأشخاص ذوي الإعاقة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2211) | in_force | 50 |
+| قانون رقم (21) لسنة 2011 بالتصديق على الاتفاق المبرم بتاريخ 27 سبتمبر 2000 بين دولة البحرين والاتحاد السويسري بشأن تعديل وإضافة مواد جديدة على اتفاقية تنظيم النقل الجوي الموقع عليها في المنامة بتاريخ 4 فبراير 1986 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2111) | in_force | 9 |
+| قانون رقم (20) لسنة 2011 بالتصديق على بروتوكول لتعديل بعض أحكام الاتفاقية المبرمة بين حكومة مملكة البحرين وحكومة مملكة بلجيكا بشأن الخدمات الجوية بين وفيما وراء إقليميهما | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2011) | in_force | 1 |
+| قانون رقم (19) لسنة 2011 بالتصديق على اتفاق بشأن الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية السودان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1911) | in_force | 0 |
+| قانون رقم (18) لسنة 2011 بالتصديق على بروتوكول بشأن تعديل بعض أحكام اتفاق النقل الجوي بين مملكة البحرين وجمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1811) | in_force | 9 |
+| قانون رقم (17) لسنة 2011 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة سلطنة عمان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1711) | in_force | 24 |
+| قانون رقم (16) لسنة 2011 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة دولة الكويت لتنظيم الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1611) | in_force | 0 |
+| قانون رقم (15) لسنة 2011 بتعديل الفقرة (أ) من المادة (25) من القانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1511) | in_force | 0 |
+| قانون رقم (14) لسنة 2011 بنقل اختصاصات وزير الإسكان بالنسبة لأعمال المساحة إلى رئيس جهاز المساحة والتسجيل العقاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1411) | in_force | 0 |
+| قانون رقم (13) لسنة 2011 بالتصديق على الاتفاقية العربية لتنظيم نقل الركاب على الطرق بين الدول العربية وعبرها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1311) | in_force | 31 |
+| قانون رقم (12) لسنة 2011 بالتصديق على البرتوكول الإضافي السابع لدستور الاتحاد البريدي العالمي والنظام العام للاتحاد البريدي العالمي والاتفاقية البريدية العالمية وبروتوكولها الختامي التي أقرها مؤتمر بوخارست عام 2004 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1211) | in_force | 130 |
+| قانون رقم (11) لسنة 2011 بالموافقة على الانضمام إلى اتفاقية الضمانات الدولية على المعدات المنقولة والبروتوكول الملحق بها بشأن المسائل التي تخص معدات الطائرات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1111) | in_force | 61 |
+| قانون رقم (10) لسنة 2011 بالتصديق على البروتوكول الإضافي للاتفاق المعقود بين مملكة البحرين والوكالة الدولية للطاقة الذرية من أجل تطبيق الضمانات في إطار معاهدة عدم انتشار الأسلحة النووية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1011) | in_force | 18 |
+| قانون رقم (9) لسنة  2011 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2011 و2012 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0911) | in_force | 0 |
+| قانون رقم (8) لسنة 2011 بالتصديق على اتفاقيتي قرض وضمان مشروع تطوير شبكة نقل الكهرباء جهد 220 كيلوفولت بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الاقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0811) | in_force | 0 |
+| قانون رقم (7) لسنة 2011 بالتصديق على اتفاقية تمويل استيراد سلع سعودية بين هيئة الكهرباء والماء بمملكة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0711) | in_force | 15 |
+| قانون رقم (6) لسنة 2011 بالتصديق على اتفاقيتي القرض والضمان لمشروع تطوير شبكتي نقل الطاقة الكهربائية ذات الجهدين 220 و 66 كيلوفولت بين حكومة مملكة البحرين وصندوق أبوظبي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0611) | in_force | 0 |
+| قانون رقم (5) لسنة 2011 بالتصديق على اتفاقيتي قرض وضمان مشروع تطوير شبكتي نقل الطاقة الكهربائية ذات الجهدين 220 و 66 كيلوفولت بين حكومة مملكة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0511) | in_force | 0 |
+| قانون رقم (4) لسنة 2011 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة مملكة هولندا للإعفاء المتبادل من الضرائب على الدخل والأرباح العائدة من عمليات النقل الجوي الدولية  والبروتوكول المرافق لها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0411) | in_force | 10 |
+| قانون رقم (3) لسنة 2011 بتعديل بعض أحكام قانوني العلامات التجارية وحماية حقوق المؤلف والحقوق المجاورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0311) | in_force | 0 |
+| قانون رقم (2) لسنة 2011 بالموافقة على الإنضمام إلى بروتوكول قرطاجنة المتعلق بالسلامة الأحيائية للاتفاقية المتعلقة بالتنوع البيولوجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0211) | in_force | 40 |
+| قانون رقم (1) لسنة 2011 بالموافقة على الانضمام إلى اتفاقية التبليغ المبكر عن وقوع حادث نووي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0111) | in_force | 16 |
+| مرسوم بقانون رقم (53) لسنة 2010 بالتصديق على الاتفاقية بين حكومة مملكة البحرين ومنظمة الأمم المتحدة للتربية والعلوم والثقافة (اليونسكو) بشأن إنشاء المركز الإقليمي العربي للتراث العالمي في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5310) | in_force | 0 |
+| مرسوم بقانون رقم (52) لسنة 2010 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5210) | in_force | 2 |
+| مرسوم بقانون رقم (51) لسنة 2010 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5110) | in_force | 4 |
+| مرسوم بقانون رقم (50) لسنة 2010 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5010) | in_force | 13 |
+| مرسوم بقانون رقم (49) لسنة 2010 بشأن تعديل بعض أحكام قانون ديوان الرقابة المالية الصادر بالمرسوم بقانون رقم (16) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4910) | in_force | 23 |
+| مرسوم بقانون رقم (48) لسنة 2010 بإصدار قانون الخدمة المدنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4810) | in_force | 32 |
+| مرسوم بقانون رقم (47) لسنة 2010 بشأن إدارة واختصاصات صندوق التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام البحرينيين وغير البحرينيين المنشأ بموجب المرسوم بقانون رقم (6) لسنة 1991 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4710) | in_force | 16 |
+| مرسوم بقانون رقم (46) لسنة 2010 بتعديل بعض أحكام قانون العقوبات العسكري الصادر بالمرسوم بقانون رقم (34) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4610) | in_force | 8 |
+| مرسوم بقانون رقم (45) لسنة 2010 بالموافقة على معاملة مواطني دول مجلس التعاون لدول الخليج العربية العاملين في الخدمة المدنية معاملة المواطن البحريني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4510) | in_force | 0 |
+| قانون رقم (44) لسنة 2010 بالموافقة على الانضمام إلى اتفاقية الأمان النووي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4410) | in_force | 35 |
+| قانون رقم (43) لسنة 2010 بالموافقة على تعديل المادتين (8) و(18) من اتفاقية إنشاء مجلس التعاون الجمركي (منظمة الجمارك العالمية) لعام 1950 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4310) | in_force | 3 |
+| قانون رقم (42) لسنة 2010 برفع الحد الأدنى لرواتب موظفي الدولة المدنيين والعسكريين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4210) | in_force | 0 |
+| قانون رقم (41) لسنة 2010 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4110) | in_force | 4 |
+| قانون رقم (40) لسنة 2010 بتعديل بعض أحكام القانون رقم (74) لسنة 2006 بشأن رعاية وتأهيل وتشغيل المعاقين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4010) | in_force | 1 |
+| مرسوم بقانون رقم  (39) لسنة 2010 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2010 والاقتراض لتغطية هذا الاعتماد | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3910) | in_force | 0 |
+| مرسوم بقانون رقم (38) لسنة 2010 بالتصديق على اتفاقيات الوكالة والإيجار والخدمات والضمان وعقد الهبة بين حكومة مملكة البحرين والبنك الإسلامي للتنمية بشأن تطوير شبكة نقل الطاقة الكهربائية ذات الجهد 66 كيلوفولت | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3810) | in_force | 10 |
+| مرسوم بقانون رقم (37) لسنة 2010 بالتصديق على اتفاقيات الوكالة والإيجار والخدمات والضمان وعقد الهبة بين حكومة مملكة البحرين والبنك الإسلامي للتنمية بشأن تطوير شبكتي نقل الطاقة الكهربائية ذات الجهدين 220 و 66 كيلوفولت | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3710) | in_force | 10 |
+| مرسوم بقانون رقم (36) لسنة 2010 بالتصديق على اتفاقيتي القرض والضمان لمشروع تطوير شبكة نقل الطاقة الكهربائية على التوترين 220 و66كيلوفولت بين حكومة مملكة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3610) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 2010 بتعديل بعض أحكام قانون السلطة القضائية الصادر بالمرسوم بقانون رقم (42 ) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3510) | in_force | 13 |
+| مرسوم بقانون رقم (34) لسنة 2010 بتعديل بعض أحكام القانون رقم (60) لسنة 2006 بشأن إعادة تنظيم دائرة الشئون القانونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3410) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 2010 بتعديل بعض أحكام المرسوم بقانون رقم (5) لسنة 1983 بشأن تعديل المرسوم الأميري رقم (2) لسنة 1975 بإنشاء مجلس أعلى للشباب والرياضة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3310) | in_force | 4 |
+| قانون رقم (32) لسنة 2010 بشأن الكشف عن الذمة المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3210) | in_force | 0 |
+| قانون رقم (31) لسنة 2010 بتعديل بعض أحكام المرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3110) | in_force | 20 |
+| قانون رقم (30) لسنة 2010 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3010) | in_force | 2 |
+| قانون رقم (29) لسنة 2010 بتعديل بعض أحكام المرسوم بقانون رقم (36) لسنة 2002 بشأن تنظيم المناقصات والمشتريات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2910) | in_force | 29 |
+| قانون رقم (28) لسنة 2010 بالتصديق على البروتوكول الأول لتعديل اتفاقية التجارة الحرة بين حكومة مملكة البحرين وحكومة الولايات المتحدة الأمريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2810) | in_force | 0 |
+| قانون رقم (27) لسنة 2010 في شأن التفرغ خلال فترة الإعداد والمشاركة في الألعاب والبطولات الرياضية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2710) | in_force | 8 |
+| قانون رقم (26) لسنة 2010 بتعديل الفقرة الثانية من المادة (7) من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2610) | in_force | 0 |
+| قانون رقم (25) لسنة 2010 بتعديل المادة الثانية والعشرين من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2510) | in_force | 0 |
+| قانون رقم (24) لسنة 2010 بإضافة مادة برقم (310) مكرراً إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2410) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 2010 بإلغاء مركز البحرين للدراسات والبحوث المنشأ بالمرسوم بقانون رقم (11) لسنة 1981 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2310) | in_force | 0 |
+| قانون رقم (22) لسنة 2010 بتعديل المادة الثالثة من المرسوم بقانون رقم (8) لسنة 1988 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2210) | in_force | 0 |
+| قانون رقم (21) لسنة 2010 بالتصديق على الاتفاقية بين حكومة مملكة البحرين و إيرلندا لتجنب الازدواج الضريبي ومنع التهرب المالي من الضرائب على الدخل وأرباح رأس المال والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2110) | in_force | 28 |
+| قانون رقم (20) لسنة 2010 بالتصديق على بروتوكول تعديل اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي من الضرائب المفروضة على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة مملكة بلجيكا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2010) | in_force | 3 |
+| قانون رقم (19) لسنة 2010 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1910) | in_force | 2 |
+| قانون رقم (18) لسنة 2010 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية أوزبكستان لتشجيع وتبادل حماية الاستثمارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1810) | in_force | 14 |
+| قانون رقم (17) لسنة 2010 بتعديل بعض أحكام القانون رقم (24) لسنة 2004 بشأن معاملة مواطني دول مجلس التعاون لدول الخليج العربية فيما يتعلق بالنشاط الاقتصادي في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1710) | in_force | 0 |
+| قانون رقم (16) لسنة 2010 بتعديل المادة (393) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1610) | in_force | 0 |
+| قانون رقم (15) لسنة 2010 بالموافقة على تعديل الفقرة (1) من المادة (20) من اتفاقية القضاء على جميع أشكال التمييز ضد المرأة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1510) | in_force | 0 |
+| قانون رقم (14) لسنة 2010 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية النمسا بشأن الضرائب المفروضة على الدخل ورأس المال والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1410) | in_force | 0 |
+| قانون رقم (13) لسنة 2010 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي من ضرائب الدخل والأموال بين حكومة مملكة البحرين وحكومة جمهورية أوزبكستان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1310) | in_force | 0 |
+| قانون رقم (12) لسنة 2010 بالتصديق على اتفاقية تشجيع وحماية الاستثمارات بين حكومة مملكة البحرين وحكومة جمهورية بلغاريا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1210) | in_force | 14 |
+| قانون رقم (11) لسنة 2010 بالموافقة على انضمام مملكة البحرين إلى اتفاقية الحماية المادية للمواد النووية وتعديلاتها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1110) | in_force | 28 |
+| قانون رقم (10) لسنة 2010 بالموافقة على انضمام مملكة البحرين إلى الاتفاقية الدولية لقمع أعمال الإرهاب النووي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1010) | in_force | 28 |
+| قانون رقم (9) لسنة 2010 بتعديل بعض أحكام المرسوم بقانون رقم (8) لسنة 1980 بتقرير زيادة لأصحاب المعاشات والمستحقين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0910) | in_force | 0 |
+| قانون رقم (8) لسنة 2010 بالتصديق على الميثاق المعدل لمنظمة المؤتمر الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0810) | in_force | 0 |
+| قانون رقم (7) لسنة 2010 بالتصديق على اتفاقية الأمم المتحدة لمكافحة الفساد | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0710) | in_force | 71 |
+| قانون رقم (6) لسنة 2010 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة جمهورية بلغاريا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0610) | in_force | 30 |
+| قانون رقم (5) لسنة 2010 بالتصديق على النظام الأساسي لمركز المعلومات الجنائية لمكافحة المخدرات لمجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0510) | in_force | 18 |
+| قانون رقم (4) لسنة 2010 بالموافقة على الانضمام إلى الاتفاقية الدولية للاستعداد والتصدي والتعاون في ميدان التلوث الزيتي (OPRC) لعام 1990 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0410) | in_force | 25 |
+| قانون رقم (3) لسنة 2010 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي من ضرائب الدخل ورأس المال بين حكومة مملكة البحرين وحكومة دوقية لوكسمبورغ | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0310) | in_force | 26 |
+| قانون رقم (2) لسنة 2010 بالتصديق على بروتوكول اتفاقية تجنب الازدواج الضريبي بين حكومة مملكة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0210) | in_force | 4 |
+| قانون رقم (1) لسنة 2010 بالتصديق على اتفاقية التجارة الحرة بين دول مجلس التعاون لدول الخليج العربية وجمهورية سنغافورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0110) | in_force | 134 |
+| قانون رقم (62) لسنة 2009 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6209) | in_force | 2 |
+| قانون رقم (61) لسنة 2009 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 2009 و 2010 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6109) | in_force | 0 |
+| قانون رقم (60) لسنة 2009 بالتصديق على اتفاقية التعاون الأمني بين حكومة مملكة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6009) | in_force | 0 |
+| قانون رقم (59) لسنة 2009 بالتصديق على اتفاقية النقل البحري للأغراض التجارية بين حكومة مملكة البحرين وحكومة جمهورية اليونان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5909) | in_force | 20 |
+| قانون رقم (58) لسنة 2009 بشأن حقوق المسنين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5809) | in_force | 13 |
+| قانون رقم (57) لسنة 2009 بشأن سوق البحرين للأوراق المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5709) | in_force | 0 |
+| قانون رقم (56) لسنة 2009 بشأن ممارسة مواطني دول مجلس التعاون لدول الخليج العربية لتجارة التجزئة وتجارة الجملة في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5609) | in_force | 0 |
+| قانون رقم (55) لسنة 2009 بالتصديق على اتفاقية الاتحاد النقدي لمجلس التعاون لدول الخليج العربية والنظام الأساسي للمجلس النقدي للدول الأعضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5509) | in_force | 27 |
+| قانون رقم (54) لسنة 2009 بتعديل المرسوم بقانون رقم (11) لسنة 1976 بإصدار قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام، بإضافة مادة جديدة برقم (11 مكرراً) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5409) | in_force | 0 |
+| قانون رقم (53) لسنة 2009 بتعديل المادة (51) من قانون الخدمة المدنية الصادر بالقانون رقم (35) لسنة 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5309) | in_force | 1 |
+| مرسوم بقانون رقم (52) لسنة 2009 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2009 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5209) | in_force | 0 |
+| قانون رقم (51) لسنة 2009 بشأن حظر استحداث وإنتاج وتخزين واستعمال الأسلحة الكيميائية وتدمير تلك الأسلحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5109) | in_force | 24 |
+| قانون رقم (50) لسنة 2009 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5009) | in_force | 3 |
+| قانون رقم (49) لسنة 2009 بالتصديق على اتفاقيتي الاستصناع والوكالة بين حكومة مملكة البحرين والبنك الإسلامي للتنمية لتنفيذ مشروع إنشاء معبر سترة البحري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4909) | in_force | 0 |
+| قانون رقم (48) لسنة 2009 بالتصديق على الاتفاقية الدولية لوقاية النباتات المعدلة من قبل مؤتمر منظمة الأغذية والزراعة للأمم المتحدة خلال دورته التاسعة والعشرين في نوفمبر سنة 1997 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4809) | in_force | 23 |
+| قانون رقم (47) لسنة 2009 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة إيطاليا بشأن المساواة في المعاملة في خصوص رسوم المرسى والموانئ | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4709) | in_force | 5 |
+| قانون رقم (46) لسنة 2009 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي من الضرائب المفروضة على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة مملكة بلجيكا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4609) | in_force | 31 |
+| قانون رقم (45) لسنة 2009 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل بين حكومة مملكة البحرين وحكومة مملكة هولندا والبروتوكول المرفق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4509) | in_force | 0 |
+| قانون رقم (44) لسنة 2009 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة مملكة البحرين وحكومة جمهورية باكستان الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4409) | in_force | 0 |
+| قانون رقم (43) لسنة 2009 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية السودان بشأن تشجيع وحماية الاستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4309) | in_force | 14 |
+| قانون رقم (42) لسنة 2009 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4209) | in_force | 0 |
+| قانون رقم (41) لسنة 2009 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة جمهورية السودان بشأن تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4109) | in_force | 0 |
+| قانون رقم (40) لسنة 2009 بتعديل المادة (51) من قانون الخدمة المدنية الصادر بالقانون رقم (35) لسنة 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4009) | in_force | 1 |
+| قانون رقم (39) لسنة 2009 بشأن استملاك العقارات للمنفعة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3909) | in_force | 35 |
+| قانون رقم (38) لسنة 2009 بإنشاء الهيئة الوطنية لتنظيم المهن والخدمات الصحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3809) | in_force | 20 |
+| قانون رقم (37) لسنة 2009 في شأن السلك الدبلوماسي والقنصلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3709) | in_force | 82 |
+| قانون رقم (36) لسنة 2009 بتعديل بعض أحكام المرسوم بقانون رقم (7) لسنة 1982 بإنشاء مجلس الموارد المائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3609) | in_force | 3 |
+| قانون رقم (35) لسنة 2009 بشأن معاملة زوجة البحريني غير البحرينية وأبناء البحرينية المتزوجة من غير بحريني معاملة البحريني في بعض الرسوم المقررة على الخدمات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3509) | in_force | 0 |
+| قانون رقم (34) لسنة 2009 بتعديل بعض أحكام القانون رقم (24) لسنة 2004 بشأن معاملة مواطني دول مجلس التعاون لدول الخليج العربية فيما يتعلق بالنشاط الاقتصادي في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3409) | in_force | 0 |
+| قانون رقم (33) لسنة 2009 بتعديل بعض أحكام القانون رقم (34) لسنة 2005 بإنشاء صندوق النفقة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3309) | in_force | 2 |
+| قانون رقم (32) لسنة 2009 بإنشاء صندوق معاشات ومكافآت التقاعد لأعضاء مجلسي الشورى والنواب والمجالس البلدية وتنظيم معاشاتهم ومكافآتهم | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3209) | in_force | 0 |
+| قانون رقم (31) لسنة 2009 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3109) | in_force | 1 |
+| قانون رقم (29) لسنة 2009 بالتصديق على البروتوكول المعدل لاتفاقية الجوانب المتصلة بالتجارة من حقوق الملكية الفكرية (TRIPS) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2909) | in_force | 1 |
+| قانون رقم (28) لسنة 2009 بالتصديق على بروتوكول خطة التعريفات التفضيلية الخاصة بنظام الأفضليات التجارية فيما بين الدول الأعضاء في منظمة المؤتمر الإسلامي (PRETAS) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2809) | in_force | 12 |
+| قانون رقم (27) لسنة 2009 بتحديد مرتبات رئيس مجلس الوزراء ونوابه والوزراء ومن يشغل وظيفة بدرجة وزير | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2709) | in_force | 0 |
+| قانون رقم (26) لسنة 2009 بتعديل بعض أحكام القانون رقم (24) لسنة 2004 بشأن معاملة مواطني دول مجلس التعاون لدول الخليج العربية فيما يتعلق بالنشاط الاقتصادي في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2609) | in_force | 0 |
+| قانون رقم (25) لسنة 2009 بالموافقة على انضمام مملكة البحرين إلى اتفاقية منظمة العمل الدولية رقم (155) لسنة 1981 بشأن السلامة والصحة المهنيتين وبيئة العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2509) | in_force | 30 |
+| قانون رقم (24) لسنة 2009 بالموافقة على اتفاقية التنمية والمشاركة في الإنتاج (DPSA) لتطوير حقل البحرين بين حكومة مملكة البحرين وكل من شركة أوكسيدنتال الأمريكية وشركة مبادلة الإماراتية والشركة القابضة للنفط والغاز | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2409) | in_force | 62 |
+| قانون رقم (23) لسنة 2009 بشأن الاقتراض لتغطية عجز الميزانية العامة للدولة للسنة المالية 2009 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2309) | in_force | 0 |
+| قانون رقم (22) لسنة 2009 بالتصديق على اتفاقية بين مملكة البحرين وجمهورية ألمانيا الاتحادية بشأن تشجيع وحماية الاستثمارات المتبادلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2209) | in_force | 14 |
+| قانون رقم (21) لسنة 2009 بالتصديق على الاتفاقية الإطارية للتعاون الاقتصادي والتجاري والاستثماري والفني بين دول مجلس التعاون لدول الخليج العربية وجمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2109) | in_force | 0 |
+| قانون رقم (20) لسنة 2009 بالتصديق على اتفاقيتي وكالة وإيجار بين حكومة مملكة البحرين والبنك الإسلامي للتنمية بشأن توكيل حكومة مملكة البحرين لشراء معدات نيابة عن البنك الإسلامي للتنمية وإيجارها لحكومة مملكة البحرين لاستخدامها في مشروع نقل مياه محطة الحد (المرحلة الثالثة) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2009) | in_force | 0 |
+| قانون رقم (19) لسنة 2009 بإصدار قانون أحكام الأسرة (القسم الأول) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1909) | in_force | 144 |
+| قانون رقم (18) لسنة 2009 بالتصديق على اتفاقية تبادل تشجيع وحماية الاستثمار والبروتوكول المعدل لها بين حكومة مملكة البحرين وحكومة جلالة سلطان ويانغ دي برتوان بروناي دار السلام | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1809) | in_force | 15 |
+| قانون رقم (17) لسنة 2009 بتعديل بعض أحكام قانون الإثبات في المواد المدنية والتجارية الصادر بالمرسوم بقانون رقم (14) لسنة 1996 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1709) | in_force | 2 |
+| قانون رقم (16) لسنة 2009 بالتصديق على اتفاقية قرض بين حكومة مملكة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي للمساهمة في تمويل مشروع إنشاء معبر سترة البحري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1609) | in_force | 0 |
+| قانون رقم (15) لسنة 2009 بالموافقة على النظام الأساسي للوكالة الدولية للطاقة الذرية بصيغته المعدلة حتى 28 ديسمبر 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1509) | in_force | 0 |
+| قانون رقم (14) لسنة 2009 بالموافقة على اتفاقية الإطار بشـأن نظام الأفضليات التجارية بين الدول الأعضاء في منظمة المؤتمر الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1409) | in_force | 0 |
+| قانون رقم (13) لسنة 2009 بالتصديق على الاتفاق بين مملكة البحرين و الوكالة الدولية للطاقة الذرية لتطبيق الضمانات في إطار معاهدة عدم انتشار الأسلحة النووية والبروتوكول المرفق به | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1309) | in_force | 96 |
+| قانون رقم (12) لسنة 2009 بالتصديق على اتفاقية تشجيع وحماية الاستثمارات المتبادلة بين حكومة مملكة البحرين و حكومة مملكة هولندا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1209) | in_force | 14 |
+| قانون رقم (11) لسنة 2009 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب المالي بالنسبة للضرائب على الدخل ورأس المال والبروتوكول المعدل لها بين حكومة مملكة البحرين و حكومة جلالة سلطان ويانغ دي برتوان بروناي دارالسلام | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1109) | in_force | 0 |
+| قانون رقم (10) لسنة 2009 بالتصديق على اتفاقية تشجيع وحماية الاستثمارات بين حكومة مملكة البحرين و حكومة جمهورية التشيك | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1009) | in_force | 12 |
+| قانون رقم (9) لسنة 2009 بتعديل بعض أحكام قانون محكمة التمييز الصادر بالمرسوم بقانون رقم (8) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0909) | in_force | 1 |
+| قانون  رقم (8) لسنة 2009 بشأن مكافحة التدخين والتبغ بأنواعه | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0809) | in_force | 23 |
+| قانون رقم (7) لسنة 2009 بإضافة مادة إلى المرسوم بقانون رقم (10) لسنة 1976 في شأن الإسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0709) | in_force | 1 |
+| قانون رقم (6) لسنة 2009 بالموافقة على اتفاقية الاستكشاف والمشاركة في الإنتاج (EPSA) في القطاع رقم (1) من المياة المغمورة بين حكومة مملكة البحرين و شركة أوكسيدنتال الأمريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0609) | in_force | 34 |
+| قانون رقم (5) لسنة 2009 بالتصديق على اتفاقية المقربين حكومة مملكة البحرين و مجموعة العمل المالي لمنطقة الشرق الأوسط و شمال أفريقيا (MENAFATF) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0509) | in_force | 0 |
+| قانون رقم (4) لسنة 2009 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2009 و 2010 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0409) | in_force | 0 |
+| قانون رقم (3) لسنة 2009 بتعديل المادة (25) من قانون تنظيم معاشات و مكافآت التقاعد لضباط و أفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0309) | in_force | 1 |
+| قانون رقم (2) لسنة 2009 بتعديل المادة (26) من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات و مكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0209) | in_force | 1 |
+| قانون رقم (1) لسنة 2009 بتعديل القانون رقم (31) لسنة 2006 باعتماد الميزانية العامة للدولة للسنتين الماليتين 2007 و 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0109) | in_force | 0 |
+| مرسوم بقانون (30) لسنة 2009 بشأن غرفة البحرين لتسوية المنازعات الاقتصادية والمالية والاستثمارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3009) | in_force | 39 |
+| مرسوم بقانون رقم (22) لسنة 2008 بالتصديق على اتفاقية قرض بين حكومة مملكة البحرين وحكومة دولة قطر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2208) | in_force | 8 |
+| مرسوم بقانون رقم (21) لسنة 2008 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2108) | in_force | 0 |
+| قانون رقم (20) لسنة 2008 بالتصديق على عقد التأسيس والنظام الأساسي لهيئة الربط الكهربائي لدول مجلس التعاون لدول الخليج العربية شركة مساهمة (ش. م) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2008) | in_force | 0 |
+| قانون رقم (19) لسنة 2008 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط و أفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1908) | in_force | 0 |
+| قانون رقم (18) لسنة 2008 بالموافقة على الانضمام لاتفاقية حماية الممتلكات الثقافية في حالة وقوع نزاع مسلح المبرمة في لاهاي في عام 1954 وبروتوكوليها المبرمين في لاهاي عامي 1954, 1999 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1808) | in_force | 58 |
+| قانون رقم (17) لسنة 2008 بالموافقة على انضمام مملكة البحرين إلى الاتفاقية المعدلة للتعاون العربي في استخدام الطاقة الذرية في الأغراض السلمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1708) | in_force | 0 |
+| قانون رقم (16) لسنة 2008 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 2007 و 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1608) | in_force | 0 |
+| قانون رقم (15) لسنة 2008 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1508) | in_force | 0 |
+| قانون رقم (14) لسنة 2008 بإضافة مادة جديدة برقم (277) مكرراً إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1408) | in_force | 0 |
+| قانون رقم (13) لسنة 2008 بالتصديق على الاتفاقية الدولية لمكافحة المنشطات في مجال الرياضة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1308) | in_force | 43 |
+| قانون رقم (12) لسنة 2008 بتعديل المادة (13) من القانون رقم (22) لسنة 2006 بشأن حماية حقوق المؤلف و الحقوق المجاورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1208) | in_force | 0 |
+| قانون رقم (11) لسنة 2008 بالموافقة على انضمام مملكة البحرين إلى اتفاقية إنشاء الهيئة العربية للاستثمار والإنماء الزراعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1108) | in_force | 0 |
+| قانون رقم (10) لسنة 2008 بالموافقة على انضمام مملكة البحرين إلى اتفاقية التسوية السلمية للمنازعات الدولية المبرمة في لاهاي في 18 أكتوبر 1907 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1008) | in_force | 1 |
+| قانون رقم (9) لسنة 2008 بإنشاء جمعية مرشدات البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0908) | in_force | 23 |
+| قانون رقم (8) لسنة 2008 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0808) | in_force | 3 |
+| قانون رقم (7) لسنة 2008 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0708) | in_force | 0 |
+| قانون رقم (6) لسنة 2008 بتعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0608) | in_force | 2 |
+| قانون رقم (5) لسنة 2008 بالتصديق على اتفاقية التعاون في المجال الأمني بين حكومة مملكة البحرين وحكومة دولة قطر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0508) | in_force | 0 |
+| قانون رقم (4) لسنة 2008 بالتصديق على اتفاقية نقل المحكوم عليهم بعقوبات سالبة للحرية بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0408) | in_force | 0 |
+| قانون رقم (3) لسنة 2008 بشأن الهيئة العامة للتأمين الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0308) | in_force | 0 |
+| قانون رقم (2) لسنة 2008 بالموافقة على اتفاقيتي الاستكشاف و المشاركة في الانتاج بين حكومة مملكة البحرين و كل من شركة أوكسيدنتال الأمريكية و شركة PTTEP التايلندية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0208) | in_force | 0 |
+| قانون رقم (1) لسنة 2008 بشأن مكافحة الاتجار بالأشخاص | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0108) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 2007 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 2007 و 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2007) | in_force | 0 |
+| قانون رقم (19) لسنة 2007 بالتصديق على اتفاقية بشأن النقل الجوي بين حكومة مملكة البحرين وحكومة دولة قطر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1907) | in_force | 0 |
+| قانون رقم (18) لسنة 2007 بالتصديق على اتفاقية تأسيس المؤسسة الدولية الإسلامية لتمويل التجارة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1807) | in_force | 0 |
+| قانون رقم (17) لسنة 2007 بشأن التدريب المهني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1707) | in_force | 0 |
+| قانون رقم (16) لسنة 2007 بالتصديق على بروتوكول بشأن تعديل واستكمال اتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة الجمهورية الإسلامية الإيرانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1607) | in_force | 0 |
+| قانون رقم (15) لسنة 2007 بشأن المواد المخدرة والمؤثرات العقلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1507) | in_force | 60 |
+| قانون رقم (14) لسنة 2007 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة مملكة تايلند | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1407) | in_force | 0 |
+| قانون رقم (13) لسنة 2007 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمرسوم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1307) | in_force | 8 |
+| قانون رقم (12) لسنة 2007 بالتصديق على اتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة جمهورية اليونان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1207) | in_force | 0 |
+| قانون رقم (11) لسنة 2007 بالتصديق على اتفاقية الخدمات الجوية بين حكومة مملكة البحرين وحكومة جمهورية سنغافورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1107) | in_force | 0 |
+| قانون رقم (10) لسنة 2007 بالموافقة على انضمام حكومة مملكة البحرين إلى العهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1007) | in_force | 0 |
+| قانون رقم (9) لسنة 2007 بالتصديق على اتفاقية تشجيع وحماية الإستثمارات بين حكومة مملكة البحرين وحكومة الجمهورية الإيطالية والبروتوكول المرافق لها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0907) | in_force | 0 |
+| قانون رقم (8) لسنة 2007 بالتصديق على اتفاقية تشجيع وحماية الاستثمارات المتبادلة بين حكومة مملكة البحرين والاتحاد الاقتصادي البلجيكي – اللوكسمبرجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0807) | in_force | 0 |
+| قانون رقم (7) لسنة 2007 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0707) | in_force | 3 |
+| قانون رقم (6) لسنة 2007 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0607) | in_force | 11 |
+| قانون رقم (5) لسنة 2007 بشان مكافحة التسول والتشرد | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0507) | in_force | 0 |
+| قانون رقم (4) لسنة 2007 بالتصديق على النظام الأساسي لمجلس السلم والأمن العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0407) | in_force | 0 |
+| قانون رقم (3) لسنة 2007 بتعديل بعض أحكام المرسوم بقانون رقم (39) لسنة 2002 بشأن الميزانية العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0307) | in_force | 1 |
+| قانون رقم (2) لسنة 2007 بتعديل بعض أحكام المرسوم بقانون رقم (36) لسنة 2002 بشأن تنظيم المناقصات والمشتريات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0207) | in_force | 0 |
+| قانون رقم (1) لسنة 2007 بتعديل المادة (9) من المرسوم بقانون رقم (36) لسنة 2002 بشأن تنظيم المناقصات والمشتريات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0107) | in_force | 1 |
+| قانون رقم (83) لسنة 2006 بالموافقة على انضمام مملكة البحرين إلى معاهدة توزيع الإشارات الحاملة لبرنامج والتي تبث من خلال الأقمار الصناعية المبرمة في بروكسل بتاريخ 21 مايو 1974 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8306) | in_force | 0 |
+| قانون رقم (82) لسنة 2006 بالتصديق على تعديل بعض مواد ميثاق جامعة الدول العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8206) | in_force | 0 |
+| قانون رقم (81) لسنة 2006 بالموافقة على قانون (نظام) التنظيم الصناعي الموحد لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8106) | in_force | 0 |
+| مرسوم بقانون رقم (80) لسنة 2006 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة دولة قطر بشأن إنشاء مؤسسة جسر قطر- البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L8006) | in_force | 0 |
+| مرسوم بقانون رقم (79) لسنة 2006 بالتصديق على اتفاقية بين حكومة مملكة البحرين وحكومة دولة قطر بشأن إنشاء جسر يربط بين البلدين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7906) | in_force | 0 |
+| مرسوم بقانون رقم (78) لسنة 2006 بشأن التأمين ضد التعطّل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7806) | in_force | 40 |
+| مرسوم بقانون رقم (77) لسنة 2006 بتعديل بعض أحكام قانون المحاماة الصادر بالمرسوم بقانون رقم (26) لسنة 1980 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7706) | in_force | 0 |
+| مرسوم بقانون رقم (76) لسنة 2006 بشأن منح حق امتياز تشغيل وإدارة ميناء سلمان وحق امتياز تشغيل وإدارة وتطوير ميناء خليفة بن سلمان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L7606) | in_force | 0 |
+| قانون رقم (75) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 1979 بإنشاء بنك الإسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7506) | in_force | 1 |
+| قانون رقم (74) لسنة 2006 بشأن رعاية وتأهيل وتشغيل المعاقين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7406) | in_force | 0 |
+| قانون رقم (73) لسنة 2006 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالمرسوم بقانون رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7306) | in_force | 1 |
+| قانون رقم (72) لسنة 2006 بشأن شعار مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7206) | in_force | 0 |
+| قانون رقم (71) لسنة 2006 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة مملكة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7106) | in_force | 0 |
+| قانون رقم (70) لسنة 2006 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة جمهورية تركيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7006) | in_force | 0 |
+| قانون رقم (68) لسنة 2006 بالموافقة على النظام الموحد لمد الحماية التأمينية لمواطني دول مجلس التعاون لدول الخليج العربية العاملين في غير دولهم في أية دولة عضو في المجلس | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6806) | in_force | 0 |
+| قانون رقم (67) لسنة 2006 بالتصديق على اتفاقية قرض بشأن مشروع ميناء خليفة بن سلمان بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الاقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6706) | in_force | 0 |
+| قانون رقم (66) لسنة 2006 بإضافة مادة إلى القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6606) | in_force | 0 |
+| قانون رقم (65) لسنة 2006 بتعديل المادة (246) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6506) | in_force | 0 |
+| قانون رقم (64) لسنة 2006 بإصدار قانون مصرف البحرين المركزي والمؤسسات المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6406) | in_force | 188 |
+| قانون رقم (63) لسنة 2006 بالتصديق على اتفاقية قرض مشروع تطوير وتوسعة شبكة كهرباء جهد 66/11 كيلوفولت بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الاقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6306) | in_force | 0 |
+| قانون رقم (62) لسنة 2006 بإنشاء وتنظيم هيئة البحرين للمؤتمرات والمعارض | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6206) | in_force | 0 |
+| قانون رقم (61) لسنة 2006 بإصدار قانون المؤسسة العامة للموانئ البحرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6106) | in_force | 0 |
+| قانون رقم (60) لسنة 2006 بشأن إعادة تنظيم دائرة الشئون القانونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6006) | in_force | 0 |
+| قانون رقم (59) لسنة 2006 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5906) | in_force | 3 |
+| قانون رقم (58) لسنة 2006 بشأن حماية المجتمع من الأعمال الإرهابية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5806) | in_force | 32 |
+| قانون رقم (57) لسنة 2006 بإنشاء صندوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5706) | in_force | 25 |
+| قانون رقم (56) لسنة 2006 بالموافقة على انضمام مملكة البحرين إلى العهد الدولي الخاص بالحقوق المدنية والسياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5606) | in_force | 53 |
+| قانون رقم (55) لسنة 2006 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5506) | in_force | 2 |
+| قانون رقم (54) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 2001 بشأن حظر ومكافحة غسل الأموال | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5406) | in_force | 0 |
+| قانون رقم (53) لسنة 2006 باعتبار خليج توبلي منطقة محمية طبيعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5306) | in_force | 8 |
+| قانون رقم (52) لسنة 2006 بشأن نشر اللوائح الإدارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5206) | in_force | 0 |
+| قانون رقم (51) لسنة 2006 بتعديل المادة (8) من قانون الإجراءات أمام المحاكم الشرعية الصادر بالمرسوم بقانون رقم (26) لسنة 1986 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5106) | in_force | 0 |
+| قانون رقم (50) لسنة 2006 بتعديل بعض أحكام قانون السلطة القضائية الصادر بالمرسوم بقانون رقم (42) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5006) | in_force | 7 |
+| قانون رقم (49) لسنة 2006 بتعديل بعض أحكام قانون النقابات العمالية الصادر بالمرسوم بقانون رقم (33) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4906) | in_force | 6 |
+| قانون رقم (48) لسنة 2006 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4806) | in_force | 1 |
+| قانون رقم (47) لسنة 2006 بتعديل بعض أحكام قانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4706) | in_force | 2 |
+| قانون رقم (46) لسنة 2006 بشأن بطاقة الهوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4606) | in_force | 15 |
+| قانون رقم (45) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (9) لسنة 1984 بشأن السجل السكاني المركزي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4506) | in_force | 5 |
+| قانون رقم (44) لسنة 2006 بالتصديق على اتفاقية قرض بين حكومة مملكة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي للمساهمة في تمويل مشروع تطوير شبكة نقل الطاقة الكهربائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4406) | in_force | 0 |
+| قانون رقم (43) لسنة 2006 بتعديل المادة (87) من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4306) | in_force | 0 |
+| قانون رقم (42) لسنة 2006 بالتصديق على اتفاقية إيجار معدات لمشروع تطوير شبكة النقل الكهربائي جهد (220) ك ف (2005- 2009) بين حكومة مملكة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4206) | in_force | 0 |
+| قانون رقم (41) لسنة 2006 بالتصديق على اتفاقية الوضع القانوني ومهام المكتب الإقليمي للمنظمة العالمية للأرصاد الجوية لقارة آسيا في مملكة البحرين والبروتوكول التنفيذي الملحق بها بين حكومة مملكة البحرين والمنظمة العالمية للأرصاد الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4106) | in_force | 2 |
+| قانون رقم (40) لسنة 2006 بتعديل بعض أحكام قانون التأمين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4006) | in_force | 3 |
+| قانون رقم (39) لسنة 2006 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالمرسوم بقانون رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3906) | in_force | 1 |
+| قانون رقم (38) لسنة 2006 بتعديل بعض أحكام قانون البلديات الصادر بالمرسوم لقانون رقم (35) لسنة 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3806) | in_force | 2 |
+| قانون رقم (37) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 2002 بشأن نظام انتخاب أعضاء المجالس البلدية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3706) | in_force | 0 |
+| قانون رقم (36) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (14) لسنة 2002 بشأن مباشرة الحقوق السياسية المعدل بالمرسوم بقانون رقم (35) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3606) | in_force | 0 |
+| قانون رقم (35) لسنة 2006 بإصدار قانون الخدمة المدنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3506) | in_force | 83 |
+| قانون رقم (34) لسنة 2006 بالموافقة على تعديل الفقرة (1) من المادة الثامنة من معاهدة الدفاع المشترك والتعاون الاقتصادي بين دول الجامعة العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3406) | in_force | 0 |
+| قانون رقم (33) لسنة 2006 بشأن الصرف الصحي وصرف المياه السطحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3306) | in_force | 20 |
+| قانون رقم (32) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (18) لسنة 1973 بشأن الاجتماعات العامة والمسيرات والتجمعات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3206) | in_force | 11 |
+| قانون رقم (31) لسنة 2006 بإعتماد الميزانية العامة للدولة للسنتين الماليتين 2007 و 2008 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3106) | in_force | 0 |
+| قانون رقم (30) لسنة 2006 بالتصديق على اتفاق الطرق الدولية في المشرق العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3006) | in_force | 0 |
+| قانون رقم (29) لسنة 2006 بالتصديق على اتفاقية توكيل حكومة مملكة البحرين بشراء معدات نيابة عن البنك الإسلامي للتنمية لمشروع تطوير شبكة النقل الكهربائي جهد (220) ك ف (2005 – 2009) بين حكومة مملكة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2906) | in_force | 0 |
+| قانون رقم (28) لسنة 2006 بشأن الاحتياطي للأجيال القادمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2806) | in_force | 7 |
+| قانون رقم (27) لسنة 2006 بالتصديق على اتفاقية بين مملكة البحرين والاتحاد السويسري للإعفاء المتبادل من الضرائب المفروضة على الدخل ورأس المال الناتج عن عمليات النقل الجوي والبحري الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2706) | in_force | 5 |
+| قانون رقم (26) لسنة 2006 بالموافقة على الانضمام إلى اتفاقية منظمة الصحة العالمية الإطارية بشأن مكافحة التبغ | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2606) | in_force | 0 |
+| قانون رقم (25) لسنة 2006 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2506) | in_force | 0 |
+| قانون رقم (24) لسنة 2006 بشأن شركات الأمن والحراسة الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2406) | in_force | 20 |
+| قانون رقم (23) لسنة 2006 بشأن العهد المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2306) | in_force | 43 |
+| قانون رقم (22) لسنة 2006 بشأن حماية حقوق المؤلف والحقوق المجاورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2206) | in_force | 79 |
+| قانون رقم (21) لسنة 2006 بالموافقة على انضمام مملكة البحرين إلى معاهدة قانون العلامات التي اعتمدها المؤتمر الدبلوماسي في جنيف بتاريخ 27/10/1994 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2106) | in_force | 0 |
+| قانون رقم (20) لسنة 2006 بشأن حماية الشواطىء والسواحل والمنافذ البحرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2006) | in_force | 6 |
+| قانون رقم (19) لسنة 2006 بشأن تنظيم سوق العمل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1906) | in_force | 47 |
+| قانون رقم (18) لسنة 2006 بشأن الضمان الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1806) | in_force | 0 |
+| قانون رقم (17) لسنة 2006 بتعديل المادة (76) من قانون التسجيل العقاري الصادر بالمرسوم بقانون رقم (15) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1706) | in_force | 0 |
+| قانون رقم (16) لسنة 2006 بتعديل بعض أحكام القانون رقم (16) لسنة 2004 بشأن حماية المؤشرات الجغرافية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1606) | in_force | 5 |
+| قانون رقم (15) لسنة 2006 بشأن تصنيع وتداول الأقراص البصرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1506) | in_force | 24 |
+| قانون رقم (14) لسنة 2006 بتعديل بعض أحكام القانون رقم (1) لسنة 2004 بشأن براءات الاختراع ونماذج المنفعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1406) | in_force | 36 |
+| قانون رقم (13) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (28) لسنة 2002 بشأن المعاملات الإلكترونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1306) | in_force | 1 |
+| قانون رقم (12) لسنة 2006 بتعديل بعض أحكام القانون رقم (7) لسنة 2003 بشأن الأسرار التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1206) | in_force | 5 |
+| قانون رقم (11) لسنة 2006 بشأن العلامات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1106) | in_force | 61 |
+| قانون رقم (10) لسنة 2006 بشأن مهام واختصاصات الهيئة الوطنية للنفط والغاز المنشأة بالمرسوم رقم (63) لسنة 2005 وتعديل بعض أحكام المرسوم بقانون رقم (42) لسنة 1999 بإنشاء شركة نفط البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1006) | in_force | 0 |
+| قانون رقم (9) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0906) | in_force | 18 |
+| قانون رقم (8) لسنة 2006 بتعديل بعض أحكام المرسوم بقانون رقم (16) لسنة 1976 في شأن المفرقعات والأسلحة والذخائر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0806) | in_force | 2 |
+| قانون رقم (7) لسنة 2006 بالتصديق على الميثاق العربي لحقوق الإنسان | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0706) | in_force | 0 |
+| قانون رقم (6) لسنة 2006 بشأن الرسوم والنماذج الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0606) | in_force | 32 |
+| قانون رقم (5) لسنة 2006 بشأن تصميمات الدوائر المتكاملة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0506) | in_force | 37 |
+| قانون رقم (4) لسنة 2006 بالموافقة على القانون (النظام) الموحد لمكافحة الإغراق والتدابير التعويضية والوقائية لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0406) | in_force | 0 |
+| قانون رقم (3) لسنة 2006 بالتصديق على اتفاقية توكيل حكومة مملكة البحرين لشراء معدات نيابة عن البنك الإسلامي للتنمية ثم إيجارها لوزارة الكهرباء والماء لاستخدامها في مشروع تطوير شبكة النقل 66 ك. ف بين حكومة مملكة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0306) | in_force | 0 |
+| قانون رقم (2) لسنة 2006 بالتصديق على اتفاقية استصناع بخصوص تشييد ميناء خليفة بن سلمان بين حكومة مملكة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0206) | in_force | 0 |
+| قانون رقم (1) لسنة 2006 بالموافقة على قيام الاتحاد الجمركي لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0106) | in_force | 0 |
+| قانون (69) لسنة 2006 بالتصديق على اتفاقية التعاون الاقتصادي والتجاري والفني بين حكومة مملكة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6906) | in_force | 0 |
+| قانون رقم (44) لسنة 2005 بالموافقه على انضمام مملكه البحرين إلى معاهده التعاون بشان البراءات PCT ولائحتها التنفيذيه | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4405) | in_force | 68 |
+| قانون رقم (43) لسنة 2005 بالتصديق على اتفاقية دول مجلس التعاون لدول الخليج العربية لمكافحة الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4305) | in_force | 0 |
+| قانون رقم (42) لسنة 2005 بالتصديق على اتفاق بين حكومة مملكة البحرين وحكومة جمهورية بيلاروس بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4205) | in_force | 0 |
+| قانون رقم (41) لسنة 2005 بتعديل بعض أحكام قانون الإجراءات الجنائية الصادر بالمرسوم بقانون رقم (46) لسنة 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4105) | in_force | 2 |
+| قانون رقم (40) لسنة 2005 بشأن تعديل بعض أحكام قانون الإجراءات أمام المحاكم الشرعية الصادر بالمرسوم بقانون رقم (26) لسنة 1986 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4005) | in_force | 7 |
+| قانون رقم (38) لسنة 2005 بالموافقة على نظام (قانون) الأسمدة ومحسنات التربة الزراعية بدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3805) | in_force | 15 |
+| قانون رقم (37) لسنة 2005 بالموافقة على نظام ( قانون ) المبيدات  لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3705) | in_force | 15 |
+| قانون رقم (36) لسنة 2005 بالتصديق على اتفاقية القرض للمساهمة في تمويل مشروع ميناء خليفة بن سلمان بين حكومة مملكة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3605) | in_force | 0 |
+| قانون رقم (35) لسنة 2005 بتعديل المادة (5) من القانون رقم (7) لسنة 2003 بشأن الأسرار التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3505) | in_force | 0 |
+| قانون رقم (34) لسنة 2005 بإنشاء صندوق النفقة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3405) | in_force | 15 |
+| قانون رقم (33) لسنة  2005 بالموافقة على النظام الإساسي لهيئة التقييس لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3305) | in_force | 0 |
+| قانون رقم (32) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى الاتفاقية الدولية لمنع التلوث من السفن لعام 1973 و بروتوكولاتها و مرفقاتها أرقام (1) و (2) و (5) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3205) | in_force | 29 |
+| قانون رقم (31) لسنة 2005 بشأن التأمين الإجتماعي على البحرينيين العاملين في الخارج ومن في حكمهم | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3105) | in_force | 0 |
+| قانون رقم (30) لسنة 2005 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالمرسوم بقانون رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3005) | in_force | 0 |
+| قانون رقم (29) لسنة 2005 بالتصديق على اتفاقية إقامة منطقة تجارة حرة بين دول مجلس التعاون لدول الخليج العربية والجمهورية اللبنانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2905) | in_force | 0 |
+| قانون رقم (28) لسنة 2005 بتعديل بعض أحكام المرسوم بقانون رقم (17) لسنة 2002 بشأن نظام المحافظات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2805) | in_force | 6 |
+| قانون رقم (27) لسنة 2005 بشأن التعليم | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2705) | in_force | 0 |
+| قانون رقم (26) لسنة 2005 بشأن الجمعيات السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2605) | in_force | 29 |
+| قانون رقم (25) لسنة 2005 بالتصديق على اتفاق السكك الحديدية الدولية في المشرق العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2505) | in_force | 1 |
+| قانون رقم (24) لسنة 2005 بالموافقة على اتفاقية قرض مشروع مستشفى الملك حمد العام بالمحرق بين حكومة مملكة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2405) | in_force | 0 |
+| قانون رقم (23) لسنة 2005 بالتصديق على اتفاقيه التجاره الحره بين حكومة مملكة البحرين وحكومة الولايات المتحدة الامريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2305) | in_force | 156 |
+| قانون رقم (21) لسنة 2005 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2105) | in_force | 0 |
+| قانون رقم (20) لسنة 2005 بشأن المجلس الأعلى للشئون الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2005) | in_force | 12 |
+| قانون رقم (19) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى معاهدة قانون البراءات ولائحتها التنفيذية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1905) | in_force | 0 |
+| قانون رقم (18) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى بروتوكول اتفاق مدريد بشأن التسجيل الدولي للعلامات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1805) | in_force | 0 |
+| قانون رقم (17) لسنة 2005 بالتصديق على اتفاقية المساعدة القانونية المتبادلة في المسائل الجنائية بين حكومة مملكة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1705) | in_force | 20 |
+| قانون رقم (16) لسنة 2005 بالموافقة على الانضمام إلى الاتفاقية الدولية لمناهضة أخذ الرهائن | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1605) | in_force | 20 |
+| قانون رقم (15) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى اتفاقية قمع الأعمال غير المشروعة الموجهة ضد سلامة الملاحة البحرية وبروتوكول قمع الأعمال غير المشروعة الموجهة ضد سلامة المنصات الثابتة القائمة في الجرف القاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1505) | in_force | 32 |
+| قانون رقم (14) لسنة 2005 بالموافقة على الإنضمام إلى اتفاقية منع ومعاقبة الجرائم المرتكبة ضد الأشخاص المشمولين بالحماية الدولية بمن فيهم الممثلون الدبلوماسيون | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1405) | in_force | 20 |
+| قانون رقم (13) لسنة 2005 بتعديل بعض أحكام قانون الإثبات في المواد المدنية والتجارية الصادر بالمرسوم بقانون رقم (14) لسنة 1996 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1305) | in_force | 1 |
+| قانون رقم (12) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى الإتفاقية الدولية لحماية الأصناف النباتية الجديدة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1205) | in_force | 42 |
+| قانون رقم (11) لسنة 2005 بالتصديق على اتفاقية التعاون الإقتصادي والتجاري بين حكومة مملكة البحرين وحكومة جمهورية بيلاروسيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1105) | in_force | 11 |
+| قانون رقم (10) لسنة 2005 بالتصديق على اتفاقية تسليم المجرمين بين حكومة مملكة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1005) | in_force | 24 |
+| قانون رقم (9) لسنة 2005 بالتصديق على اتفاقية التعاون القانوني والقضائي في المواد المدنية والتجارية بشأن الإعلان بالحضور و الأوراق القضائية والإنابات وتنفيذ الأحكام القضائية وأحكام المحكمين بين حكومة مملكة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0905) | in_force | 26 |
+| قانون رقم (8) لسنة 2005 بالتصديق على تعديل اتفاقية بازل بشأن التحكم في نقل النفايات الخطرة والتخلص منها عبر الحدود لعام 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0805) | in_force | 0 |
+| قانون رقم (7) لسنة 2005 بالتصديق على اتفاقية تشجيع وحماية الإستثمار بين حكومة مملكة البحرين وصندوق الأوبك للتنمية الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0705) | in_force | 0 |
+| قانون رقم (6) لسنة 2005 بتعديل بعض أحكام المراسيم بقوانين بشأن استملاك الأراضي للمنفعة العامة وتنظيم المباني والتخطيط العمراني وتقسيم الأراضي المعدة للتعمير والتطوير وإشغال الطرق العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0605) | in_force | 0 |
+| قانون رقم (5) لسنة 20052005﷦ بالتصديق على اتفاقية تشجيع وحماية الإستثمارات المتبادلة بين حكومة مملكة البحرين وحكومة الجمهورية اللبنانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0505) | in_force | 14 |
+| قانون رقم (4) لسنة 2005 بالتصديق على اتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة مملكة البحرين وحكومة الجمهورية اللبنانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0405) | in_force | 0 |
+| قانون رقم (3) لسنة 2005 بشأن التعليم العالي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0305) | in_force | 0 |
+| قانون رقم (2) لسنة 2005 بالتصديق على البروتوكول المعدل والمكمل لاتفاقية النقل الجوي بين حكومة مملكة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0205) | in_force | 10 |
+| قانون رقم (1) لسنة 2005 بالموافقة على انضمام مملكة البحرين إلى الإتفاقية الدولية لحماية فناني الأداء ومنتجي التسجيلات الصوتية وهيئات الإذاعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0105) | in_force | 36 |
+| قانون رقم (24) لسنة 2004 بشأن معاملة مواطني دول مجلس التعاون لدول الخليج العربية فيما يتعلق بالنشاط الإقتصادي في مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2404) | in_force | 0 |
+| قانون رقم (23) لسنة 2004 بشأن التصديق على اتفاقية تبادل تشجيع وحماية الإستثمارات بين حكومة مملكة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2304) | in_force | 14 |
+| قانون رقم (22) لسنة 2004 بشأن التصديق على اتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة مملكة البحرين وحكومة جمهورية سنغافورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2204) | in_force | 1 |
+| قانون رقم (21) لسنة 2004 بشأن التصديق على اتفاقية تشجيع وحماية الإستثمارات بين حكومة مملكة البحرين وحكومة جمهورية سنغافورة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2104) | in_force | 16 |
+| قانون رقم (20) لسنة 2004 بشأن التصديق على البروتوكول المعدل والمكمل لاتفاقية الخدمات الجوية بين حكومة مملكة البحرين وجمهورية الفلبين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2004) | in_force | 4 |
+| قانون رقم (19) لسنة 2004 بالموافقة على انضمام مملكة البحرين إلى البروتوكولين الاختياريين بشأن اشتراك الأطفال في الصراعات المسلحة وبيع الأطفال وبغاء الأطفال والمواد الإباحية عن الأطفال الملحقين باتفاقية الأمم المتحدة لحقوق الطفل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1904) | in_force | 32 |
+| قانون رقم (18) لسنة 2004 بالتصديق على اتفاقية تشجيع وحماية الإستثمار بين حكومة مملكة البحرين وحكومة جمهورية بيلاروسيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1804) | in_force | 15 |
+| قانون رقم (17) لسنة 2004 بالتصديق على اتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب المفروضة على الدخل والأموال بين حكومة مملكة البحرين وحكومة جمهورية بيلاروسيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1704) | in_force | 31 |
+| قانون رقم (16) لسنة 2004 بشأن حماية المؤشرات الجغرافية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1604) | in_force | 16 |
+| قانون رقم (15) لسنة 2004 بالموافقة على انضمام مملكة البحرين إلى معاهدة الويبو بشأن الأداء والتسجيل الصوتي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1504) | in_force | 34 |
+| قانون رقم (14) لسنة 2004 بالموافقة على انضمام مملكة البحرين إلى معاهدة الويبو بشأن حق المؤلف | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1404) | in_force | 25 |
+| قانون رقم (13) لسنة 2004 بالموافقة على انضمام مملكة البحرين الى اتفاق نيس بشأن التصنيف الدولي للسلع والخدمات لأغراض تسجيل العلامات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1304) | in_force | 0 |
+| قانون رقم (12) لسنة 2004 بالموافقة على نظام براءات الإختراع لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1204) | in_force | 34 |
+| قانون رقم (11) لسنة 2004 بشأن الفحص الطبي للمقبلين على الزواج من الجنسين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1104) | in_force | 8 |
+| قانون رقم (10) لسنة 2004 بفتح إعتماد إضافي في الميزانية العامة للدولة للسنة المالية 2004 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1004) | in_force | 0 |
+| قانون رقم (9) لسنة 2004 بالموافقة على انضمام مملكة البحرين للاتفاقية الدولية لقمع الهجمات الإرهابية بالقنابل | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0904) | in_force | 24 |
+| قانون رقم (8) لسنة 2004 بالتصديق على انضمام مملكة البحرين للاتفاقية الدولية لقمع تمويل الارهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0804) | in_force | 8 |
+| قانون رقم (7) لسنة 2004 بالتصديق على اتفاقية للتعاون الفني في مجال المواصفات والمقاييس وضبط الجودة بين حكومة مملكة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0704) | in_force | 0 |
+| قانون رقم (6) لسنة 2004 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب المفروضة على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0604) | in_force | 0 |
+| قانون رقم (5) لسنة 2004 بالتصديق على اتفاقية تشجيع وحماية الإستثمار بين حكومة مملكة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0504) | in_force | 0 |
+| قانون رقم (4) لسنة 2004 بالموافقة على انضمام مملكة البحرين إلى اتفاقية الأمم المتحدة لمكافحة الجريمة المنظمة عبر الوطنية والبروتوكولين المكملين لها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0404) | in_force | 86 |
+| قانون رقم (3) لسنة 2004 بالتصديق على قرار المجلس الأعلى لمجلس التعاون لدول الخليج العربية بشأن إعفاء المنشآت الصناعية من الضرائب (الرسوم) الجمركية المفروضة على مدخلات الصناعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0304) | in_force | 0 |
+| قانون رقم (2) لسنة 2004 بشأن التصديق على معاهدة الحظر الشامل للتجارب النووية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0204) | in_force | 2 |
+| قانون رقم (1) لسنة 2004 بشأن براءات الاختراع ونماذج المنفعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0104) | in_force | 46 |
+| قانون رقم ( 8 ) لسنة 2003 بالموافقة على نظام الحجر البيطري في دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0803) | in_force | 26 |
+| قانون رقم (7) لسنة 2003 بشأن الأسرار التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0703) | in_force | 9 |
+| قانون رقم (5) لسنة 2003 بالموافقة على نظام ( قانون ) الحجر الزراعي في دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0503) | in_force | 34 |
+| قانون رقم (4) لسنة 2003 بالتصديق على اتفافية القرض للمساهمة في تمويل مشروع توسعة محطة الحد لتوليد الكهرباء وشبكة نقلها بين حكومة مملكة البحرين و الصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0403) | in_force | 0 |
+| قانون رقم (3) لسنة 2003 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0303) | in_force | 2 |
+| قانون رقم (2) لسنة 2003 بتعديل بعض أحكام المرسوم بقانون رقم (6) لسنة 1987 بشأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0203) | in_force | 0 |
+| قانون رقم (1) لسنة 2003 بالموافقة على اقتراض مبلغ 500 مليون دولار أمريكي لإصدار سندات حكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0103) | in_force | 0 |
+| مرسوم بقانون رقم (56) لسنة 2002 بتفسير بعض أحكام المرسوم بقانون رقم (10) لسنة 2001 بالعفو الشامل عن الجرائم الماسة بالأمن الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5602) | in_force | 2 |
+| مرسوم بقانون رقم (55) لسنة 2002 بشأن اللائحة الداخلية لمجلس الشورى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5502) | in_force | 191 |
+| مرسوم بقانون رقم (54) لسنة 2002 بشأن اللائحة الداخلية لمجلس النواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5402) | in_force | 220 |
+| مرسوم بقانون رقم (53) لسنة 2002 بالتصديق على اتفاقية تجنب الازدواج الضريبي على الدخل ورأس المال بين حكومة مملكة البحرين وحكومة جمهورية إيران الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5302) | in_force | 0 |
+| مرسوم بقانون رقم (52) لسنة 2002 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة مملكة البحرين وحكومة جمهورية إيران الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5202) | in_force | 0 |
+| مرسوم بقانون رقم (51) لسنة 2002 بالتصديق على اتفاقية التعاون الاقتصادي والتجاري والفني بين حكومة مملكة البحرين وحكومة جمهورية إيران الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5102) | in_force | 17 |
+| مرسوم بقانون رقم (50) لسنة 2002 بإنشاء الهيئة العامة لحماية الثروة البحرية والبيئة والحياة الفطرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L5002) | in_force | 0 |
+| مرسوم بقانون رقم (49) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (10) لسنة 1992 بشأن الوكالة التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4902) | in_force | 0 |
+| مرسوم بقانون رقم (48) لسنة 2002 بإصدار قانون الإتصالات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4802) | in_force | 77 |
+| مرسوم بقانون رقم (46) لسنة 2002 بإصدار قانون الإجراءات الجنائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4602) | in_force | 427 |
+| مرسوم بقانون رقم (45) لسنة 2002 بالتصديق على اتفاقية التعاون الدفاعي بين حكومة مملكة البحرين وحكومة الولايات المتحدة الأمريكية وتعديلها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4502) | in_force | 0 |
+| مرسوم بقانون رقم (44) لسنة 2002 بتعديل بعض أحكام قانون الجمعيات والأندية الاجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة الصادر بالمرسوم بقانون رقم (21) لسنة 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4402) | in_force | 5 |
+| مرسوم بقانون رقم (42) لسنة 2002 بإصدار قانون السلطة القضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4202) | in_force | 79 |
+| مرسوم بقانون رقم (41) لسنة 2002 بشأن سياسات وضوابط الخصخصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4102) | in_force | 9 |
+| مرسوم بقانون رقم (40) لسنة 2002 بشأن التصديق على اتفاقية إنشاء الهيئة الإقليمية لمصايد الأسماك | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4002) | in_force | 0 |
+| مرسوم بقانون رقم (39) لسنة 2002 بشأن الميزانية العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3902) | in_force | 0 |
+| مرسوم بقانون رقم (38) لسنة 2002 بتعديل بعض أحكام قانون الحرس الوطني الصادر بالمرسوم بقانون رقم (20) لسنة 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3802) | in_force | 0 |
+| مرسوم بقانون رقم (37) لسنة 2002 بتعديل بعض أحكام نظام قوات الأمن العام الصادر بالمرسوم بقانون رقم (3) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3702) | in_force | 30 |
+| مرسوم بقانون رقم (36) لسنة 2002 بشأن تنظيم المناقصات والمشتريات الحكومية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3602) | in_force | 67 |
+| مرسوم بقانون رقم (35) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (14) لسنة 2002 بشأن مباشرة الحقوق السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3502) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 2002 بإصدار قانون النقابات العمالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3302) | in_force | 21 |
+| مرسوم بقانون رقم (31) لسنة 2002 بالموافقة على اتفاقية قرض للمساهمة في تمويل مشروع توسعة منظومتي توليد ونقل الكهرباء بين حكومة مملكة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3102) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3002) | in_force | 2 |
+| مرسوم بقانون رقم (29) لسنة 2002 بالموافقة على تعديل بعض أحكام النظام الاساسي لمؤسسة الخليج للاستثمار المرافق للمرسوم بقانون رقم (25) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2902) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 2002 بشأن المعاملات الإلكترونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2802) | in_force | 27 |
+| مرسوم بقانون رقم (27) لسنة 2002 بإنشاء المحكمة الدستورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2702) | in_force | 34 |
+| مرسوم بقانون رقم (26) لسنة 2002 بالموافقة على الانضمام إلى معاهدة منظمة المؤتمر الإسلامي لمكافحة الإرهاب الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2602) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 2002 بالموافقة على إتفاقية القرض الخاصة بتمويل تطوير الحقول النفطية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2502) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 2002 بشأن التصديق على اتفاقية إنشاء منظمة المرأة العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2402) | in_force | 22 |
+| مرسوم بقانون رقم (22) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (71) لسنة 1987 في شأن شركات وهيئات التأمين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2202) | in_force | 2 |
+| مرسوم بقانون رقم (21) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 1987 بإنشاء وتـنظيم سوق البحرين للأوراق المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2102) | in_force | 1 |
+| مرسوم بقانون رقم (20) لسنة 2002 بشأن تنظيم صيد واستغلال وحماية الثروة البحرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2002) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 2002 بالموافقة على الاتفاقيات والوثائق المتعلقة بالمساهمة في تمويل مشروع المرحلة الثانية من محطة الحد لإنتاج الكهرباء والماء الموقعة في مدينة المنامة بتاريخ 10 أبريل 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1802) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 2002 بشأن نظام المحافظات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1702) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 2002 بإصدار قانون ديوان الرقابة المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1602) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 2002 بشأن مجلسي الشورى والنواب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1502) | in_force | 47 |
+| مرسوم بقانون رقم (14) لسنة 2002 بشأن مباشرة الحقوق السياسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1402) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 2002 بشأن الاعتمادات الإضافية والمناقلات والحساب الختامي للشئون المالية للدولة عن السنة المالية 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1302) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 2002 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب المفروضة على الدخل بين حكومة مملكة البحرين وحكومة جمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1202) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 2002 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة مملكة البحرين وحكومة مملكة تايلند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1102) | in_force | 12 |
+| مرسوم بقانون رقم (10) لسنة 2002 بالموافقة على النظام ((القانون)) الموحد للجمارك لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1002) | in_force | 179 |
+| مرسوم بقانون رقم (9) لسنة 2002 بالمصادقة على اتفاقية المحافظة على الحياة الفطرية ومواطنها الطبيعية في دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0902) | in_force | 13 |
+| مرسوم بقانون رقم (8) لسنة 2002 بتعديل بعض أحكام قانون العمل في القطاع الأهلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0802) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 2002 بالموافقة على الاتفاقية الاقتصادية الموحدة بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0702) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 2002 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 2002 بشأن نظام انتخاب أعضاء المجالس البلدية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0602) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 2002 بالموافقة على الإنضمام إلى اتفاقية القضاء على جميع أشكال التمييز ضد المراة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0502) | in_force | 28 |
+| مرسوم بقانون رقم (4) لسنة 2002 بشأن علم مملكة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0402) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 2002 بشأن نظام انتخاب أعضاء المجالس البلدية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0302) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 2002 بالموافقة على اتفاقية توكيل حكومة دولة البحرين لشراء معدات نيابة عن البنك ثم إيجارها لحكومة دولة البحرين لاستخدامها في مشروع تطوير شبكة النقل ذات جهد (220) كيلوفولت للسنوات (2000 - 2004) بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0202) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 2002 بالمصادقة على التعديلات على اتفاقية المنظمة الدولية للاتصالات عبر الأقمار الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0102) | in_force | 0 |
+| دستور مملكة البحرين 2002 | [link](https://legalaffairs.gov.bh/page/دستور مملكة البحرين) | in_force | 125 |
+| مرسوم بقانون رقم (35) لسنة 2001 بإصدار قانون البلديات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3501) | in_force | 25 |
+| مرسوم بقانون رقم (34) لسنة 2001 بالتصديق على إتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل ورأس المال بين حكومة دولة البحرين وحكومة جمهورية الفلبين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3401) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 2001 بالتصديق على إتفاقية وحماية الإستثمارات المتبادلة بين حكومة دولة البحرين وحكومة جمهورية الفلبين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3301) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 2001 بالتصديق على إتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة دولة البحرين وحكومة مملكة تايلند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3201) | in_force | 26 |
+| مرسوم بقانون رقم (31) لسنة 2001 بالتصديق على اتفاقية التعاون الإقتصادي والتجاري والتقني بين حكومة دولة البحرين وحكومة مملكة تايلند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3101) | in_force | 10 |
+| مرسوم بقانون رقم (30) لسنة 2001 بالموافقة على إتفاقية التعاون القضائي والقانوني في المواد المدنية والتجارية والجزائية والأحوال الشخصية وتسليم المجرمين وتصفية التركات بين دولة البحرين والجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3001) | in_force | 67 |
+| مرسوم بقانون رقم (29) لسنة 2001 بالموافقة على إتفاقية الإستصناع بين حكومة دولة البحرين والبنك الإسلامي للتنمية بخصوص تشييد جسر الشيخ خليفة بن سلمان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2901) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 2001 بفتح إعتماد إضافي في الميزانية العامة لدولة للسنتين الماليتين 2001 و 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2801) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 2001 بالتصديق على إتفاقية التعاون الإداري المتبادل من أجل التطبيق الصحيح للتشريع الجمركي وتدارك المخالفات الجمركية والبحث عنها ومكافحتها بين حكومة دولة البحرين وحكومة المملكة الأردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2701) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 2001 بالتصديق على إتفاقية تنظيم النقل البري الدولي بالعبور (الترانزيت) بين حكومة دولة البحرين وحكومة المملكة الأردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2601) | in_force | 25 |
+| مرسوم بقانون رقم (25) لسنة 2001 بالتصديق على إتفاقية التعاون الإقتصادي والتجارة الحرة بين حكومة دولة البحرين وحكومة المملكة الأردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2501) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 2001 بشأن التصرف في الأراضي التي تعتبر من أملاك الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2401) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 2001 بتعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 بشأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2301) | in_force | 2 |
+| مرسوم بقانون رقم (22) لسنة 2001 بشأن منح إمتياز بإستيراد اللحوم الإسترالية لشركة البحرين للمواشي – شركة مساهمة بحرينية مقفلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2201) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 2001 بإصدار قانون الشركات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2101) | in_force | 5 |
+| مرسوم بقانون رقم (20) لسنة 2001 بالتصديق على اتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة الولايات المتحدة الامريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2001) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 2001 بإصدار القانون المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1901) | in_force | 1,050 |
+| مرسوم بقانون رقم (18) لسنة 2001 بشأن إعتماد الحساب الختامي للشئون المالية للدولة عن السنة المالية 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1801) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 2001 بالموافقة على الإنضمام إلى الإتفاقية الإطارية للمساعدة في مجال الحماية المدنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1701) | in_force | 12 |
+| مرسوم بقانون رقم (16) لسنة 2001 بالتصديق على تعديل بعض أحكام إتفاقية النقل الجوي بين دولة البحرين وجمهورية مصر العربية والمصدق عليها بالمرسوم بقانون رقم (11) لسنة 1994 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1601) | in_force | 2 |
+| مرسوم بقانون رقم (15) لسنة 2001 بإلغاء مجلس البحرين للترويج والتسويق ونقل بعض إختصاصاته إلى مجلس التنمية الإقتصادية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1501) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 2001 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع ردم موقع الميناء الجديد والمنطقة الصناعية في الحد بين حكومة دولة البحرين وصندوق أبوظبي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1401) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 2001 بالانضمام الى اتفاقية إنشاء مجلس التعاون الجمركي (منظمة الجمارك العالمية) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1301) | in_force | 20 |
+| مرسوم بقانون رقم (12) لسنة 2001 بالموافقة على انضمام دولة البحرين إلى اتفاقية منظمة العمل الدولية رقم (182) لسنة 1999 بشأن حظر أسوأ أشكال عمل الأطفال والإجراءات الفورية للقضاء عليها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1201) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 2001 بإلغاء المرسوم بقانون بشأن تدابير أمن الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1101) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 2001 بالعفو الشامل عن الجرائم الماسة بالأمن الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1001) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 2001 بشأن جوائز الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0901) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 2001 بالتصديق على إتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة دولة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0801) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 2001 بالتصديق على إتفاقية تشجيع وحماية الإستثمار بين حكومة دولة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0701) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 2001 بالتصديق على إتفاقية التعاون الإقتصادي والفني بين حكومة دولة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0601) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 2001 بتعديل البند (2) من المادة (1) من قانون الطيران المدني الصادر بالمرسوم بقانون رقم (6) لسنة 1995 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0501) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 2001 بشأن حظر ومكافحة غسل الأموال | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0401) | in_force | 13 |
+| مرسوم بقانون رقم (3) لسنة 2001 بالتصديق على إتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة الجمهورية الإيطالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0301) | in_force | 26 |
+| مرسوم بقانون رقم (2) لسنة 2001 بشأن تملك غير البحرينيين للعقارات المبنية والأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0201) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 2001 بشأن التصديق على إتفاقية الدفاع المشترك لمجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0101) | in_force | 0 |
+| مرسوم بقانون رقم (37) لسنة 2000 بربط الميزانية العامة للدولة للسنتين الماليتين 2001 ، 2002 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3700) | in_force | 0 |
+| مرسوم بقانون رقم (36) لسنة 2000 بالموافقة على إنضمام دولة البحرين إلى إتفاقية مونتريال لعام 1999 لتوحيد بعض قواعد النقل الجوي الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3600) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 2000 بتعديل المادة الأولى من المرسوم بقانون رقم (6) لسنة 1989 بشأن حماية الصناعات ذات المنشأ الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3500) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 2000 بفتح إعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 1999 و 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3400) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 2000 بتأسيس شركة صندوق البنك الإسلامي للتنمية للبنية الأساسية شركة توصية بسيطة واستثنائها من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 وقانون مؤسسة نقد البحرين الصادر بالمرسوم بقانون رقم (23) لسنة 1973 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3300) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 2000 بالموافقة على الإنضمام إلى البروتوكول الموقع في مونتريال عام 1978 بشأن تعديل اتفاقية المسئولية الناتجة عن الأضرار الحاصلة من الطائرات الأجنبية للطرف الثالثة على الأرض لعام 1952 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3200) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 2000 بالتصديق على تعديل الفقرة (7) من المادة الثالثة من اتفاقية المؤسسة العربية للإتصالات الفضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3100) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 2000 بشأن فتح إعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 1999 ، 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3000) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 2000 بالتصديق على إتفاق بشأن تعديل وإضافة مواد مكملة لإتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة جمهورية ألمانيا الإتحادية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2900) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 2000 بالتصديق على إتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب فيما يتعلق بالضرائب على الدخل بين حكومة دولة البحرين وحكومة الجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2800) | in_force | 29 |
+| مرسوم بقانون رقم (27) لسنة 2000 بالتصديق على إتفاقية تشجيع وحماية الإستثمار بين حكومة دولة البحرين وحكومة الجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2700) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 2000 بشأن تنظيم إجراءات دعاوي إكتساب الأسماء والألقاب وتعديلها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2600) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 2000 بالتصديق على إتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة الجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2500) | in_force | 21 |
+| مرسوم بقانون رقم (24) لسنة 2000 بإصدار قانون الجمعيات التعاونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2400) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 2000 بشأن المصادقة على تعديل المادة (5) وإضافة مادة جديدة برقم (13-أ) ضمن إتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة المملكة المتحدة لبريطانيا العظمى وإيرلندا الشمالية الموقعة في مدينة لندن بتاريخ 29 إبريل 1998 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2300) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 2000 بشأن الحضانة الأسرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2200) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 2000 بتعديل المادة (393) من قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2100) | in_force | 1 |
+| مرسوم بقانون رقم (20) لسنة 2000 باصدار قانون الحرس الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2000) | in_force | 107 |
+| مرسوم بقانون رقم (19) لسنة 2000 بتعديل بعض احكام المرسوم بقانون رقم (13) لسنة 1971 بشان تنظيم القضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1900) | in_force | 10 |
+| مرسوم بقانون رقم (18) لسنة 2000 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة دولة البحرين وحكومة الجمهورية الجزائرية الديمقراطية الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1800) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 2000 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة دولة البحرين وحكومة الجمهورية الجزائرية الديمقراطية الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1700) | in_force | 14 |
+| مرسوم بقانون رقم (16) لسنة 2000 بتاسيس شركة البنك الاهلي المتحد شركة مساهمة بحرينية (ش.م.ب) واستثنائها من بعض احكام قانون الشركات التجارية رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1600) | in_force | 12 |
+| مرسوم بقانون رقم (15) لسنة 2000 بتعديل بعض احكام القانون رقم (13) لسنة 1975 بشان تنظيم معاشات ومكافات التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1500) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 2000 بتعديل بعض احكام قانون التامين الاجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1400) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 2000 بتعديل بعض احكام المرسوم بقانون رقم (20) لسنة 1979 بشان قواعد التسجيل والسلامة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1300) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 2000 بتعديل بعض احكام المرسوم بقانون رقم (2) لسنة 1995 بشأن حماية الحياة الفطرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1200) | in_force | 6 |
+| مرسوم بقانون رقم (11) لسنة 2000 بالتصديق على اتفاقية تأسيس المؤسسة الإسلامية لتنمية القطاع الخاص | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1100) | in_force | 60 |
+| مرسوم بقانون رقم (10) لسنة 2000 بتعديل بعض أحكام القانون رقم (2) لسنة 1975 بشأن البطاقة الشخصية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1000) | in_force | 2 |
+| مرسوم بقانون رقم (9) لسنة 2000 بتعديل بعض أحكام القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0900) | in_force | 2 |
+| مرسوم بقانون رقم (8) لسنة 2000 بالتصديق على تعديل الفقرة (2) من المادة (43) من اتفاقية الأمم المتحدة لحقوق الطفل التي اعتمدتها الجمعية العامة في نوفمبر عام 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0800) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 2000 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وجمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0700) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 2000 بالموافقة على نظام مركز التحكيم التجاري لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0600) | in_force | 73 |
+| مرسوم بقانون رقم (5) لسنة 2000 بشأن الاعتمادات الاضافية والمناقلات والحساب الختامي للشئون المالية للدولة عن السنة المالية 1999 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0500) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 2000 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة المملكة الاردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0400) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 2000 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة جمهورية ايران الإسلامية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0300) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 2000 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل ورأس المال بين حكومة دولة البحرين وحكومة المملكة الاردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0200) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 2000 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة دولة البحرين وحكومة المملكة الاردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0100) | in_force | 13 |
+| مرسوم بقانون رقم (42) لسنة 1999 بإنشاء شركة نفط البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4299) | in_force | 0 |
+| مرسوم بقانون رقم (41) لسنة 1999 بالتصديق على إتفاقية الرياض العربية للتعاون القضائي لعام 1983 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4199) | in_force | 71 |
+| مرسوم بقانون رقم (40) لسنة 1999 بشأن تملك مواطني دول مجلس التعاون لدول الخليج العربية للعقارات المبنية والأراضي في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4099) | in_force | 0 |
+| مرسوم بقانون رقم (39) لسنة 1999 بتعديل بعض أحكام قانون المحاماة الصادر بالمرسوم بقانون رقم (26) لسنة 1980 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3999) | in_force | 0 |
+| مرسوم بقانون رقم (38) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (11) لسنة 1981 بإنشاء مركز البحرين للدراسات والبحوث | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3899) | in_force | 0 |
+| مرسوم بقانون رقم (37) لسنة 1999 بالتصديق على إتفاقية تشجيع الإستثمار وتوفير الحماية المتبادلة له بين حكومة دولة البحرين وحكومة الولايات المتحدة الأمريكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3799) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 1999 بالموافقة على إتفاقية توكيل حكومة دولة البحرين لشراء معدات نيابة عن البنك ثم بيعها لحكومة دولة البحرين لإستخدامها في مشروع إعادة تأهيل محطة سترة لتوليد الكهرباء وتحلية المياه بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3599) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (4) لسنة 1998 بالإنضمام إلى إتفاقية مناهضة التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللإنسانية أو المهنية التي إعتمدتها الجمعية العامة للأمم المتحدة في 10 ديسمبر 1984 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3499) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 1999 بالتصديق على إضافة مادتين جديدتين إلى إتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة مملكة تايلند الموقعة بتاريخ 14 يوليو1980 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3399) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 1999 بالتصديق على إتفاقية تجنب الإزدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة دولة البحرين وحكومة ماليزيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3299) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 1999 بالتصديق على إتفاقية تشجيع وحماية الإستثمارات بين حكومة دولة البحرين وحكومة ماليزيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3199) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 1999 بالتصديق على إتفاقية الإعفاء الضريبي المتبادل على الدخل الناشئ من عمليات النقل الجوي الدولي بين حكومة دولة البحرين وحكومة جمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3099) | in_force | 10 |
+| مرسوم بقانون رقم (29) لسنة 1999 بالتصديق على إتفاقية تشجيع وحماية الإستثمارات المتبادلة بين حكومة دولة البحرين وحكومة جمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2999) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1999 بشأن إنشاء وتنظيم المناطق الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2899) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1999 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع الإسكان في دولة البحرين بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2799) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1999 بتعديل نص المادة (3-أ) من المرسوم بقانون رقم (5) لسنة 1983 بإنشاء مجلس أعلى للشباب والرياضة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2699) | in_force | 1 |
+| مرسوم بقانون رقم (25) لسنة 1999 بالتصديق على إتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة جمهورية فيتنام الإشتراكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2599) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1999 بالموافقة على إتفاقية القرض للمساهمة في تمويل جانب من مشروع تطوير شبكة نقل الطاقة ذات جهد (66) كيلو فولت بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2499) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1999 بالتصديق على إتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة الجمهورية اللبنانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2399) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1999 بتعديل بعض أحكام قانون أصول المحاكمات الجزائية لعام 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2299) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1999 بتعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2199) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1999 بالتصديق على إتفاقية الإعفاء الضريبي المتبادل للدخل ورأس المال الناتج من عمليات النقل الجوي الدولي بين حكومة دولة البحرين وحكومة الجمهورية اليمنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2099) | in_force | 8 |
+| مرسوم بقانون رقم (19) لسنة 1999 بالتصديق على إتفاقية التعاون التجاري والإقتصادي والتقني بين حكومة دولة البحرين وحكومة جمهورية روسيا الإتحاية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1999) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (12) لسنة 1986 بإنشاء وتنظيم جامعة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1899) | in_force | 14 |
+| مرسوم بقانون رقم (17) لسنة 1999 بالموافقة على الإنضمام إلى إتفاقية العمل الدولية رقم (159) لسنة 1983 الخاصة بالتأهيل المهني والعمالة (المعوقون) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1799) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (30) لسنة 1975 بالموافقة على إتفاقية تأسيس بنك الخليج الدولي (شركة مساهمة بحرينية) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1699) | in_force | 12 |
+| مرسوم بقانون رقم (15) لسنة 1999 بالموافقة على إتفاقية التأجير للمساهمة في تمويل جانب من مشروع تطوير شبكة نقل الطاقة ذات جهد (66) كيلوفولت بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1599) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1999 بالتصديق على قرار مجلس المحافظين رقم م م / م أ / ق . ت 1 – 419 – بشأن إنضمام دولة البحرين إلى إتفاقية المؤسسة الإسلامية لتأمين الإستثمار وائتمان الصادرات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1499) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1999 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع منطقة الحد الصناعية بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1399) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1999 بالموافقة على إتفاقية القرض للمساهمة في تمويل جانب من مشروع معالجة واستخدام مياه الصرف الصحي بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1299) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1999 بتنظيم تركيب واستعمال مكبرات الصوت | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1199) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1999 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1099) | in_force | 1 |
+| مرسوم بقانون رقم (9) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (12) لسنة 1980 بشأن تنظيم إستعمال المياه الجوفية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0999) | in_force | 1 |
+| مرسوم بقانون رقم (8) لسنة 1999 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع محطة الحد لإنتاج الكهرباء والماء بين حكومة دولة البحرين وبنك البحرين الوطني وسيتي بنك ومجموعة البنوك المضمون بتسهيلات من قبل بنك التصدير والإستيراد الأمريكي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0899) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1999 في شأن الترخيص للصندوق الأفرو آسيوي لتأمين مخاطر النفط والطاقة في التسجيل بدولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0799) | in_force | 37 |
+| مرسوم بقانون رقم (6) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (16) لسنة 1976 في شأن المفرقعات والأسلحة والذخائر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0699) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1999 بتعديل بعض أحكام قانون أصول المحاكمات الجزائية لعام 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0599) | in_force | 1 |
+| مرسوم بقانون رقم (4) لسنة 1999 بتعديل بعض أحكام المرسوم بقانون رقم (13) لسنة 1971 بشأن تنظيم القضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0499) | in_force | 4 |
+| مرسوم بقانون رقم (3) لسنة 1999 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمروسم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0399) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1999 بتعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالمرسوم رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0299) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1999 بالموافقة على إتفاقية المؤسسة العربية للإتصالات الفضائية المعدلة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0199) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1998 بربط الميزانية العامة للدولة للسنتين الماليتين 1999 و 2000 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2898) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1998 بتعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1989 بشأن ممارسة مواطني دول مجلس التعاون لدول الخليج العربية لتجارة الجملة في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2698) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1998 بشأن المؤسسات التعليمية والتدريبية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2598) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1998 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع نقل وتوزيع المياه من محطة الحد لإنتاج الكهرباء والماء (المرحلة الأولى) بين حكومة دولة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2498) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1998 بالموافقة على اتفاقية توكيل حكومة دولة البحرين لشراء معدات نيابة عن البنك ثم إيجارها لحكومة دولة البحرين لاستخدامها في المرحلة الثانية من مشروع معالجة واستغلال مياه الصرف الصحي بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2398) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1998 بالموافقة على اتفاقية القرض للمساهمة في تمويل جزء من تكلفة أعمال الهندسة المدنية للمرحلة الثانية من مشروع معالجة واستغلال مياه الصرف الصحي بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2298) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة البحرين وحكومة الجمهورية التركية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2198) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة بولندا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2098) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1998 بتعديل بعض أحكام قانون أصول المحاكمات الجزائية لعام 1966 المعدل بالمرسوم بقانون رقم (8) لسنة 1996 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1998) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة مملكة بلجيكا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1898) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1998 بتعديل بعض أحكام المرسوم بقانون رقم (6) لسنة 1970 بتنظيم تسجيل المواليد والوفيات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1798) | in_force | 6 |
+| مرسوم بقانون رقم (16) لسنة 1998 بشأن نقل وزراعة الأعضاء البشرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1698) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1998 بالتصديق على الاتفاقية العربية لمكافحة الإرهاب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1598) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1998 بالتصديق على إضافة مادة جديدة إلى اتفاقية الخدمات الجوية بين حكومة دولة البحرين ومملكة هولندا الموقعة بتاريخ 22 مارس 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1498) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة المملكة المتحدة لبريطانيا العظمى وايرلندا الشمالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1398) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1998 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع معالجة واستخدام مياه الصرف الصحي بين حكومة دولة البحرين والصندوق العربي للإنماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1298) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1998 بإضافة فقرة ثانية إلى المادة (147) من قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1198) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1998 بموافقة دولة البحرين على ضمان القرض الوارد في اتفاقية القرض المبرمة بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية لتمويل مشاريع برنامج عمليات بنك البحرين للتنمية للسنوات 1998 - 2001 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1098) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1998 بتعديل بعض أحكام المرسوم بقانون رقم (30) لسنة 1975 بالموافقة على اتفاقية تأسيس بنك الخليج الدولي (شركة مساهمة بحرينية) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0998) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1998 بتعديل بعض أحكام المرسوم بقانون رقم (10) لسنة 1992 بشأن الوكالة التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0898) | in_force | 7 |
+| مرسوم بقانون رقم (7) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة جمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0798) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة هونغ كونغ الإقليم الإداري الخاص لجمهورية الصين الشعبية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0698) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1998 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة اليابان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0598) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1998 بالانضمام إلى اتفاقية مناهضة التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللاانسانية أو المهنية التي اعتمدتها الجمعية العامة للأمم المتحدة في 10 ديسمبر 1984 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0498) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1998 بالتصديق على اتفاقية التعاون القانوني والقضائي في المواد المدنية والتجارية والأحوال الشخصية بين حكومة دولة البحرين وحكومة المملكة المغربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0398) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1998 بالتصديق على اتفاقية نقل المحكوم عليهم بعقوبات سالبة للحرية بين حكومة دولة البحرين وحكومة جمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0298) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1998 بالانضمام إلى اتفاقية وارسو الخاصة بتوحيد بعض قواعد النقل الجوي الدولي لعام 1929 وبروتوكول لاهاي لعام 1955 و الإتفاقية المكملة إتفاقية وارسو بشأن توحيد بعض قواعد النقل الجوي الدولي الذي يقوم به شخص آخر غير الناقل المتعاقد لعام 1961 وبروتوكول غواتيمالا لعام 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0198) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1997 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع نقل وتوزيع المياه من محطة الحد لإنتاج الكهرباء والماء بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2697) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1997 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع ربط محطة الحد لإنتاج الكهرباء والماء للشبكة الكهربائية بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2597) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1997 بإنشاء جائزة للتفوق الصناعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2497) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1997 بالموافقة على اتفاقية القرض المباشر لتمويل محطة الحد لانتاج الكهرباء والماء بين حكومة دولة البحرين وبنك البحرين الوطني وسيتي بنك ومجموعة البنوك | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2397) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1997 بالموافقة على اتفاقية القرض لتمويل تنفيذ محطة الحد لانتاج الكهرباء والماء بين حكومة دولة البحرين وبنك البحرين الوطني وسيتي بنك ومجموعة البنوك المضمون بتسهيلات من قبل هيئة ضمان ائتمان الصادرات السويسرية (إي. آر. جي (ERG)) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2297) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1997 بالموافقة على اتفاقية القرض لتمويل تنفيذ محطة الحد لإنتاج الكهرباء والماء بين حكومة دولة البحرين وبنك البحرين الوطني وسيتي بنك ومجموعة البنوك المضمون بتسهيلات من قبل هيئة ضمان ائتمان الصادرات الايطالية (ساتشي) (SACE) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2197) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1997 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة بلغاريا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2097) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1997 بالتصديق على اتفاق إنشاء مركز تجاري مصري في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1997) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1997 في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1897) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1997 بالتصديق على اتفاقية تجنب الازدواج الضريبي ومنع التهرب من الضرائب بالنسبة للضرائب على الدخل بين حكومة دولة البحرين وحكومة جمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1797) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1997 بالتصديق على اتفاقية تشجيع وحماية الاستثمار بين حكومة دولة البحرين وحكومة جمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1697) | in_force | 15 |
+| مرسوم بقانون رقم (15) لسنة 1997 بالتصديق على اتفاقية التعاون الإقتصادي والتجاري بين حكومة دولة البحرين وحكومة جمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1597) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1997 بتعديل بعض أحكام المرسوم بقانون رقم (14) لسنة 1980 باستثناء المجموعة العربية للتأمين (ش. م . ب) من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1497) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1997 بالموافقة على اتفاقية التأجير للمساهمة في تمويل جانب من تكاليف تنفيذ مشروع تطوير شبكة الحد لنقل الطاقة الكهربائية ذات جهد (220) كيلوفولتا بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1397) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1997 بتعديل بعض أحكام المرسوم بقانون رقم (12) لسنة 1980 بشأن تنظيم استعمال المياه الجوفية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1297) | in_force | 9 |
+| مرسوم بقانون رقم (11) لسنة 1997 بتعديل المرسوم بقانون رقم (26) لسنة 1976 بتنظيم شئون الحج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1197) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1997 بالتصديق على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة رومانيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1097) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1997 بشأن تملك مواطني دولة الامارات العربية المتحدة للعقارات المبنية والأراضي في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0997) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1997 بإضافة مادة جديدة إلى المرسوم بقانون رقم (21) لسنة 1996 بشأن البيئة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0897) | in_force | 1 |
+| مرسوم بقانون رقم (7) لسنة 1997 بحل وتصفية صندوق التأمين على المركبات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0797) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1997 بالموافقة على تحول شركة البحرين الإسلامية للتأمين شركة مساهمة بحرينية مقفلة إلى شركة مساهمة بحرينية (ش. م. ب.) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0697) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1997 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع الإسكان في دولة البحرين بين حكومة دولة البحرين والصندوق العربي للانماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0597) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1997 بتعديل المرسوم بقانون رقم (24) لسنة 1973 بإنشاء مجلس الدفاع الأعلى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0497) | in_force | 1 |
+| مرسوم بقانون رقم (3) لسنة 1997 بفتح اعتماد اضافي في الميزانية العامة للدولة للسنتين الماليتين 1997 و 1998 م | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0397) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1997 بشأن مكاتب الخدمات التعليمية للدارسين في الخارج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0297) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1997 بالتصديق على اتفاق الخدمات الجوية بين حكومة دولة البحرين وحكومة أوزبكستان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0197) | in_force | 0 |
+| مرسوم بقانون رقم (35) لسنة 1996 بتعديل الفقرة الثالثة من المادة (3) من المرسوم بقانون رقم (17) لسنة 1987 في شركات وهيئات التأمين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3596) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 1996 بربط الميزانية العامة للدولة للسنتين الماليتين 1997 و 1998 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3496) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 1996 بتعديل المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3396) | in_force | 2 |
+| مرسوم بقانون رقم (32) لسنة 1996 بالتصديق على اتفاقية النقل الجوي بين دولة البحرين وجمهورية سري لانكا الديمقراطية الاشتراكية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3296) | in_force | 0 |
+| مرسوم بقانون رقم (31) لسنة 1996 بالموافقة على الانضمام إلى اتفاقية باريس لحماية الملكية الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3196) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 1996 بالموافقة على الانضمام إلى اتفاقية برن لحماية المصنفات الأدبية والفنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3096) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 1996 بالموافقة على الانضمام إلى اتفاقية المسئولية الناتجة عن الأضرار الحاصلة من الطائرات الأجنبية للطرف الثالث على الأرض لعام 1952 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2996) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1996 بالموافقة على الانضمام إلى اتفاقية بشأن الاعتراف الدولي بالحقوق على الطائرات لعام 1948 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2896) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1996 بالتصديق على الاتفاقية بين حكومة دولة البحرين وحكومة الاتحاد السويسري بإضافة ملحق برقم (2) إلى اتفاقية النقل الجوي بين حكومتي الدولتين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2796) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1996 بشأن مدققي الحسابات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2696) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1996 بالموافقة على اتفاقية القرض للمساهمة في تمويل جانب من تكاليف مشروع تطوير شبكة نقل الطاقة الكهربائية ذات جهد (66) كيلوفولتا بين حكومة دولة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2596) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1996 بالموافقة على اتفاقية القرض للمساهمة في تمويل جانب من تكاليف مشروع تطوير شبكة نقل الطاقة الكهربائية ذا جهد (66) كيلوفولتا بين حكومة دولة البحرين وصندوق أبوظبي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2496) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1996 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع إعادة تأهيل محطة سترة لتوليد الكهرباء وتحلية المياه بين حكومة دولة البحرين وصندوق أبوظبي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2396) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1996 بتعديل بعض احكام المرسوم بقانون رقم (3) لسنة 1983 بشأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2296) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1996 بشأن البيئة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2196) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1996 بالموافقة على اتفاقية القرض للمساهمة في تمويل جانب من تكاليف مشروع تطوير شبكة نقل الطاقة الكهربائية ذات جهد (66) كيلوفولتا بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2096) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1996 بإنشاء مجلس البحرين للترويج والتسويق | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1996) | in_force | 17 |
+| مرسوم بقانون رقم (18) لسنة 1996 بالتصديق على اتفاقية التنوع البيولوجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1896) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1996 بشان تعديل بعض أحكام المرسوم بقانون رقم (9) لسنة 1993 بإنشاء مركز البحرين للتحكيم التجاري الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1796) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1996 بشان نظام المحافظات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1696) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1996 بالموافقة على اتفاقية التأجير للمساهمة في تمويل جانب من تكاليف مشروع تطوير شبكة نقل الطاقة الكهربائية ذات جهد (66) كيلوفولتا بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1596) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1996 بإصدار قانون الاثبات في المواد المدنية والتجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1496) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1996 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1983 بشأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1396) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1996 بتعديل بعض أحكام المرسوم بقانون رقم (1) لسنة 1993 بإنشاء هيئة الاذاعة والتلفزيون | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1296) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1996 بالتصديق على اتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة ماليزيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1196) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1996 بشأن تعديل بعض أحكام قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1096) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1996 بالتصديق على اتفاقية تنفيذ الأحكام والانابات والاعلانات القضائية لدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0996) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1996 بتعديل بعض أحكام قانون أصول المحاكمات الجزائية لعام 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0896) | in_force | 13 |
+| مرسوم بقانون رقم (7) لسنة 1996 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1987 بشأن التأمين الاجباري عن المسئولية المدنية الناشئة عن حوادث المركبات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0796) | in_force | 3 |
+| مرسوم بقانون رقم (6) لسنة 1996 بالتصديق على اتفاقية النقل الجوي بين حكومة دولة البحرين وحكومة جمهورية مالطا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0696) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1996 بتعديل بعض أحكام قانون إنشاء مؤسسة نقد البحرين الصادر بالمرسوم بقانون رقم (23) لسنة 1973 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0596) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1996 بالتصديق على بروتوكول تعديل الاتفاق التجاري والإقتصادي بين حكومة دولة البحرين وحكومة المملكة الاردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0496) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1996 بالموافقة على الانضمام إلى الاتفاقية العربية رقم (17) لسنة 1993 بشأن تأهيل وتشغيل المعوقين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0396) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1996 بشأن إشغال الطرق العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0296) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1996 في شأن الكهرباء والماء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0196) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1995 في شأن تقويم المؤهلات العلمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1995) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1995 بشأن شروط وقواعد ضم مدد الخدمة السابقة لضباط وأفراد قوة دفاع البحرين والأمن العام الخاضعين لأحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1895) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1995 بشأن شروط وقواعد ضم مدد الخدمة السابقة لموظفي الحكومة الخاضعين لأحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1795) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1995 بالتصديق على اتفاقية المركز الدولي لحل منازعات الاستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1695) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1995 بالموافقة على الانضمام إلى البروتوكول بشأن قمع الأفعال غير المشروعة في المطارات التي تخدم الطيران المدني الموقع بتاريخ 24 فبراير 1988 والمكمل لمعاهدة قمع الأفعال غير المشروعة ضد سلامة الطيران المدني الدولي الموقعة في مونتريال بتاريخ 23 سبتمبر 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1595) | in_force | 9 |
+| مرسوم بقانون رقم (14) لسنة 1995 بالتصديق على اتفاقيات ثنائية بشأن النقل الجوي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1495) | in_force | 21 |
+| مرسوم بقانون رقم (14) لسنة 1995 بالتصديق على اتفاقيات ثنائية بشأن النقل الجوي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1495) | in_force | 21 |
+| مرسوم بقانون رقم (13) لسنة 1995 بالموافقة على الانضمام إلى الاتفاقية الدولية بشأن المسئولية المدنية عن أضرار التلوث الزيتي لعام 1969 وبروتوكوليهما لعامي 1976 – 1992 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1395) | in_force | 109 |
+| مرسوم بقانون رقم (12) لسنة 1995 بالموافقة على انضمام دولة البحرين إلى اتفاقية الهيئة العربية للطيران المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1295) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1995 بشأن حماية الآثار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1195) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1995 بالموافقة على اتفاقية القرض الثاني للمساهمة في تمويل مشروع تطوير مركز السلمانية الطبي بين حكومة دولة البحرين والصندوق العربي للانماء الاقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1095) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1995 بالتصديق على الاتفاقية العربية لمكافحة الاتجار غير المشروع بالمخدرات والمؤثرات العقلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0995) | in_force | 26 |
+| مرسوم بقانون رقم (8) لسنة 1995 بالتصديق على الاتفاقية الأمنية بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0895) | in_force | 44 |
+| مرسوم بقانون رقم (7) لسنة 1995 بالتصديق على اتفاقية الإعفاء الضريبي المتبادل للدخل الناتج من عمليات النقل الجوي الدولي بين دولة البحرين وجمهورية سنغافورة والبروتوكولين الملحقين بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0795) | in_force | 6 |
+| مرسوم بقانون رقم (6) لسنة 1995 بإصدار قانون الطيران المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0695) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1995 بالتصديق على اتفاق التعاون الإقتصادي والتجاري بين حكومة دولة البحرين وحكومة الجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0595) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1995 بشأن الرقابة على استعمال وتسويق وترويج بدائل لبن الأم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0495) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1995 بشأن خبراء الجدول | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0395) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1995 بشأن حماية الحياة الفطرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0295) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1995 بشأن تملك مواطني دول مجلس التعاون لدول الخليج العربية للعقارات المبنية والأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0195) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1994 بربط الميزانية العامة للدولة للسنتين الماليتين 1995, 1996 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1394) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1994 بتعديل المرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1294) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1994 بالتصديق على اتفاقيات ثنائية بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1194) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1994 بالتصديق على اتفاقيات ثنائية بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1194) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1994 بشأن مكافحة التدخين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1094) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1994 بإصدار قانون التحكيم التجاري الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0994) | in_force | 36 |
+| مرسوم بقانون رقم (8) لسنة 1994 في شأن الترخيص للصندوق العربي لتأمين أخطار الحرب في التسجيل بدولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0894) | in_force | 14 |
+| مرسوم بقانون رقم (7) لسنة 1994 بالتصديق على وثيقة تأسيس منظمة التجارة الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0794) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1994 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0694) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1994 بالتصديق على اتفاقية تجنب الازدواج الضريبي بين حكومة دولة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0594) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1994 بشأن الموافقة على ضمان دولة البحرين لحصة في القرض المعقود بين المؤسسة العربية للاتصالات الفضائية وبين عدد من البنوك | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0494) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1994 بشأن تقسيم الأراضي المعدة للتعمير والتطوير | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0394) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1994 بشأن التخطيط العمراني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0294) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1994 بشأن تنظيم تصدير بعض منتجات الصناعات الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0194) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1993 بتعديل بعض أحكام القانون رقم (3) لسنة 1975 بشأن الصحة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1693) | in_force | 3 |
+| مرسوم بقانون رقم (15) لسنة 1993 بتعديل المادة (20) من قانون تنظيم المباني الصادر بالمرسوم بقانون رقم (13) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1593) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1993 بتعديل قانون العمل في القطاع الأهلي الصادر بالمرسوم بقانون رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1493) | in_force | 33 |
+| مرسوم بقانون رقم (13) لسنة 1993 في شأن تعديل الفقرة (1) من المادة (479) من قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1393) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1993 بإنشاء صندوق الزكاة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1293) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1993 بالتصديق على اتفاقية مقر برنامج الخليج العربي لدعم منظمات الأمم المتحدة الإنمائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1193) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1993 بشأن حماية حقوق المؤلف | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1093) | in_force | 0 |
+| ملحق للمرسوم بقانون رقم (9) لسنة 1993 بإنشاء مركز البحرين للتحكيم التجاري الدولي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0993) | in_force | 5 |
+| مرسوم بقانون رقم (8) لسنة 1993 بشأن البحر الإقليمي لدولة البحرين والمنطقة المتاخمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0893) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1993 بتعديل بعض أحكام المرسوم بقانون رقم (6) لسنة 1985 بتنظيم تملك مواطني دول مجلس التعاون الخليجي للعقارات المبنية والأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0793) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1993 بإضافة مادة جديدة برقم (302) مكررا إلى قانون العقوبات الصادر بالمرسوم بقانون رقم (15) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0693) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1993 بشأن ميزانية مجلس الشورى للسنتين الماليتين 1993, 1994 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0593) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1993 بالتصديق على اتفاقيات ثنائية بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0493) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1993 بالتصديق على اتفاقيات ثنائية بشأن الخدمات الجوية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0493) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1993 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 م | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0393) | in_force | 3 |
+| مرسوم بقانون رقم (2) لسنة 1993 بالموافقة على الانضمام إلى اتفاقية المنظمة الدولية للاتصالات عبر الأقمار الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0293) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1993 بإنشاء هيئة الإذاعة والتلفزيون | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0193) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1992 بربط الميزانية العامة للدولة للسنتين الماليتين 1993 و 1994 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1792) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1992 بالموافقة على القرار رقم 3/6-أ ت (ق أ) الصادر عن مؤتمر القمة الإسلامي السادس بشأن الفقرة الأولى من المادة السادسة من ميثاق منظمة المؤتمر الإسلامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1692) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1992 بتعديل بعض أحكام المرسوم رقم (30) لسنة 1975 بالموافقة على اتفاقية تأسيس بنك الخليج الدولي (شركة مساهمة بحرينية) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1592) | in_force | 6 |
+| مرسوم بقانون رقم (13) لسنة 1992 بتعديل نص المادة (3) بند &quot;أ&quot; من المرسوم بقانون رقم (16) لسنة 1985 في شأن المواصفات والمقاييس | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1392) | in_force | 1 |
+| مرسوم بقانون رقم (12) لسنة 1992 بالانضمام إلى البروتوكولات الإضافية من (1 - 4) المعدلة لاتفاقية توحيد بعض القواعد المتعلقة بالنقل الدولي عن طريق الجو الموقعة في وارسو في 12 أكتوبر 1929 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1292) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1992 بالتصديق على اتفاقية بازل بشأن التحكم في نقل النفايات الخطرة والتخلص منها عبر الحدود لعام 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1192) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1992 بشأن الوكالة التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1092) | in_force | 1 |
+| مرسوم بقانون رقم (9) لسنة 1992 بالموافقة على الانضمام إلى اتفاقية امتيازات وحصانات الوكالات المتخصصة للأمم المتحدة المؤرخة في 21 نوفمبر 1947 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0992) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1992 بالموافقة على الانضمام إلى اتفاقية امتيازات وحصانات الأمم المتحدة المؤرخة في 13 فبراير 1946 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0892) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1992 بالموافقة على الانضمام إلى اتفاقية فيينا للعلاقات القنصلية المبرمة في 22 أبريل 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0792) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1992 بتعديل المادة (129) من قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0592) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1992 بتعديل المادة رقم (81) من قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0492) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1992 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0392) | in_force | 9 |
+| مرسوم بقانون رقم (2) لسنة 1992 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع الطرق بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0292) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1992 بالموافقة على اتفاقية القرض للمساهمة في تمويل مشروع تطوير مركز السلمانية الطبي بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0192) | in_force | 0 |
+| مرسوم بقانون قم (6) لسنة 1992 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1992 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0692) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1991 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2091) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1991 بإنشاء بنك البحرين للتنمية (ش. م. ب.) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1991) | in_force | 57 |
+| مرسوم بقانون رقم (18) لسنة 1991 بتعديل المادة (1) من القانون البحري الصادر بالمرسوم بقانون رقم (23) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1891) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1991 بتعديل الفقرة (2) من المادة (1) من المرسوم بقانون رقم (17) لسنة 1982 في شأن تنظيم مزاولة المهن الهندسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1791) | in_force | 1 |
+| مرسوم بقانون رقم (16) لسنة 1991 بشأن انضمام دولة البحرين إلى اتفاقية الأمم المتحدة لحقوق الطفل التي اعتمدتها الجمعية العامة في نوفمبر عام 1989 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1691) | in_force | 50 |
+| مرسوم بقانون رقم (15) لسنة 1991 بتعديل المادة رقم (81) من قانون التجارة الصادر بالمرسوم بقانون رقم (7) لسنة 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1591) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1991 بتعديل المرسوم بقانون رقم (30) لسنة 1975 بالموافقة على اتفاقية تأسيس بنك الخليج الدولي &quot;شركة مساهمة بحرينية&quot; | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1491) | in_force | 19 |
+| مرسوم بقانون رقم (13) لسنة 1991 بتعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1391) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1991 بشأن الموافقة على اتفاقية المساعدة المتبادلة في مكافحة الاتجار في المخدرات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1291) | in_force | 13 |
+| مرسوم بقانون رقم (11) لسنة 1991 بشأن الصرف الصحي وصرف المياه السطحية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1191) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1991 في شأن العلامات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1091) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1991 بتعديل بعض أحكام المرسوم بقانون رقم (11) لسنة 1981 بإنشاء مركز البحرين للدراسات والبحوث | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0991) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1991 بربط الميزانية العامة للدولة للسنتين الماليتين 1991 – 1992 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0891) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1991 بشأن تعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0791) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1991 بإنشاء صندوق التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام البحرينيين وغير البحرينيين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0691) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1991 بالموافقة على اتفاقية الحصص لعام 1990 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0591) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1991 بشأن إضافة فقرة جديدة إلى المادة (110) من القانون البحري الصادر بالمرسوم بقانون رقم (23) لسنة 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0491) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1991 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0391) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1991 بالترخيص لمؤسسة الخليج للاستثمار بالعمل في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0291) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1991 بالموافقة على اتفاقية القرض لتمويل مشروع طريق المنامة – المحرق الثاني وتطوير التقاطعات الرئيسية بين حكومة دولة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0191) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1990 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1983 في شأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1290) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1990 بتعديل الفقرة الثانية من المادة (103) من قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1190) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1990 في شأن الرقابة على اللؤلؤ والأحجار ذات القيمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1090) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1990 بشأن جوائز الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0990) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1990 بإنضمام دولة البحرين لإتفاقية تبادل الإعفاء من الضرائب والرسوم على نشاطات ومعدات ومؤسسات النقل الجوي العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0890) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1990 بتعديل بعض أحكام قانون خدمة الضباط في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0790) | in_force | 4 |
+| مرسوم بقانون رقم (6) لسنة 1990 في شأن الرقابة على المعادن الثمينة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0690) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1990 بشأن الدفاع المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0590) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1990 بشأن الإنضمام إلى إتفاقية منع جريمة الإبادة الجماعية والمعاقبة عليها المبرمة في 9 ديسمبر 1948 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0490) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1990 بتعديل بعض أحكام المرسوم بقانون رقم (2) لسنة 1980 بإستثناء المؤسسة العربية المصرفية من بعض أحكام قانون الشركات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0390) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1990 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0290) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1990 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية الصادر بالمرسوم بقانون رقم (12) لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0190) | in_force | 28 |
+| مرسوم بقانون رقم (21) لسنة 1989 بإصدار قانون الجمعيات والأندية الإجتماعية والثقافية والهيئات الخاصة العاملة في ميدان الشباب والرياضة والمؤسسات الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2189) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1989 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بتنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2089) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1989 بشأن ممارسة مواطني دول مجلس التعاون لدول الخليج العربية لتجارة الجملة في دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1989) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1989 بفتح إعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1990 وتعديل إعتمادات ميزانية وزارة الدفاع للسنة المالية 1990 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1889) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1989 بشأن التصديق على إتفاقية الأمم المتحدة لمكافحة الإتجار غير المشروع في المخدرات والمؤثرات العقلية لعام 1988 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1789) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1989 بتعديل بعض أحكام القانون رقم (3) لسنة 1975 بشأن الصحة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1689) | in_force | 2 |
+| مرسوم بقانون رقم (15) لسنة 1989 بالموافقة على بروتوكول تعديل معاهدة شيكاغو للطيران المدني لسنة 1944 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1589) | in_force | 1 |
+| مرسوم بقانون رقم (14) لسنة 1989 بالموافقة على إنضمام دولة البحرين إلى الإتفاقية الوحيدة للمخدرات لسنة 1961 المعدلة ببروتوكول سنة 1972 إلى إتفاقية المؤثرات العقلية لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1489) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1989 بشأن تعديل بعض أحكام عقد التأسيس والنظام الأساسي لشركة الخليج لصناعة البتروكيماويات (وقرار الجمعية العامة بهذه التعديلات) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1389) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1989 بتعديل قانون الجنسية البحرينية لعام 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1289) | in_force | 3 |
+| مرسوم بقانون رقم (11) لسنة 1989 في شأن المبيدات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1189) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1989 بالموافقة على إتفاقية التعاون القانوني والقضائي بين دولة البحرين وجمهورية مصر العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1089) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1989 بشأن قوة دفاع البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0989) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1989 بإصدار قانون محكمة التمييز | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0889) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1989 بشأن مزاولة مهنة الطب البشري وطب الأسنان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0789) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1989 بشأن حماية الصناعات ذات المنشأ الوطني بدول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0689) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1989 بشأن تعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0589) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1989 بشأن تعديل بعض أحكام القانون رقم (13) لسنة 1975 بتنظيم معاشات ومكافآت التقاعد لموظفي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0389) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1989 بالموافقة على القرار رقم 13 /5 – س (ق . أ) الصادر عن مؤتمر القمة الإسلامي الخامس بإنشاء محكمة العدل الإسلامية الدولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0289) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1989 بربط الميزانية العامة للدولة للسنتين الماليتين 1989 ، 1990 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0189) | in_force | 0 |
+| مرسوم بقانون (4) لسنة 1989 بالموافقة على اتفاقية التعاون بين الدول الأعضاء في النظام الأساسي لمجلس التعاون لدول الخليج العربية من جهة والجماعة الاقتصادية الأوروبية من جهة أخرى وملحقاتها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0489) | in_force | 1 |
+| مرسوم بقانون رقم (13) لسنة 1988 بفتح إعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1988 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1388) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1988 بفتح إعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1988 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1288) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1988 بتفويض وزير الإسكان سلطات رئيس الهيئة البلدية المركزية المؤقتة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1188) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1988 بتعديل المرسوم بقانون رقم (3) لسنة 1972 بشأن الرسوم القضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1088) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1988 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1983 في شأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0988) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1988 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0888) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1988 بتعديل المرسوم بقانون رقم (24) لسنة 1973 بإنشاء مجلس الدفاع الأعلى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0788) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1988 بتعديل المادة (1) من قانون خدمة الأفراد في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (23) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0688) | in_force | 1 |
+| مرسوم بقانون رقم (5) لسنة 1988 بتعديل بعض أحكام قانون خدمة الضباط في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0588) | in_force | 3 |
+| مرسوم بقانون رقم (4) لسنة 1988 بشأن الموافقة على انضمام دولة البحرين مع التحفظ إلى اتفاقية نيويورك بشأن الاعتراف بقرارات التحكيم الأجنبية وتنفيذها لعام 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0488) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1988 بالموافقة على إتفاقية القرض لتمويل مشاريع الطرق للفترة من 1988 – 1991 بين حكومة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0388) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1988 بتعديل المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0288) | in_force | 1 |
+| مرسوم بقانون رقم (1) لسنة 1988 بربط الميزانية العامة للدولة للسنة المالية 1988 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0188) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1987 في شأن شركات وهيئات التأمين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1787) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1987 بتعديل البند رقم (5) من المادة الرابعة من المرسوم بقانون رقم (11) لسنة 1985 بشأن حماية دعم الصناعات الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1687) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1987 بتعديل بعض أحكام قانون التأمين الإجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1587) | in_force | 1 |
+| مرسوم بقانون رقم (14) لسنة 1987 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1982 بشأن نظام قوات الأمن العام | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1487) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1987 بشأن تعديل بعض أحكام القانون رقم (13) لسنة 1975 بتنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1387) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1987 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1287) | in_force | 3 |
+| مرسوم بقانون رقم (11) لسنة 1987 بإصدار قانون الإفلاس والصلح الواقي منه | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1187) | in_force | 132 |
+| مرسوم بقانون رقم (10) لسنة 1987 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بتنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1087) | in_force | 3 |
+| مرسوم بقانون رقم (9) لسنة 1987 بشأن تعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0987) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1987 بتنظيم ملكية الطبقات والشقق | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0887) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1987 بإصدار قانون التجارة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0787) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1987 بتعديل بعض أحكام المرسوم بقانون رقم (3) لسنة 1983 في شأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0687) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1987 في شأن القوة الإحتياطية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0587) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1987 بإنشاء وتنظيم سوق البحرين للأوراق المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0487) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1987 في شأن التأمين الإجباري عن المسئولية المدنية الناشئة عن حوادث المركبات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0387) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1987 في شأن مزاولة غير الأطباء والصيادلة للمهن الطبية المعاونة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0287) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1987 بشأن بعض الأحكام المتعلقة ببيع وتأجير المحال التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0187) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1986 بشأن الإجراءات أمام المحاكم الشرعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2686) | in_force | 1 |
+| مرسوم بقانون رقم (25) لسنة 1986 بشأن تعديل بعض أحكام المرسوم بقانون رقم (13) لسنة 1971 بشأن تنظيم القضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2586) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1986 بتعديل أحكام قانون الأجانب (الهجرة والإقامة) لسنة 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2486) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1986 بشأن المستشفيات الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2386) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1986 بإنضمام دولة البحرين إلى إتفاقية إنشاء الوكالة الدولية لضمان الإستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2286) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1986 بشأن تعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2186) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1986 بتعديل قانون التأمين الإجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2086) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1986 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1986) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1986 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1886) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1986 بشأن تعديل بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1786) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1986 بالموافقة على إنضمام دولة البحرين إلى البروتوكولين الإضافيين لإتفاقيات جنيف لعام 1949 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1686) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1986 بشأن تنظيم السياحة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1586) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1986 بفرض رسم خدمات المغادرين عن طريق الجو | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1486) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1986 بتعديل المرسوم بقانون رقم (3) لسنة 1979 بإنشاء مجلس الدفاع الأعلى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1386) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1986 بإنشاء وتنظيم جامعة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1286) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1986 في شأن تعديل بعض أحكام قانون خدمة الأفراد في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (23) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1186) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1986 بتعديل بعض أحكام قانون خدمة الضباط في قوة دفاع البحرين الصادر بالمرسوم رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1086) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1986 بتعديل أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات و مكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0986) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1986 في شأن تعديل تسميتين في قوة دفاع البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0886) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1986 بإصدار قانون الولاية على المال | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0786) | in_force | 1 |
+| مرسوم بقانون رقم (6) لسنة 1986 بالموافقة على إنضمام دولة البحرين إلى دستور منظمة الأمم المتحدة للتنمية والصناعة (اليونيدو) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0686) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1986 بتعديل المرسوم بقانون (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0586) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1986 بشأن الموافقة على إتفاقية إنشاء المؤسسة العامة للجسر السعودي البحريني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0486) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1986 بربط الميزانية العامة للدولة للسنتين الماليتين 1986 ، 1987 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0386) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1986 في شأن النشيد الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0286) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1986 بتعديل بعض أحكام قانون العقوبات لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0186) | in_force | 2 |
+| مرسوم قانون رقم (18) لسنة 1985 بالموافقة على إتفاقية القرض لتمويل جزء من مشروع كوابل لمحطات فرعية قوة (66) فولت بين حكومة دولة البحرين والبنك الإسلامي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1885) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1985 بتعديل بعض أحكام قانون الآثار للبحرين لسنة 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1785) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1985 في شأن المواصفات والمقاييس | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1685) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1985 بشأن تعديل بعض أحكام قانون المرافعات المدنية والتجارية لسنة 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1585) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1985 بشأن المؤسسات التعليمية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1485) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1985 بشأن الموافقة على إنضمام دولة البحرين إلى إتفاقيات دولية في شأن الملاحة البحرية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1385) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1985 بتعديل المادة الثانية من المرسوم بقانون رقم (1) لسنة 1985 بتعديل قانون التأمين الإجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1285) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1985 بشأن حماية ودعم الصناعات الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1185) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1985 بتعديل الفقرة الأولى من المادة (2) من المرسوم بقانون رقم (23) لسنة 1975 بشأن الوكالات التجارية وتنظيمها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1085) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1985 بشأن الموافقة على إنضمام دولة البحرين إلى إتفاقية المنظمة البحرية للأقمار الصناعية (إنمارسات) وملاحقها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0985) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1985 بشأن المصادقة على إتفاقية الأمم المتحدة لقانون البحار الموقعة في جاميكا في 10 ديسمبر 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0885) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1985 بتعديل بعض أحكام قانون العقوبات لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0785) | in_force | 5 |
+| مرسوم بقانون رقم (6) لسنة 1985 بتنظيم تملك مواطني دول مجلس التعاون الخليجي للعقارات المبنية والأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0685) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1985 بتعديل المادة (8) من قانون السيارات (التأمين على الطرف الثالث) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0585) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1985 في شأن تنظيم المصارف الزراعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0485) | in_force | 1 |
+| مرسوم بقانون رقم (3) لسنة 1985 بشأن مراقبة المواد الغذائية المستوردة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0385) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1985 بتعديل المرسوم بقانون رقم (9) لسنة 1979 بإصدار قانون المرور | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0285) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1985 بتعديل قانون التأمين الإجتماعي الصادر بالمرسوم بقانون رقم (24) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0185) | in_force | 1 |
+| مرسوم بقانون رقم (15) لسنة 1984 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع الإتصالات السلكية واللاسلكية العربي المشترك السابع بين حكومة دولة البحرين والصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1584) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1984 في شأن تقويم المؤهلات العلمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1484) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1984 بتعديل قانون الموانيء لسنة 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1384) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1984 بشأن بعض الأحكام الخاصة بالشركات المساهمة المعفاة وأسهمها وشهاداتها المؤقتة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1284) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1984 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1184) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1984 بتعديل المادة الأولى من المرسوم بقانون رقم (15) لسنة 1983 بتعديل المادتين (24,23) من المرسوم بقانون رقم (4) لسنة 1973 بشأن مراقبة التداول في المواد والمستحضرات المخدرة واستعمالها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1084) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1984 في شأن السجل السكاني المركزي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0984) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1984 في شأن تحديد أجرة العقار قبل أول يناير 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0884) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1984 بتعديل المرسوم بقانون رقم (8) لسنة 1970 بشأن إستملاك الأراضي للمنفعة العامة المعدل بالمرسوم بقانون رقم (24) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0784) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1984 بشأن تنظيم الصناعة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0684) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1984 بالموافقة على إتفاقية مزايا وحصانات مجلس التعاون بدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0584) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1984 بتعديل بعض أحكام القانون رقم (3) لسنة 1983 في شأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0484) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1984 بالموافقة على الإنضمام إلى الإتفاقية العربية رقم (15) لسنة 1983 بشأن تحديد وحماية الأجور | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0384) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1984 بتعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0284) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1984 بربط الميزانية العامة للدولة للسنتين الماليتين 1984 ، 1985 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0184) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1983 بالموافقة على إتفاقية القرض لتطوير وتوسعة مطار البحرين الدولي بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2383) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1983 بإنشاء شركة البنك البحريني السعودي (ش . م . ب) واستثنائها من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 وتعديلاته | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2283) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1983 في شأن حماية النخيل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2183) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1983 في شأن الحجر الزراعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2083) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1983 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1983) | in_force | 5 |
+| مرسوم بقانون رقم (18) لسنة 1983 بشأن إلزام ملاك الأراضي بمصاريف دفن أراضيهم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1883) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1983 بتعديل بعض أحكام المرسوم بقانون رقم (17) لسنة 1982 في شأن تنظيم مزاولة المهن الهندسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1683) | in_force | 9 |
+| مرسوم بقانون رقم (15) لسنة 1983 بتعديل المادتين 23 ، 24 من المرسوم بقانون رقم (4) لسنة 1973 بشأن مراقبة التداول في المواد والمستحضرات المخدرة واستعمالها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1583) | in_force | 2 |
+| مرسوم بقانون رقم (14) لسنة 1983 بتعديل المرسوم بقانون رقم (6) لسنة 1981 بإنشاء شركة الخليج لدرفلة الألمنيوم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1483) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1983 بشأن جوائز الدولة التقديرية والتشجيعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1383) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1983 بتعديل المادتين(55 ، 85) من قانون خدمة الأفراد في قوة دفاع البحرين والصادر بالمرسوم بقانون رقم (23) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1283) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1983 بتعديل المادة (75) من قانون خدمة الضباط في قوة دفاع البحرين والصادر بقانون رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1183) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1983 بتعديل بعض أحكام المرسوم رقم (19) في شأن وسم ومراقبة المشغولات الذهبية والفضية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1083) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1983 بتعديل جداول الرسوم الملحقة بالمرسوم بقانون رقم (3) لسنة 1972 بشأن الرسوم القضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0983) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1983 بتعديل بعض أحكام المرسوم بقانون رقم (6) لسنة 1977 الخاص بالموازين والمكاييل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0883) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1983 بالموافقة على إتفاقية القرض للمساهمة في تمويل مشروع الإتصالات السلكية واللاسلكية العربي المشترك السادس بين حكومة دولة البحرين وبين الصندوق العربي للإنماء الإقتصادي والإجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0783) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1983 بتعديل المرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0683) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1983 بشأن تعديل المرسوم الأميري رقم (2) لسنة 1975 بإنشاء مجلس أعلى للشباب والرياضة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0583) | in_force | 15 |
+| مرسوم بقانون رقم (4) لسنة 1983 في شأن الموافقة على الإنضمام مع التحفظ إلى معاهدة الجرائم والأفعال الأخرى التي ترتكب على متن الطائرات والموقعة في طوكيو في 14 سبتمبر 1963 وإلى معاهدة قمع الإستيلاء غير المشروع على الطائرات والموقعة في لاهاي في 16 ديسمبر 1970 والى معاهدة قمع الانفال غير المشروعة ضد سلامة الطيران المدني والموقعة في مونتريال في 23 سبتمبر 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0483) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1983 في شأن معاملة مواطني دول مجلس التعاون الخليجي فيما يتعلق بالنشاط الإقتصادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0383) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1983 بزيادة الإعتماد الإضافي المقرر بالمرسوم بقانون رقم (1) لسنة 1983 وجعله ثمانية ملايين دينار ويشمل العسكريين أيضا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0283) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1983 بفتح إعتماد إضافي بمبلغ خمسة ملايين دينار لتحسين رواتب الموظفين والمستخدمين والمدنيين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0183) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1982 بالموافقة على اتفاقية مؤسسة الخليج للاستثمار بين دول مجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2582) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1982 في شأن الموافقة على اتفاقيات البريد العالمية والعربية والخليجية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2482) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1982 بإصدار القانون البحري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2382) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1982 بشأن الموافقة على اتفاقية مركز التراث الشعبي لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2282) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1982 بشأن اعتماد ميزانية شركة نفط البحرين الوطنية للسنة المالية 1982 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2182) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1982 بتعديل قانون العمل في القطاع الأهلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2082) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1982 بالموافقة على ضمان حصة حكومة دولة البحرين في اتفاقية القرض المبرمة بتاريخ 8 يناير 1982بين شركة طيران الخليج ومجموعة من البنوك لتمويل شراء محركات الطائرات الترايستار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1982) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1982 بشأن فتح اعتماد إضافي في الميزانية العامة للدولة للسنتين الماليتين 1982 ، 1983 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1882) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1982 في شأن تنظيم مزاولة المهن الهندسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1782) | in_force | 1 |
+| مرسوم بقانون رقم (16) لسنة 1982 بتعديل أحكام القانون رقم (13) لسنة 1975 بشأن معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1682) | in_force | 2 |
+| مرسوم بقانون رقم (15) لسنة 1982 بالموافقة على اتفاقية التعاون الأمني الموقعة بين حكومة دولة البحرين و بين حكومة المملكة العربية السعودية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1582) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1982 بالموافقة على ضمان القرض الواردة في اتفاقية القرض المبرمة بين شركة طيران الخليج وبنك الخليج الدولي وبنك ميدلاند لتمويل شراء جهاز لتدريب الطيارين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1482) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1982 بالموافقة على بروتوكول تعديل الاتفاق التجاري والإقتصادي بين حكومة دولة البحرين وحكومة الجمهورية العراقية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1382) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1982 بإنشاء مجلس الخدمة المدنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1282) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1982 بإنشاء صندوق التأمين على المركبات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1182) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1982 بتعديل القانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1082) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1982 بتعديل بعض أحكام قانون العقوبات لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0982) | in_force | 1 |
+| مرسوم بقانون رقم (8) لسنة 1982 بالموافقة على الانضمام إلى اتفاقية تيسير وتنمية التبادل التجاري بين الدول العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0882) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1982 بإنشاء مجلس الموارد المائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0782) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1982 بتنظيم مهنة الدلالة في الأوراق المالية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0682) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1982 في شأن الحجر البيطري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0582) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1982 بتعديل بعض أحكام قانون العقوبات لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0482) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1982 بشان نظام قوات الأمن العام | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0382) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1982 بشأن اعتماد ميزانية الكلية الجامعية للعلوم والآداب والتربية للسنتين الماليتين 1982 و 1983 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0282) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1982 بربط الميزانية العامة للدولة للسنتين الماليتين 1982 و 1983 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0182) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1981 بشأن منح اعتماد اضافي في الميزانية العامة للدولة للسنتين الماليتين 1980-1981 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2881) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1981 بشأن الأحكام العرفية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2781) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1981 بالموافقة على الاتفاقية الإقتصادية الموحدة بين دول مجلس التعاون الخليجي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2681) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1981 بالموافقة على تعديل ضمان القرض الوارد في اتفاقية القرض المبرمة بتاريخ 4 يوليه 1980 بين شركة المنيوم البحرين ودائرة ضمان اعتمادات التصدير للمملكة المتحدة ومجموعة من البنوك بزيادة تمويل التوسع في برنامج مصهر الالمنيوم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2581) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1981 بالموافقة على النظام الاساسي لمجلس التعاون لدول الخليج العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2481) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1981 بتعديل بعض أحكام قانون الشركات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2381) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1981 بالموافقة عل الانضمام إلى الاتفاقية بإنشاء المؤسسة العربية لضمان الاستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2281) | in_force | 51 |
+| مرسوم بقانون رقم (21) لسنة 1981 بشأن الموافقة على اتفاقية الجسر بين حكومة دولة البحرين وحكومة المملكة العربية السعودية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2181) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1981 بالموافقة على ضمان حصة دولة البحرين في اتفاقية القرض المبرمة بتاريخ 11 يونيه 1981 بين شركة طيران الخليج ومجموعة من البنوك لتمويل شراء محركات رولزرويس وقع غيار لطائرة الترايستار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2081) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1981 بالموافقة على ضمان حكومة دولة البحرين في اتفاقية القرض المبرمة بين شركة طيران الخليج وبنك الاستيراد والتصدير الامريكي وشركة لوكهيد لتمويل شراء طائرة ترايستار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1981) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1981 بإنشاء شركة مساهمة بحرينية باسم شركة البحرين للاتصالات السلكية واللاسلكية (ش.م.ب) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1881) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1981 بتعديل المادة (28) من المرسوم رقم (26) لسنة 1975 في شأن مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1781) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1981 في شأن زيادة المعاشات في المرسوم بقانون رقم (11) لسنة 1976 بإصدار قانون بتنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1681) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1981 في شأن زيادة المعاشات في القانون رقم (13) بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1581) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1981 بتعديل بعض أحكام المرسوم بقانون رقم (23) لسنة 1973 بإنشاء مؤسسة نقد البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1481) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1981 بشأن فتح اعتماد اضافي في الميزانية العامة للدولة للسنة المالية 1981 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1381) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1981 بالموافقة على اتفاقية التعاون الفني والإقتصادي بين حكومة دولة البحرين وحكومة جمهورية الهند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1281) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1981 بإنشاء مركز البحرين للدراسات والبحوث | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1181) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1981 بتعديل قانون الجنسية البحرينية لعام 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1081) | in_force | 2 |
+| مرسوم بقانون رقم (9) لسنة 1981 بالموافقة على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة مملكة تايلند | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0981) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1981 بتعديل قانون العمل في القطاع الأهلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0881) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1981 باستثناء الشركة البحرينية الكويتية للتأمين (ش.م.ب.) من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0781) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1981 بإنشاء شركة الخليج لدرفلة الالمنيوم (ش.م.ب.) مقفلة واستثنائها من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0681) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1981 بتنظيم صيد الأسماك | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0581) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1981 بشأن اعتماد ميزانية الكلية الجامعية للعلوم والآداب والتربية للسنة المالية 1981 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0481) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1981 بتعديل نظام شركة نفط البحرين الوطنية المنشأ بالمرسوم بقانون رقم (9) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0381) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1981 بإصدار النظام الأساسي لكلية الخليج للتكنولوجيا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0281) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1981 بإلغاء الفقرة الثانية من المادة (44) من قانون المحاماة الصادر بالمرسوم بقانون رقم (26) لسنة 1980 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0181) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1980 بالموافقة عل الاتفاقية الموحدة لاستثمار رؤوس الاموال العربية في الدول العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2780) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1980 بإصدار قانون المحاماة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2680) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1980 بإنشاء المجلس الأعلى للنفط | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2580) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1980 بتعديل المادتين (55 و 85) من قانون خدمة الافراد في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (23) لسنة 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2480) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1980 بتعديل المادة (75) من قانون خدمة الضباط في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2380) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1980 بتعديل المادة (64) من المرسوم بقانون رقم (26) لسنة 1975 في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2280) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1980 بتعديل المادة (29) من قانون الاجانب (الهجرة والإقامة) 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2180) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1980 بالموافقة على اتفاقية القرض المعقود بين حكومة دولة البحرين ومجموعة البنوك وبنك الخليج الدولي لتمويل شراء دولة البحرين 60% من رأس مال مصفاة شركة نفط البحرين والعمليات المتعلقة بذلك | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2080) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1980 بالموافقة على اتفاقية إنشاء جامعة الخليج العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1980) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1980 بالموافقة على ضمان القرض الوارد في اتفاقية القرض المبرمة بتاريخ 4 يوليه 1980 بين شركة المنيوم البحرين ودائرة ضمان اعتماد التصدير للمملكة المتحدة ومجموعة من البنوك لزيادة تمويل التوسع في برنامج مصهر الالمنيوم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1880) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1980 بالترخيص في تعديل عقد التأسيس والنظام الأساسي للشركة البحرينية الكويتية لصناعة البتروكيماويات (ش.م.ب.) وتعديلات عقد التأسيس والنظام الاساسي للشركة البحرينية الكويتية لصناعة البتروكيماويات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1780) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1980 بتعديل بعض أحكام المرسوم بقانون رقم (11) لسنة 1978 بإنشاء وتنظيم الكلية الجامعية للعلوم والآداب والتربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1680) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1980 بإنهاء كافة أوجه المقاطعة السياسية والإقتصادية لجمهورية زيمبابوي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1580) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1980 باستثناء المجموعة العربية للتأمين (ش.م.ب.) من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1480) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1980 بتعديل بعض أحكام قانون الشركات التجارية الصادرة بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1380) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1980 بشأن تنظيم استعمال المياه الجوفية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1280) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1980 بالموافقة على اتفاقية القرض لتمويل مشروع منظمة شمال سترة الصناعية بين حكومة دولة البحرين والصندوق الكويتي للتنمية الإقتصادية العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1180) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1980 بالموافقة على إنشاء المركز الاقليمي للتوثيق الاعلامي لدول الخليج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1080) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1980 بشأن تعديل بعض أحكام قانون المرافعات المدنية والتجارية لعام 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0980) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1980 بتقرير زيادة لأصحاب المعاشات والمستحقين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0880) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1980 بالموافقة على النظام الأساسي لمكتب التربية العربي لدول الخليج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0780) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1980 بشأن اعتماد ميزانية الكلية الجامعية للعلوم والآداب والتربية للسنة المالية 1980 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0680) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1980 بالموافقة على اتفاقية التملك الكامل لحقوق الاستشكاف والانتاج والمرافق والانتاج المتعلق بها بين حكومة دولة البحرين وشركة نفط البحرين المحدودة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0580) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1980 بالموافقة على اتفاقية الخدمات الجوية بين حكومة دولة البحرين وحكومة الجمهورية الباكستانية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0480) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1980 بالموافقة على قرار مجلس وزراء منظمة الاقطار العربية المصدرة للبترول بشأن تعديل بعض مواد اتفاقية إنشاء الشركة العربية للخدمات البترولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0380) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1980 باستثناء المؤسسة العربية المصرفية (ش.م.ب.) من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0280) | in_force | 69 |
+| مرسوم بقانون رقم (1) لسنة 1980 بالموافقة على اتفاقية تجنب الازدواج الضريبي بشأن الضرائب على دخل النقل الجوي الدولي بين حكومة دولة البحرين وحكومة الجمهورية الفرنسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0180) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1979 بالموافقة على اتفاقية إنشاء المعهد العربي للتخطيط بالكويت | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2779) | in_force | 31 |
+| مرسوم بقانون رقم (26) لسنة 1979 بربط الميزانية العامة للدولة للسنتين الماليتين 1980، 1981 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2679) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1979 بالموافقة على ضمان القرض الوارد في اتفاقية القرض المبرمة بتاريخ 15 نوفمبر 1979 بين شركة المنيوم البحرين ومجموعة من البنوك لتمويل التوسع في برنامج مصهر الألمنيوم | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2579) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1979 بالموافقة على اتفاقية المنظمة العربية للتنمية الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2479) | in_force | 17 |
+| مرسوم بقانون رقم (23) لسنة 1979 بإصدار قانون خدمة الأفراد في قوة دفاع البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2379) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1979 بشأن تعديل أحكام المرسوم رقم (8) لسنة 1955 وتعديلاته في شأن ضريبة الدخل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2279) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1979 باستثناء بنك الاسلامي (ش . م . ب) من بعض أحكام قانون الشركات التجارية الصادر بالمرسوم بقانون رقم (28) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2179) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1979 بشأن فتح اعتماد اضافي في ميزانية الدولة العامة للسنة المالية 1978 والسنة المالية 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2178) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1979 بشأن قواعد التسجيل والسلامة الخاصة بالسفن الصغيرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2079) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1979 في شأن وسم ومراقبة المشغولات الذهبية والفضية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1979) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1979 بإنشاء شركة مساهمة بحرينية باسم الشركة البحرينية الكويتية لصناعة البتروكيماويات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1879) | in_force | 42 |
+| مرسوم بقانون رقم (17) لسنة 1979 بالموافقة على الاتفاق بشأن العلاقات التجارية والإقتصادية والتعاون الفني بين حكومة دولة البحرين وحكومة استراليا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1779) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1979 بشأن بعض عقود بيع الأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1679) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1979 بإصدار قانون التسجيل العقاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1579) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1979 في شأن المطبوعات والنشر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1479) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1979 بتعديل المادة الثانية من المرسوم بقانون رقم (20) لسنة 1977 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والامن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1379) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1979 بتعديل المادة (23) من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1279) | in_force | 1 |
+| مرسوم بقانون رقم (11) لسنة 1979 بتعديل بعض أحكام قانون خدمة الضباط في قوة دفاع البحرين الصادر بالمرسوم بقانون رقم (16) لسنة 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1179) | in_force | 12 |
+| مرسوم بقانون رقم (10) لسنة 1979 بشأن تعديل بعض أحكام المرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1079) | in_force | 2 |
+| مرسوم بقانون رقم (9) لسنة 1979 بإصدار قانون المرور | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0979) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1979 بإنشاء صندوق الزكاة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0879) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1979 بالموافقة على الاتفاق بين حكومة دولة البحرين وبرنامج الأمم المتحدة الانمائي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0779) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1979 بشان فتح اعتماد إضافي في ميزانية الدولة العامة للسنة المالية 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0679) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1979 بشأن اعتماد ميزانية الكلية الجامعية للعلوم والآداب والتربية للسنة المالية 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0579) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1979 بإنشاء بنك الإسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0479) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1979 بتعديل المرسوم بقانون رقم (24) لسنة 1973 بإنشاء مجلس الدفاع الأعلى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0379) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1979 بتعديل بعض أحكام المرسوم بقانون رقم (5) لسنة 1971 بشأن أخذ الرمل والحصى والحجارة اللازمة لعمليات الدفن أو البناء أو نقلها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0279) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1979 بالموافقة على تنظيم النقل بالعبور (الترانزيت) بين دول الجامعة العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0179) | in_force | 45 |
+| مرسوم بقانون رقم (19) لسنة 1978 بالموافقة على ضمان اتفاقيتي القرض المبرمتين بتاريخ 14 سبتمبر سنة 1978 بين شركة نفط البحرين الوطنية وبين اتحادين من البنوك المتعاقدة لتمويل مشروع الغاز المصاحب في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1978) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1978 بتعديل بعض مواد القانون رقم (2) لسنة 1975 بشأن الصحة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1878) | in_force | 4 |
+| مرسوم بقانون رقم (17) لسنة 1978 بالموافقة على اتفاقية الكويت الاقليمية للتعاون في حماية البيئة البحرية من التلوث والبروتوكول المحلق بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1778) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1978 بتعديل مادة في قانون الشركات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1678) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1978 بالموافقة على بروتوكول الهيئة القضائية لمنظمة الاقطار العربية المصدرة للبترول | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1578) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1978 بإصدار قانون تسجيل السفن وتحديد شروط السلامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1478) | in_force | 1 |
+| مرسوم بقانون رقم (13) لسنة 1978 بتعديل المادة 4 من القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1378) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1978 بتعديل بعض أحكام المرسوم بقانون رقم (1) مالية لسنة 1961 الخاص بإنشاء السجل التجاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1278) | in_force | 1 |
+| مرسوم بقانون رقم (11) لسنة 1978 بإنشاء وتنظيم الكلية الجامعية للعلوم والآداب والتربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1178) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1978 بالموافقة على اتفاق إنشاء شركة طيران الخليج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1078) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1978 بالموافقة على تعديل المادة الثامنة من معاهدة الدفاع المشترك والتعاون الإقتصادي بين دول الجامعة العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0978) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1978 بتعديل بعض أحكام قانون المرافعات المدنية والتجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0878) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1978 بتعديل بعض مواد المرسوم بقانون رقم (26) في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0778) | in_force | 8 |
+| مرسوم بقانون رقم (6) لسنة 1978 بتوزيع اعتمادات الإيرادات والمصروفات في الميزانية العامة للدولة للسنة المالية 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0678) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1978 بالموافقة على اتفاقية القرض لتمويل مشروع كهرباء البحرين بين حكومة دولة البحرين والصندوق العربي للأنماء الإقتصادي والاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0578) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1978 بالموافقة على اتفاقية القرض لتمويل مشروع كهرباء البحرين بين حكومة دولة البحرين وصندوق ابوظبي للأنماء الإقتصادي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0478) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1978 بالموافقة على اتفاقية القرض لتمويل مشروع كهرباء البحرين بين دولة البحرين والصندوق الكويتي للتنمية الإقتصادي العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0378) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1978 بالموافقة على اتفاقية القرض لتمويل مشروع كهرباء البحرين بين حكومة دولة البحرين والصندوق السعودي للتنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0278) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1978 بشأن ربط الميزانية العامة للدولة للسنة المالية 1978 والسنة المالية 1979 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0178) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة 1977 بتعديل أحكام المرسوم رقم (1 مالية) لسنة 1961 الخاص بإنشاء السجل التجاري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3476) | in_force | 0 |
+| مرسوم بقانون رقم (33) لسنة 1977 بالموافقة على اتفاقية إنشاء الشركة العربية للخدمات البترولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3376) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1977 في شأن مزاولة مهنة التوليد (القبالة) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2477) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1977 بالموافقة على إنشاء &quot;جهاز تلفزيون الخليج&quot; | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2377) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1977 بتعديل بعض أحكام لائحة الامتيازات الصناعية والتصميمات والعلامات التجارية لسنة 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2277) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1977 بشأن المؤسسات التعليمية الخاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2177) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1977 بتعديل بعض أحكام قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام الصادر بالمرسوم بقانون رقم (11) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2077) | in_force | 2 |
+| مرسوم بقانون رقم (19) لسنة 1977 في شأن منظمة السياحة العالمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1977) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1977 في شأن تعديل كادر القضاة الصادر بالقانون رقم (4) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1877) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1977 بتعديل المادة (27) من المرسوم بقانون رقم (13) لسنة 1971 بشأن تنظيم القضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1777) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1977 بإصدار قانون خدمة الضباط في قوة دفاع البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1677) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1977 بإصدار سندات التنمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1577) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1977 في شأن الإحتياطات الصحية للوقاية من الأمراض المعدية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1477) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1977 بإصدار قانون تنظيم المباني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1377) | in_force | 1 |
+| مرسوم بقانون رقم (12) لسنة 1977 في شأن إيقاف العمل بأحكام قانون التأمين الاجتماعي بالنسبة لغير البحرينيين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1277) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1977 بتعديل المرسوم بقانون رقم (18) لسنة 1975 بتحديد الأسعار والرقابة عليها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1177) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1977 بفتح اعتماد اضافي بمبلغ ستة ملايين دينار لتحسين رواتب موظفي ومستخدمي الحكومة المدنيين والعسكرييين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1077) | in_force | 1 |
+| مرسوم بقانون رقم (9) لسنة 1977 بالموافقة على اتفاقية إنشاء الأكاديمية العربية للنقل البحري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0977) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1977 بالموافقة على الانضمام إلى اتفاقية المنظمة العربية للمواصفات والمقاييس بجامعة الدول العربية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0877) | in_force | 19 |
+| مرسوم بقانون رقم (7) لسنة 1977 في شأن الإحصاء والتعداد | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0777) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1977 خاص بالموازين والمقاييس و المكاييل | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0677) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1977 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1977 لمواجهة الزام الدولة بالاشتراك في إنشاء صندوق الدعم العسكري لدول المواجهة ومنظمة التحرير الفلسطينية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0577) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1977 بالموافقة على اتفاقية إنشاء مؤسسة الانتاج البرامجي المشترك لدول الخليج العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0477) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1977 بتعديل أحكام المادة (11) من القانون رقم (11) لسنة 1975 بشان جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0377) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1977 بشأن ربط الميزانية العامة للدولة للسنة المالية 1977 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0277) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1977 بتعديل بعض أحكام المرسوم رقم (80) لسنة 1955 في شأن ضريبة دخل البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0177) | in_force | 0 |
+| مرسوم بقانون رقم (32) لسنة 1976 بتعديل لائحة السير والمرور للبحرين لعام 1955 وتحديد الرسوم الخاصة بخدمات إدارة المرور والترخيص | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3276) | in_force | 3 |
+| مرسوم بقانون رقم (31) لسنة 1976 بالموافقة على اتفاقية صندوق النقد العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3176) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 1976 بالموافقة على اتفاقية إنشاء مكتب اتحاد موانئ الخليج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3076) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 1976 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2976) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1976 بتعديل المادة الأولى من المرسوم بقانون رقم (14) لسنة 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2876) | in_force | 0 |
+| مرسوم بقانون رقم (27) لسنة 1976 بتعديل المادة (38) والمادة (139) من قانون التأمين الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2776) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1976 بتنظيم شئون الحج | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2676) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1976 بالموافقة على اتفاقية المؤسسة العربية للاتصالات الفضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2576) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1976 بإصدار قانون التأمين الاجتماعي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2476) | in_force | 0 |
+| مرسوم بقانون رقم (43) لسنة ‏2002 بشأن تعديل بعض أحكام قانون العمل في القطاع الأهلي الصادر بالمرسوم بقانون رقم (23) لسنة 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4302) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1976 بإصدار قانون العمل في القطاع الأهلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2376) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1976 في شأن تعديل بعض أحكام الإيجار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2276) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1976 بتنظيم مهنة الدلالة في العقارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2176) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1976 بتعديل بعض أحكام قانون قوة دفاع البحرين لسنة 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2076) | in_force | 1 |
+| مرسوم بقانون رقم (19) لسنة 1976 في شأن الأوسمة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1976) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1976 بالموافقة على اتفاقية إنشاء منظمة الخليج للاستشارات الصناعية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1876) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1976 في شأن الأحداث | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1776) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1976 في شأن المفرقعات والأسلحة والذخائر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1676) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1976 بإصدار قانون العقوبات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1576) | in_force | 1 |
+| مرسوم بقانون رقم (14) لسنة 1976 بالموافقة على اتفاقيتي القرض والضمان لتمويل مشاريع الصناعات الخفيفة المبرمتين بين حكومة دولة البحرين وصندوق أبوظبي للإنماء الإقتصادي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1476) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1976 بالموافقة على اتفاقيتي القرض والضمان لتمويل المرحلة الثانية لمشروع محطة سترة للكهرباء والماء المبرمتين بين حكومة دولة البحرين وصندوق أبوظبي للإنماء الإقتصادي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1376) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1976 بالموافقة على البروتوكول التنفيذي لاتفاقية القرض بين حكومة دولة البحرين وصندوق أبوظبي للإنماء الإقتصادي العربي بشأن تمويل المرحلة الأولى من مشروع محطة سترة للكهرباء والماء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1276) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1976 بإصدار قانون تنظيم معاشات ومكافآت التقاعد لضباط وأفراد قوة دفاع البحرين والأمن العام | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1176) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1976 في شأن الاسكان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1076) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1976 بإنشاء شركة نفط البحرين الوطنية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0976) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1976 بالموافقة على اتفاقية ضمان القرض بين حكومة دولة البحرين وصندوق أبوظبي للإنماء الإقتصادي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0876) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1976 بالموافقة على اتفاقية إنشاء شركة الملاحة العربية المتحدة (شركة مساهمة خليجية) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0776) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1976 بشأن ربط الميزانية العامة للدولة للسنة المالية 1976 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0676) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1976 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0576) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1976 بالموافقة على الاتفاق التجاري والإقتصادي بين حكومة دولة البحرين وحكومة المملكة الأردنية الهاشمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0476) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1976 بالموافقة على اتفاق تنظيم شئون نقل البضائع بالسيارات الشاحنة العمومية بين دولة البحرين و الجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0376) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1976 بالموافقة على اتفاق تنظيم نقل الركاب بالسيارات بين دولة البحرين والجمهورية العربية السورية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0276) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1976 في شأن جدول الدرجات لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0176) | in_force | 0 |
+| مرسوم بقانون رقم (30) لسنة 1975 بالموافقة على اتفاقية تأسيس بنك الخليج الدولي &quot;شركة مساهمة بحرينية&quot; | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3075) | in_force | 0 |
+| مرسوم بقانون رقم (29) لسنة 1975 بالموافقة على الاتفاق التجاري والإقتصادي بين حكومة دولة البحرين وحكومة الجمهورية العراقية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2975) | in_force | 0 |
+| مرسوم بقانون رقم (28) لسنة 1975 بإصدار قانون الشركات التجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2875) | in_force | 3 |
+| مرسوم بقانون رقم (27) لسنة 1975 بالموافقة على اتفاق التعاون الإقتصادي والفني بين دولة البحرين والجمهورية التونسية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2775) | in_force | 0 |
+| مرسوم بقانون رقم (26) لسنة 1975 في شأن تنظيم مهنة الصيدلة والمراكز الصيدلية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2675) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1975 بالموافقة على إتفاقية قرض بين حكومة دولة البحرين وصندوق أبوظبي للإنماء الإقتصادي العربي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2575) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1975 بتعديل بعض أحكام المرسوم بقانون رقم (8) لسنة 1970 بشأن استملاك الأراضي للمنفعة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2475) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1975 بشأن الوكالات التجارية وتنظيمها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2375) | in_force | 0 |
+| مرسوم بقانون رقم (22) لسنة 1975 بتعديل بعض أحكام القانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2275) | in_force | 0 |
+| مرسوم بقانون رقم (21) لسنة 1975 بفتح اعتماد إضافي في ميزانية الدولة العامة للسنة المالية 1975 لمواجهة نفقات تلفزيون البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2175) | in_force | 0 |
+| مرسوم بقانون رقم (20) لسنة 1975 بشأن الإيداع القانوني للمصنفات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2075) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة 1975 بالموافقة على الاتفاق الإقتصادي بين المملكة العربية السعودية ودولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1975) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1975 بتحديد الأسعار والرقابة عليها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1875) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1975 بتعديل المادة الرابعة من المرسوم بقانون رقم (6) لسنة 1973 بتحديد أوزان السيارات على الطرق | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1775) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1975 بتمديد فترة العمل بالمادة (6) من قانون البطاقة الشخصية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1675) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1975 بتمديد فترة قيد المواليد والوفيات بموجب المادة (24) من القانون رقم (6) لسنة 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1575) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1975 بتعديل بعض أحكام المرسوم بقانون رقم (16) لسنة 1973 بشأن إنشاء هيئة بلدية مركزية مؤقتة لإدارة شئون البلديات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1475) | in_force | 0 |
+| قانون رقم (13) لسنة 1975 بشأن تنظيم معاشات ومكافآت التقاعد لموظفي ومستخدمي الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1375) | in_force | 0 |
+| قانون رقم (12) لسنة 1975 بالموافقة على اتفاقية المشاركة المبرمة بين حكومة دولة البحرين وشركة نفط البحرين المحدودة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1275) | in_force | 0 |
+| قانون رقم (11) لسنة 1975 بشأن جوازات السفر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1175) | in_force | 0 |
+| قانون رقم (10) لسنة 1975 بفتح اعتماد إضافي بمبلغ أربعة ملايين ونصف مليون دينار لتحسين رواتب الموظفين المدنيين والعسكريين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1075) | in_force | 5 |
+| قانون رقم (9) لسنة 1975 بالتصديق على اتفاقية الشركة العربية للاستثمار | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0975) | in_force | 0 |
+| قانون رقم (8) لسنة 1975 بالتصديق على اتفاقية الشركة العربية للاستثمارات البترولية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0875) | in_force | 0 |
+| قانون رقم (7) لسنة 1975 بالتصديق على اتفاقية البنك الإسلامي للتنمية التي وقعتها البحرين في 21 أكتوبر 1974 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0775) | in_force | 0 |
+| قانون رقم (6) لسنة 1975 بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0675) | in_force | 0 |
+| قانون رقم (5) لسنة 1975 بربط الميزانية العامة للدولة للسنة المالية 1975 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0575) | in_force | 0 |
+| قانون رقم (4) لسنة 1975 بشأن كادر القضاة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0475) | in_force | 0 |
+| قانون رقم (3) لسنة 1975 بشأن الصحة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0375) | in_force | 0 |
+| قانون رقم (2) لسنة 1975 بشأن البطاقة الشخصية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0275) | in_force | 0 |
+| قانون رقم (1) لسنة 1975 بشأن تحديد السنة المالية وقواعد إعداد الميزانية العامة والرقابة على تنفيذها والحساب الختامي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0175) | in_force | 0 |
+| قانون رقم (6) لسنة 1974 في شأن تعديل جدول وظائف درجات ورواتب موظفي السلكين الدبلوماسي والقنصلي | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0674) | in_force | 0 |
+| قانون رقم (5) لسنة 1974 بتعديل ميزانية الدولة العامة للسنتين المالية 1974 الصادرة بالمرسوم بقانون رقم (22) لسنة 1973 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0574) | in_force | 0 |
+| قانون رقم (4) لسنة 1974 بشأن اللائحة الداخلية للمجلس الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0474) | in_force | 0 |
+| قانون رقم (3) لسنة 1974 بفتح اعتماد إضافي في ميزانية الدولة العامة للسنة المالية 1974 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0374) | in_force | 0 |
+| قانون رقم (2) لسنة 1974 بشأن التصديق على اتفاقية الشركة العربية لبناء واصلاح السفن | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0274) | in_force | 0 |
+| قانون رقم (1) لسنة 1974 بتعيين مكافآت أعضاء المجلس الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0174) | in_force | 0 |
+| مرسوم بقانون رقم (25) لسنة 1973 بتعديل الفقرة الثالثة من المادة الثانية من قانون قوة الدفاع لسنة 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2573) | in_force | 0 |
+| مرسوم بقانون رقم (24) لسنة 1973 بإنشاء مجلس الدفاع الأعلى | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2473) | in_force | 0 |
+| مرسوم بقانون رقم (23) لسنة 1973 بإصدار قانون بإنشاء مؤسسة نقد البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2373) | in_force | 2 |
+| مرسوم بقانون رقم (22) لسنة 1973 بشأن ربط ميزانية الدولة العامة للسنة المالية 1974 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2273) | in_force | 0 |
+| مرسوم بقانون رقم (18) لسنة 1973 بشأن الاجتماعات العامة والمواكب والتجمعات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1873) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1973 بشأن إنشاء هيئة بلدية مركزية لإدارة شئون البلديات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1673) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1973 بتمديد فترة قيد المواليد والوفيات بموجب المادة (24) من القانون رقم (6) لسنة 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1573) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1973 بشأن تنظيم الاعلانات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1473) | in_force | 0 |
+| مرسوم بقانون رقم (10)لسنة 1973 بشأن أحكام الإنتخاب للمجلس الوطني | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1073) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1973 بشأن منح الشركة الوطنية للاستيراد والتصدير (تحت التأسيس) امتيازا | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0873) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1973 بتحديد أوزان السيارات على الطرق | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0673) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1973 بشأن مراقبة التداول في المواد والمستحضرات المخدرة واستعمالها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0473) | in_force | 0 |
+| مرسوم بقانون رقم (17) لسنة 1972 بشأن تعديل المادة الثالثة من المرسوم بقانون رقم (13) لسنة 1972 بشأن أحكام الانتخاب للمجلس التأسيسي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1772) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1972 بشأن علم دولة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1672) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1972 بشأن إنضمام دولة البحرين إلى اتفاقيتي صندوق النقد الدولي والبنك الدولي للانشاء والتعمير | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1572) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1972 بتمديد فترة قيد المواليد والوفيات بموجب المادة (24) من القانون رقم (6) لسنة 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1472) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1972 بشأن أحكام الانتخاب للمجلس التأسيسي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1372) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1972 بشأن إنشاء مجلس تأسيسي لإعداد دستور للدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1272) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1972 بإنشاء وتنظيم دائرة الشئون القانونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1172) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1972 بشأن الجمعيات التعاونية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0872) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1972 بتعديل بعض أحكام القانون رقم (1) لسنة 1972 بشأن الرقابة على الأسعار وتحديدها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0772) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1972 بشأن ربط الميزانية العامة للدولة للسنة المالية 1972 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0572) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1972 بفرض رسوم موانئ على ناقلات البترول | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0472) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1972 بشأن رباط ميزانية الدولة للسنة المالية 1973 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0373) | in_force | 0 |
+| مرسوم بقانون رقم (3) لسنة 1972 بشأن الرسوم القضائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0372) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1972 بتعديل لائحة السير والمرور للبحرين لسنة 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0272) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1972 بشأن الرقابة على الأسعار وتحديدها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0172) | in_force | 0 |
+| مرسوم بقانون رقم (16) لسنة 1971 بتمديد العمل بأحكام القانون المؤقت لتنظيم تطوير الأراضي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1671) | in_force | 0 |
+| مرسوم بقانون رقم (15) لسنة 1971 بتعديل أحكام المرسوم رقم (6) لسنة 1970 بقانون تنظيم تسجيل المواليد والوفيات | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1571) | in_force | 0 |
+| مرسوم بقانون رقم (14) لسنة 1971 بشأن التوثيق | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1471) | in_force | 0 |
+| مرسوم بقانون رقم (13) لسنة 1971 بشأن تنظيم القضاء | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1371) | in_force | 0 |
+| مرسوم بقانون رقم (12) لسنة 1971 بإصدار قانون المرافعات المدنية والتجارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1271) | in_force | 0 |
+| مرسوم بقانون رقم (11) لسنة 1971 بميراث وتصفية تركات غير المسلمين من الأجانب | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1171) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1971 بإضافة مادة جديدة للإعلان رقم (13) لسنة 1956 بشأن الصكوك المتداولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1071) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1971 بشأن اعتماد زواج المسيحيين الموجودين في البحرين وتوابعها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0971) | in_force | 0 |
+| مرسوم بقانون رقم (7) لسنة 1971 بالموافقة على انضمام البحرين وتوابعها إلى اتفاقيات جنيف الموقعة في 12 أغسطس 1949 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0771) | in_force | 0 |
+| مرسوم بقانون رقم (6) لسنة 1971 بشأن مزاولة مهنة الطب البشري وطب الأسنان | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0671) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1971 بتنظيم مزاولة مهنة دلالة الأغنام والمواشي | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0571-1) | in_force | 0 |
+| مرسوم بقانون رقم (5) لسنة 1971 بشأن أخذ الرمل والحصى والحجارة اللازمة لعمليات الدفن أو البناء ونقلها | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0571) | in_force | 0 |
+| مرسوم بقانون رقم (4) لسنة 1971 بشأن ربط الميزانية العامة للدولة للسنة المالية 1971 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0471) | in_force | 0 |
+| مرسوم بقانون رقم (2) لسنة 1971 بشأن مراقبة وتنظيم التحكم في المياه | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0271) | in_force | 0 |
+| مرسوم بقانون رقم (1) لسنة 1971 بشأن تحديد تسجيل سيارات الأجرة (التاكسي) | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0171) | in_force | 0 |
+| مرسوم بقانون رقم (10) لسنة 1970 بتمديد فترة قيد المواليد والوفيات بموجب المادة (24) من القانون رقم (6) لسنة 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1070) | in_force | 0 |
+| مرسوم بقانون رقم (9) لسنة 1970 بشأن تعديل بعض قواعد الإيجار | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0970) | in_force | 0 |
+| مرسوم بقانون رقم (8) لسنة 1970 بشأن استملاك الأراضي للمنفعة العامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L0870) | in_force | 0 |
+| قانون تعديل قانون المطبوعات والنشر لسنة 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0765) | in_force | 24 |
+| قانون رقم 5 لسنة 1963 بتنظيم مكتب مقاطعة اسرائيل في البحرين وتوابعها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0563) | in_force | 0 |
+| تعديل لائحة السير والمرور للبحرين لسنة 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0257) | in_force | 0 |
+| التهم فى القضايا الجنائية لسنة 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0757) | in_force | 0 |
+| قانون التصرف بالمال فى القضايا الجنائية لسنة 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2556) | in_force | 0 |
+| قانون (التعديلات الثانية) لسنة 1956 على لائحة السير والمرور للبحرين لعام 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1256) | in_force | 0 |
+| اصدار قانون الطرق لسنة 1956 من مجلس بلدية البحرين بموافقة الحكومة | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0256) | in_force | 0 |
+| مرسوم بقانون رقم (47) لسنة ‏2002‏‏ بشأن تنظيم الصحافة والطباعة والنشر | [link](https://legalaffairs.gov.bh/Legislation/HTM/L4702) | in_force | 96 |
+| قانون رقم (39) لسنة‏ 2005 بالتصديق على اتفاقية استوكهولم للملوثات العضوية الثابتة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3905) | in_force | 0 |
+| مرسوم بقانون رقم (34) لسنة ‏2002‏‏ بإصدار قانون العقوبات العسكري | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3402) | in_force | 139 |
+| مرسوم بقانون رقم (32) لسنة ‏2002‏‏ بإصدار قانون قوة دفاع البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/L3202) | in_force | 67 |
+| مرسوم بقانون رقم (23) بشان تأسيس السوق المالية الاسلامية العالمية | [link](https://legalaffairs.gov.bh/Legislation/HTM/L2302) | in_force | 0 |
+| قانون رقم (22) لسنة بإعتماد الميزانية العامة للدولة للسنتين الماليتين 2005 و 2006 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2205) | in_force | 0 |
+| مرسوم بقانون رقم (19) لسنة ‏2002‏‏‏ بشأن التصرف في الأراضي المملوكة للدولة ملكية خاصة | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1902) | in_force | 0 |
+| مرسوم بقانون رقم (14) بفتح اعتماد إضافي في الميزانية العامة للدولة للسنة المالية 1992 | [link](https://legalaffairs.gov.bh/Legislation/HTM/L1492) | in_force | 0 |
+| قانـون رقـم (6) لسـنة 2003 بإعتمـــاد المــيزانية العامــة للدولــة للسـنتين المالـيتين ‏2003‏‏ و 2004 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0603) | in_force | 0 |
+| مرسوم بقانون بشأن تدابير أمن الدولة | [link](https://legalaffairs.gov.bh/Legislation/HTM/LN0174) | in_force | 0 |
+| قانون بتعديل قانون عقوبات البحرين لعام 1969 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0369) | in_force | 0 |
+| قانون تعديل قانون الصاغه فى البحرين لعام 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1669) | in_force | 1 |
+| قانون البحرين بخصوص روديسيا الجنوبية - عقوبات الامم المتحدة لسنه 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1768) | in_force | 0 |
+| قانون جمعية كشافة البحرين لعام 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1568) | in_force | 0 |
+| قانون ضريبه بنزين السيارات للبحرين لعام 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1068) | in_force | 0 |
+| قانون الصاغه للبحرين لعام 1968 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0868) | in_force | 0 |
+| قانون سن قانون المنظمات الدولية - الحصانات والامتيازات المعدل لعام 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0568) | in_force | 0 |
+| قانون تعديل قانون التوكيل في محاكم البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0268) | in_force | 0 |
+| قانون تعديل قانون عقوبات البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0168) | in_force | 0 |
+| قانون اللجنة الوطنية لليونسكو 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1367) | in_force | 0 |
+| قانون دائرة الشئون القروية لحكومة البحرين - الصلاحيات والواجبات لعام 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0167) | in_force | 0 |
+| قانون سن قانون المنظمات الدولية - الحصانات والامتيازات 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1167) | in_force | 0 |
+| قانون تعديل قانون حيازة الاسلحة والمتاجرة بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0967) | in_force | 1 |
+| قانون المتفجرات (المعدل) للبحرين - 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1067) | in_force | 1 |
+| قانون لائحة الامتيازات الصناعية والتصميمات والعلامات التجارية (المعدلة) - 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0467) | in_force | 0 |
+| قانون تعديل قانون العمل البحريني لعام 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0567) | in_force | 0 |
+| قانون تعديل قانون تعويض موظفي البحرين لعام 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0667) | in_force | 0 |
+| قانون البحرين لروديسيا الجنوبية (التجارة والمعاملات الممنوعة) لعام 1967 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0167) | in_force | 0 |
+| قانون تخويل يتعلق بقانون الاجانب (الهجرة والاقامة) 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1365) | in_force | 0 |
+| قانون تخويل يتعلق بقانون الاجانب (الهجرة والاقامة) 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1265) | in_force | 0 |
+| قانون تخويل يتعلق بقانون الاجانب (الهجرة والاقامة) 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1165) | in_force | 0 |
+| قانون الاجانب (الهجرة والاقامة) 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0365) | in_force | 0 |
+| قانون تعديل قانون مراقبه العقاقير الخطره | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0565) | in_force | 0 |
+| قانون الأمن العام 1965 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0165) | in_force | 0 |
+| قانون السجون | [link](https://legalaffairs.gov.bh/Legislation/HTM/DN0164) | in_force | 0 |
+| قانون تعديل قانون الجمارك لسنه 1964 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0464) | in_force | 0 |
+| قانون تعديل قانون الجمارك لعام 1964 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0564) | in_force | 0 |
+| قانون تعديل قانون الجمارك | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1063) | in_force | 0 |
+| قانون تعديل قانون الحجارة والكنكريت والرمل 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0663) | in_force | 0 |
+| قانون تعيين علي عبدالرحمن الوزان رئيسا لمكتب مقاطعة اسرائيل | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0163) | in_force | 0 |
+| قانون تعديل قانون الجمارك الصادر عام 1950 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0263) | in_force | 0 |
+| قانون مطار البحرين المدني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1462) | in_force | 0 |
+| قانون تعديل قانون حيازة الاسلحة والمتاجرة فيها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1362) | in_force | 0 |
+| قانون حيازه الاسلحه والمتاجره بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1262) | in_force | 0 |
+| قانون التعليم الخصوصي للبحرين سنه 1961 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1161) | in_force | 0 |
+| قانون انتقال السلطة على الصوماليين لعام 1961 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0961) | in_force | 0 |
+| قانون لا يجوز لأي شخص دخول جزيرة جده لمسافة الف ياردة من حدود الجزر لانخفاض مياه البحر | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0561) | in_force | 0 |
+| قانون مكافحة الملاريا فى البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1260) | in_force | 0 |
+| قانون تعديل قانون الجمارك لعام 1960 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0860) | in_force | 0 |
+| قانون عرض الروايات والاستعراضات المسرحية والحفلات الموسيقية لعام 1960 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0760) | in_force | 0 |
+| قانون تعديل لائحة السير والمرور للبحرين لعام 1960 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0660) | in_force | 0 |
+| قانون المرور البحريني لعام 1955 - رخص نقليات عامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0160) | in_force | 0 |
+| قانون المرور لعام 1955 - فحص السيارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0159) | in_force | 0 |
+| قانون مراقبة العقاقير الخطره للبحرين - 1959 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0959) | in_force | 0 |
+| قانون تعديل قانون ترخيص الجمعيات والنوادي في البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0559) | in_force | 0 |
+| قانون تعديل قانون حيازة الاسلحة والمتاجرة بها لعام 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2758) | in_force | 0 |
+| قانون تعديل قانون اساءة استعمال التيلفون للبحرين 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2658) | in_force | 0 |
+| قانون سن قانون عقوبات البحرين المعدل 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2058) | in_force | 0 |
+| الامتيازات الصناعية والتصميمات والعلامات التجارية لعام 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/D1958) | in_force | 0 |
+| قانون ميناء سترة للبحرين - 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1558) | in_force | 0 |
+| القانون البحريني لسلطات رئيس العمل للتفيش لعام 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0958) | in_force | 0 |
+| قانون المتفجرات للبحرين 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0658) | in_force | 0 |
+| سن قانون تحديد سرعة السيارات للبحرين لسنه 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0258) | in_force | 0 |
+| استدراك بشان قانون العمل البحريني لعام 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0158) | in_force | 0 |
+| تعديل قانون الجمارك الصادر في عام 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4858) | in_force | 0 |
+| تعديل قانون جمارك البحرين لعام 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4857) | in_force | 0 |
+| قانون جمع التبرعات الخيرية لعام 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5856) | in_force | 0 |
+| نظام الجمهور البحريني لعام 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4556) | in_force | 0 |
+| قانون الصحافة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1054) | in_force | 0 |
+| قانون الاشخاص الموقوفين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2156) | in_force | 0 |
+| اصدار بلدية الحد قانون الطرق لسنه 1956 بموافقة حكومة البحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0156) | in_force | 0 |
+| تنفيذ قانون هيئات البحرين الاستشارية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5855) | in_force | 0 |
+| قانون المسكرات لسنه 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1156) | in_force | 0 |
+| قانون الاشخاص الموقوفين لسنه 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0656) | in_force | 0 |
+| الكحول التجارى للبحرين - 1956 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0756) | in_force | 0 |
+| قانون حيازة الاسلحة والمتاجرة بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8955) | in_force | 0 |
+| قانون انتخاب مجلسي الصحة والمعارف لسنه 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8155) | in_force | 0 |
+| قانون عقوبات البحرين لعام 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K7155) | in_force | 0 |
+| تحديد اجارات المحلات التجارية فى المنامة للعام 1955 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4255) | in_force | 0 |
+| قانون الاقامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3555) | in_force | 0 |
+| قانون الجوازات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2855) | in_force | 0 |
+| اعاده نشر الاعلان الخاص بنقل الاملاك الثابتة مع تعديل الفقرة هـ من الماده الثالثة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4653) | in_force | 0 |
+| قانون الصحافه | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2952) | in_force | 0 |
+| حوادث الطائرات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4557) | in_force | 0 |
+| تعديل قانون الكحول التجاري (المعدل) للبحرين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2757) | in_force | 0 |
+| تعديل قانون السيارات لعام 1957 | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0157) | in_force | 0 |
+| تعديل قانون المهاجرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2657) | in_force | 0 |
+| التصرف بالمال الملتقط المجهول صاحبه | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1857) | in_force | 0 |
+| تبليغ الاحضاريات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0957) | in_force | 0 |
+| قانون الجنسية البحرينية (المعدل) لعام 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1163) | in_force | 0 |
+| قانون الجنسية البحرينية لعام 1963 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0863) | in_force | 0 |
+| قانون المخالفات المدنية 1970 | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0170) | in_force | 0 |
+| قانون أصول المحاكمات الجزائية - 1966 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0558-1) | in_force | 0 |
+| تعديل قانون العمل البحريني لعام 1958 | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0558) | in_force | 0 |
+| قانون الرسوم والمصاريف في القضايا المدنيه | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0258-1) | in_force | 0 |
+| قانون تحديد سرعة السيارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0258) | in_force | 2 |
+| استدراك وتعديلات على قانون العمل البحريني | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2657-1) | in_force | 0 |
+| قانون المهاجرة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1857-1) | in_force | 0 |
+| التصرف في المال الملتقط المجهول صاحبه | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0357) | in_force | 0 |
+| قانون السيارات (التأمين على الطرف الثالث) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0757-1) | in_force | 0 |
+| التهم فى القضايا الجنائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5856-1) | in_force | 0 |
+| جمع التبرعات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K6156) | in_force | 0 |
+| ترجمة قانون العقوبات البحريني | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0556) | in_force | 0 |
+| الاجراءات الجنائية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1156-1) | in_force | 0 |
+| قانون المسكرات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0656-1) | in_force | 0 |
+| الاشخاص الموقوفين | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0756-1) | in_force | 0 |
+| الكحول التجارى | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0356) | in_force | 0 |
+| طرق بلدية الحد | [link](https://legalaffairs.gov.bh/Legislation/HTM/KN0456) | in_force | 0 |
+| طرق بلدية المحرق | [link](https://legalaffairs.gov.bh/Legislation/HTM/K8955-1) | in_force | 0 |
+| حيازة الاسلحة والمتاجرة بها | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3555-1) | in_force | 0 |
+| قانون الاقامة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K1054-1) | in_force | 0 |
+| الصحافة | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2448) | in_force | 0 |
+| قوانين السيارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K0148) | in_force | 0 |
+| قانون تعديل على قانون التسجيلات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K4246) | in_force | 0 |
+| قانون الايجارات | [link](https://legalaffairs.gov.bh/Legislation/HTM/K3137) | in_force | 0 |
+| قانون السيارات العموميه (الباصات) | [link](https://legalaffairs.gov.bh/Legislation/HTM/K2037) | in_force | 5 |
+| قانون الجنسية البحرينية | [link](https://legalaffairs.gov.bh/Legislation/HTM/K5137) | in_force | 0 |
