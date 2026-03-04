@@ -25,31 +25,41 @@ export function getAbout(db: InstanceType<typeof Database>, context: AboutContex
   const caps = detectCapabilities(db);
   const meta = readDbMetadata(db);
 
+  const euRefs = safeCount(db, 'SELECT COUNT(*) as count FROM eu_references');
+
+  const stats: Record<string, number> = {
+    documents: safeCount(db, 'SELECT COUNT(*) as count FROM legal_documents'),
+    provisions: safeCount(db, 'SELECT COUNT(*) as count FROM legal_provisions'),
+    definitions: safeCount(db, 'SELECT COUNT(*) as count FROM definitions'),
+  };
+
+  if (euRefs > 0) {
+    stats.eu_documents = safeCount(db, 'SELECT COUNT(*) as count FROM eu_documents');
+    stats.eu_references = euRefs;
+  }
+
   return {
-    server: SERVER_NAME,
+    name: 'Bahrain Law MCP',
     version: context.version,
-    repository: REPOSITORY_URL,
-    database: {
-      fingerprint: context.fingerprint,
-      built_at: context.dbBuilt,
-      tier: meta.tier,
-      schema_version: meta.schema_version,
-      capabilities: [...caps],
+    jurisdiction: 'BH',
+    description: 'Bahrain Law MCP — legislation via Model Context Protocol',
+    stats,
+    data_sources: [
+      {
+        name: 'Bahrain Legal Affairs',
+        url: 'https://legalaffairs.gov.bh',
+        authority: 'Legislation and Legal Opinion Commission',
+      },
+    ],
+    freshness: {
+      database_built: context.dbBuilt,
     },
-    statistics: {
-      documents: safeCount(db, 'SELECT COUNT(*) as count FROM legal_documents'),
-      provisions: safeCount(db, 'SELECT COUNT(*) as count FROM legal_provisions'),
-      definitions: safeCount(db, 'SELECT COUNT(*) as count FROM definitions'),
-      eu_documents: safeCount(db, 'SELECT COUNT(*) as count FROM eu_documents'),
-      eu_references: safeCount(db, 'SELECT COUNT(*) as count FROM eu_references'),
-    },
-    data_source: {
-      name: 'Bahrain Law',
-      authority: 'Legislation and Legal Opinion Commission',
-      url: 'https://legalaffairs.gov.bh',
-      license: 'Government Publication',
-      jurisdiction: 'BH',
-      languages: ['ar'],
+    disclaimer:
+      'This is a research tool, not legal advice. Verify critical citations against official sources.',
+    network: {
+      name: 'Ansvar MCP Network',
+      open_law: 'https://ansvar.eu/open-law',
+      directory: 'https://ansvar.ai/mcp',
     },
   };
 }
