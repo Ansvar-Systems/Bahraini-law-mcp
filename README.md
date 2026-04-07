@@ -40,12 +40,12 @@ This MCP server makes Bahraini law **searchable, cross-referenceable, and AI-rea
 
 > Connect directly to the hosted version -- zero dependencies, nothing to install.
 
-**Endpoint:** `https://bahraini-law-mcp.vercel.app/mcp`
+**Endpoint:** `https://mcp.ansvar.eu/law-bh/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add bahraini-law --transport http https://bahraini-law-mcp.vercel.app/mcp` |
+| **Claude Code** | `claude mcp add bahraini-law --transport http https://mcp.ansvar.eu/law-bh/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -56,7 +56,7 @@ This MCP server makes Bahraini law **searchable, cross-referenceable, and AI-rea
   "mcpServers": {
     "bahraini-law": {
       "type": "url",
-      "url": "https://bahraini-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-bh/mcp"
     }
   }
 }
@@ -69,7 +69,7 @@ This MCP server makes Bahraini law **searchable, cross-referenceable, and AI-rea
   "github.copilot.chat.mcp.servers": {
     "bahraini-law": {
       "type": "http",
-      "url": "https://bahraini-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-bh/mcp"
     }
   }
 }
